@@ -49,6 +49,7 @@ Isso tira 7 itens da fila de cadastro e muda a prioridade: o que falta não é *
 | **Nivea** | Marca de mercado/farmácia; campanhas regionais frequentes | Via plataformas (Squid/Influency) — não responde e-mail direto | 🔵 |
 | **CeraVe / La Roche-Posay (L'Oréal Derm)** | Skincare de iniciante mais indicado do Brasil; audiência pede "por onde começo" | Via plataformas e agência — só quando tiver 10k | 🔵 |
 | **Cetaphil** | Pele sensível, clima seco — dor real da sua audiência | Via plataformas | 🔵 |
+| Caudalie ✅ | Premium francesa (uva, 1% for the Planet); só vende no Brasil pela Sephora, sem loja no interior — ângulo "o único produto caro que vale" | pr.us@caudalie.com (PR dos EUA, pedir encaminhamento ao Brasil) | 🟡 |
 
 ### Maquiagem
 

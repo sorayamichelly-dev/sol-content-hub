@@ -568,3 +568,36 @@ O que eu proponho: uma série de autocuidado de cinco minutos com produtos Grana
 Mídia kit completo e portfólio: https://claude.ai/artifact/UvZKHyzG2qzfr1id29P9zV
 
 Contato: soraya.michelly@gmail.com
+
+---
+
+## 20. CAUDALIE — pr.us@caudalie.com (caixa de PR dos EUA; pedir encaminhamento ao Brasil/LatAm)
+
+**Assunto:** Caudalie in the Brazilian Northeast: the one premium product a budget-first audience would buy
+
+*(Em inglês porque o endereço é o PR dos Estados Unidos. A Caudalie vende no Brasil pela Sephora Brasil, sem loja física no interior — o e-mail usa isso como argumento.)*
+
+Hello Caudalie PR team,
+
+My name is Soraya Oliveira, a motherhood and real-routine content creator based in Mossoró, in the Northeast of Brazil (@sorayaaoliroutine). I'm writing to the US inbox because it's the one Caudalie makes public — if there is a Brazil or LatAm contact, I'd be grateful if you could forward this.
+
+What I admire about Caudalie is that it never abandoned its founding idea: a brand built around one ingredient, the grape, that turned a family's vineyard into three decades of skincare — and joined 1% for the Planet before it was fashionable. That's a rare kind of consistency, and it's exactly what my audience responds to.
+
+Here's the honest reason I'm writing. My audience is not Caudalie's typical customer — yet. They are 1,107 followers, 85% women, 70% aged 25 to 44, 93% living in the state of Rio Grande do Norte, in a hot, dry climate where hydration is the number-one skin complaint. They buy skincare by price and by trust, and Caudalie is only available to them online, through Sephora Brasil. In other words: no store, no tester, no one nearby who has used it.
+
+That gap is my value. The most-saved post on my profile in the last 30 days was a carousel about the order of a skincare routine — my audience is still learning what to buy first. The question she asks is "if I can afford one premium product, which one is worth it?" I can answer that for Caudalie with a real 30-day test (Beauty Elixir or Vinosource-Hydra would be my pick for this climate), photographed in the same light on weeks 0, 2 and 4, and I publish the result even if it's "no visible change".
+
+Today's numbers, from Instagram Insights:
+
+- 1,107 followers, but 101,341 views in 30 days — 91 views per follower
+- 3,713 interactions and a 3.66% interaction-per-view rate
+- +250 followers in the last month (+29%)
+- Best day: 2,788 accounts reached, 2.5× my follower base
+- 181 Story replies in the month — my audience asks me directly before buying
+
+Media kit and portfolio: https://claude.ai/artifact/UvZKHyzG2qzfr1id29P9zV
+
+Thank you for your time,
+Soraya Oliveira
+@sorayaaoliroutine · soraya.michelly@gmail.com
+Mossoró, RN — Brazil
