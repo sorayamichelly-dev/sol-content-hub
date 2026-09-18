@@ -49,7 +49,7 @@ Aqui você não pede parceria: você cria perfil, envia portfólio e recebe brie
 | **LATAM UGC** (outra) | latamugc.com | 📝 | latamugc.com | Rede de influência da América Latina |
 | **Collabstr** (internacional) | — | 📝 | collabstr.com | Marketplace; já lista 127 creators UGC do Brasil |
 
-**Não vale o tempo agora:** Pop Creator (Mynd) exige 50k seguidores e 1,5% de engajamento. TikTok Creator Marketplace exige 10k.
+**Não vale o tempo agora:** Pop Creator (Mynd) exige 50k seguidores e 1,5% de engajamento. TikTok Creator Marketplace exige 10k. **TikTok Shop: descartado por decisão da Soraya.**
 
 ---
 

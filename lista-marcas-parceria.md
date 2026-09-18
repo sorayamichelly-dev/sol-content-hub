@@ -127,7 +127,7 @@ Aqui você não precisa de resposta de ninguém: a maioria é cadastro. É a ren
 | **Mercado Livre Afiliados e Criadores** | Afiliado (link) + "Campanhas para Criadores" que pagam por visualização de vídeo | Afiliado: sem mínimo · Campanhas de criadores: **10k no Instagram ou TikTok** | **✔ já afiliada** · Campanhas de criadores quando bater 10k (vale somar TikTok, não só Instagram) | ✔ (afiliado) · 🔵 (criador) |
 | **Amazon Associados** | Comissão de 1% a 15% sobre o carrinho inteiro | Sem mínimo; precisa de **3 vendas em 180 dias** para manter | **✔ já associada** — atenção ao prazo das 3 vendas | ✔ |
 | **Magalu Parceiro** | Loja virtual própria + link de afiliado | CPF, +18, conta bancária | **✔ já parceira** | ✔ |
-| **TikTok Shop — Criador Afiliado** | Comissão + amostras grátis de vendedores | Mínimo em teste: entre 1.000 e 2.000 seguidores **no TikTok** (mudou 3 vezes em 2026) | Perfil → TikTok Shop para Criadores. **Você já posta no TikTok — conferir quantos seguidores tem lá** | 🟢 se tiver 1–2k no TikTok |
+| ~~TikTok Shop — Criador Afiliado~~ | — | — | **Descartado por decisão da Soraya (18/09).** Não incluir em planos. | ✖ |
 | **Temu Afiliados** | Comissão em achadinho de preço baixo | Sem mínimo | App | 🟢 |
 | **AliExpress** ✅ | E-mail enviado; também tem afiliados aberto | Sem mínimo | Portal de afiliados | 🟢 |
 | **SHEIN** ✅ | E-mail enviado; também tem afiliados | — | Portal de afiliados | 🟢 |
@@ -195,10 +195,9 @@ Aqui você tem o argumento que ninguém mais tem: 93% da sua audiência mora no 
 **Semana 1 — ativar o que já existe (cadastro parado não paga):**
 1. **Afiliados:** colocar link de Amazon/ML/Shopee/Magalu em **todo** post de achadinho e nos Destaques; Amazon exige 3 vendas em 180 dias ou desativa. Meta: 1 carrossel de curadoria por semana com link.
 2. **MIS e Creator Ads:** perfil 100% preenchido (nicho, cidade, mídia kit, portfólio), notificações ligadas, candidatar a *toda* campanha aberta na primeira semana — o algoritmo dessas plataformas prioriza quem responde rápido.
-3. **TikTok:** ver o número de seguidores. Com 1–2k, ativar TikTok Shop para Criadores (comissão + amostra grátis). Se estiver abaixo, é a meta mais barata do mês — é o mesmo conteúdo que já vai pra lá.
-4. **Cadastros novos que faltam (10 min cada):** Like by B2Mamy → Spark Hub → Creatify → Publipost → Bloomer → Winclap (formulário)
-5. **Ruby Lovers** (formulário)
-6. **Kwai:** repostar os 5 Reels do portfólio — quarta plataforma com o mesmo vídeo, paga por view
+3. **Cadastros novos que faltam (10 min cada):** Like by B2Mamy → Spark Hub → Creatify → Publipost → Bloomer → Winclap (formulário)
+4. **Ruby Lovers** (formulário)
+5. **Kwai:** repostar os 5 Reels do portfólio — quarta plataforma com o mesmo vídeo, paga por view
 
 **Semana 2 — DMs com mídia kit:**
 Zanphy, Luisance, Bella Femme, Fenzza, Widi Care, Bioart, Flora Pura, Yes! Cosmetics, Buba, Clingo, Lillo
@@ -209,7 +208,7 @@ UGC (modelo curto): Winclap, Influee, Insense, Creatify · Apps: Nubank, PicPay,
 **Semana 4 — presencial em Mossoró:**
 Lojas Santa Lúcia, 2 farmácias, 1 loja de bebê, 1 salão — com mídia kit impresso e a frase "85% de quem me assiste mora aqui".
 
-**Quando bater 10k (somando Instagram ou TikTok):** Creator da Shô (Shopee), Campanhas para Criadores (Mercado Livre), TikTok Creator Marketplace, e as marcas 🔵 via agência.
+**Quando bater 10k (somando Instagram ou TikTok):** Creator da Shô (Shopee), Campanhas para Criadores (Mercado Livre) e as marcas 🔵 via agência.
 
 ---
 
