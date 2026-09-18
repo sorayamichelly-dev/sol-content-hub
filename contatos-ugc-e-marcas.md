@@ -35,8 +35,8 @@ Aqui você não pede parceria: você cria perfil, envia portfólio e recebe brie
 | **AchaPubli** (BR) | — | 📝 | achapubli.com.br | Mural gratuito de vagas de publi, permuta e UGC — checar toda semana |
 | **InfluencerBrasil** (BR) | — | 📝 | influencerbrasil.com.br | Lista de UGC creators com briefing pago, contrato e pagamento seguro; gera mídia kit |
 | **UGC+ / POPline Creators** (BR) | — | 📝 | ugcplus.com.br · poplinecreators.com.br | Campanhas pagas em dinheiro, saque via PIX, IA de roteiro |
-| **Creator Ads** (ex-BrandLovers, BR) | — | 📝 | **signup.creatorads.io** | Mídia programática com creators — paga por entrega, não por seguidor |
-| **MIS — BR Media / Publicis** | DM @miscreators | 📝 | mis-app.com (app iOS/Android) | **Mínimo 1.000 seguidores — você já tem.** Maior plataforma de nano/micro da América Latina; Dove (EmbaixaDove) roda por aqui |
+| **Creator Ads** (ex-BrandLovers, BR) | — | ✔ **já cadastrada** | signup.creatorads.io | Mídia programática com creators — paga por entrega, não por seguidor |
+| **MIS — BR Media / Publicis** | DM @miscreators | ✔ **já cadastrada** | mis-app.com (app iOS/Android) | Maior plataforma de nano/micro da América Latina; Dove (EmbaixaDove) roda por aqui — candidatar a toda campanha aberta |
 | **Spark Influencer Hub** | — | 📝 | spark.com.br/influencerhub | **Sem mínimo de seguidores.** Marcas grandes brasileiras |
 | **Squid Creators Hub** | — | 📝 | app.squidit.com.br | 260 mil creators; Nivea, Boticário, Unilever passam por aqui |
 | **Influency.me** | — | 📝 | influency.me/sou-influenciador | Instagram comercial |
@@ -182,7 +182,7 @@ Para plataforma, agência e app o argumento **não é a sua audiência** — é 
 
 ## 7. Ordem de ataque — UGC (esta semana)
 
-1. **Cadastros de 10 minutos, hoje:** Like by B2Mamy → MIS (app) → Spark Hub → Creatify → Publipost → Bloomer → Seu Influencer → Creator Ads → Winclap (formulário)
+1. **Cadastros de 10 minutos, hoje** (MIS e Creator Ads já feitos): Like by B2Mamy → Spark Hub → Creatify → Publipost → Bloomer → Seu Influencer → Winclap (formulário)
 2. **Programa Ruby Lovers** (formulário) — é o recebido de maquiagem mais acessível do país
 3. **E-mails com modelo UGC:** hello@winclap.com · creators@insense.pro · hello@influee.co · oi@creatify.com.br
 4. **E-mails de app:** parcerias@nubank.com.br · parcerias@picpay.com · serasa@adcomunicacao.com.br · contato@cingulo.com · contato@vittude.com

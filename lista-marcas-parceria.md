@@ -2,6 +2,17 @@
 
 **Montada em 18/09/2026.** Perfil de referência: 1.107 seguidores · 101.341 views/30 dias · 85% mulheres · 70% de 25 a 44 anos · 93% Rio Grande do Norte.
 
+
+## Status atual (informado por Soraya em 18/09/2026)
+
+| Já feito | Detalhe |
+|---|---|
+| ✔ Afiliada | Amazon Associados · Mercado Livre Afiliados · Shopee Afiliados · Magalu Parceiro |
+| ✔ Cadastrada | MIS (BR Media) · Creator Ads · The Insider |
+| ✔ Multiplataforma | Mesmo conteúdo no Instagram, TikTok e YouTube Shorts |
+
+Isso tira 7 itens da fila de cadastro e muda a prioridade: o que falta não é *entrar* nas plataformas, é **virar ativa** nelas (ver seção F).
+
 ## Como ler a prioridade
 
 | Selo | Significa |
@@ -111,12 +122,12 @@ Aqui você não precisa de resposta de ninguém: a maioria é cadastro. É a ren
 
 | Plataforma | O que é | Requisito | Como entrar | Prioridade |
 |---|---|---|---|---|
-| **Shopee Afiliados** ✅ (e-mail enviado) | Comissão por link | Sem mínimo | Cadastro no app | 🟢 |
+| **Shopee Afiliados** ✅ (e-mail enviado) | Comissão por link | Sem mínimo | **✔ já cadastrada** | ✔ |
 | **Shopee — Creator da Shô** | Programa mensal para micro: R$ 1.000 em saldo, divulgação nas redes da Shopee (17 mi), mentoria; melhor do mês vira embaixador | **10k seguidores** | Formulário na plataforma | 🔵 (meta) |
-| **Mercado Livre Afiliados e Criadores** | Afiliado (link) + "Campanhas para Criadores" que pagam por visualização de vídeo | Afiliado: sem mínimo · Campanhas de criadores: **10k no Instagram ou TikTok** | mercadolivre.com.br/l/afiliados-home | 🟢 (afiliado) · 🔵 (criador) |
-| **Amazon Associados** | Comissão de 1% a 15% sobre o carrinho inteiro | Sem mínimo; precisa de 3 vendas em 180 dias para manter | associados.amazon.com.br | 🟢 |
-| **Magalu Parceiro** | Loja virtual própria + link de afiliado | CPF, +18, conta bancária | Cadastro no site | 🟢 |
-| **TikTok Shop — Criador Afiliado** | Comissão + amostras grátis de vendedores | Mínimo em teste: entre 1.000 e 2.000 seguidores **no TikTok** (mudou 3 vezes em 2026) | Perfil → TikTok Shop para Criadores | 🟢 se tiver 1–2k no TikTok |
+| **Mercado Livre Afiliados e Criadores** | Afiliado (link) + "Campanhas para Criadores" que pagam por visualização de vídeo | Afiliado: sem mínimo · Campanhas de criadores: **10k no Instagram ou TikTok** | **✔ já afiliada** · Campanhas de criadores quando bater 10k (vale somar TikTok, não só Instagram) | ✔ (afiliado) · 🔵 (criador) |
+| **Amazon Associados** | Comissão de 1% a 15% sobre o carrinho inteiro | Sem mínimo; precisa de **3 vendas em 180 dias** para manter | **✔ já associada** — atenção ao prazo das 3 vendas | ✔ |
+| **Magalu Parceiro** | Loja virtual própria + link de afiliado | CPF, +18, conta bancária | **✔ já parceira** | ✔ |
+| **TikTok Shop — Criador Afiliado** | Comissão + amostras grátis de vendedores | Mínimo em teste: entre 1.000 e 2.000 seguidores **no TikTok** (mudou 3 vezes em 2026) | Perfil → TikTok Shop para Criadores. **Você já posta no TikTok — conferir quantos seguidores tem lá** | 🟢 se tiver 1–2k no TikTok |
 | **Temu Afiliados** | Comissão em achadinho de preço baixo | Sem mínimo | App | 🟢 |
 | **AliExpress** ✅ | E-mail enviado; também tem afiliados aberto | Sem mínimo | Portal de afiliados | 🟢 |
 | **SHEIN** ✅ | E-mail enviado; também tem afiliados | — | Portal de afiliados | 🟢 |
@@ -156,7 +167,7 @@ Cadastro grátis. Uma vez dentro, as marcas te encontram. A maioria não exige m
 | **Squid (Creators Hub)** | 260 mil influenciadores; campanhas de marcas grandes (Nivea, Boticário, Unilever passam por aqui) | Instagram comercial | Campanhas pagas | app.squidit.com.br |
 | **Influency.me** | Plataforma de marcas — cadastro de creator | Instagram comercial | Campanhas pagas | influency.me |
 | **Air (ex-Airfluencers)** | Campanhas de performance | — | Campanhas pagas | air.com.vc |
-| **Creator Ads (ex-BrandLovers)** | Mídia programática com creators — paga por entrega, não por seguidor | Baixo | Por campanha | creatorads (site novo desde jun/2026) |
+| **Creator Ads (ex-BrandLovers)** | Mídia programática com creators — paga por entrega, não por seguidor | Baixo | Por campanha | **✔ já cadastrada** — manter perfil completo e responder briefings em até 24 h |
 | **TikTok Creator Marketplace / Meta Creator Marketplace** | Marcas te acham pelo painel oficial | TikTok: 10k · Meta: conta profissional | — | Nas configurações do app | 🔵 / 🟢 |
 
 ---
@@ -177,26 +188,28 @@ Aqui você tem o argumento que ninguém mais tem: 93% da sua audiência mora no 
 
 ---
 
-## F. Ordem de ataque — próximos 30 dias
+## F. Ordem de ataque — próximos 30 dias (revisado com o que já está feito)
 
-**Semana 1 — cadastros (não depende de ninguém responder):**
-1. Like by B2Mamy
-2. Creatify, Bloomer, The Creator, Seu Influencer, AchaPubli
-3. Squid Creators Hub + Influency.me
-4. Amazon Associados, Magalu Parceiro, Mercado Livre Afiliados, Temu
-5. Kwai — repostar os 5 Reels do portfólio
-6. Ativar TikTok com os mesmos Reels (meta: 1.000–2.000 seguidores lá para liberar TikTok Shop)
+**Já feito, não repetir:** Amazon, Mercado Livre, Shopee, Magalu (afiliada) · MIS, Creator Ads, The Insider (cadastrada) · TikTok e Shorts (já posta).
 
-**Semana 2 — DMs com mídia kit (marcas pequenas respondem DM, não e-mail):**
+**Semana 1 — ativar o que já existe (cadastro parado não paga):**
+1. **Afiliados:** colocar link de Amazon/ML/Shopee/Magalu em **todo** post de achadinho e nos Destaques; Amazon exige 3 vendas em 180 dias ou desativa. Meta: 1 carrossel de curadoria por semana com link.
+2. **MIS e Creator Ads:** perfil 100% preenchido (nicho, cidade, mídia kit, portfólio), notificações ligadas, candidatar a *toda* campanha aberta na primeira semana — o algoritmo dessas plataformas prioriza quem responde rápido.
+3. **TikTok:** ver o número de seguidores. Com 1–2k, ativar TikTok Shop para Criadores (comissão + amostra grátis). Se estiver abaixo, é a meta mais barata do mês — é o mesmo conteúdo que já vai pra lá.
+4. **Cadastros novos que faltam (10 min cada):** Like by B2Mamy → Spark Hub → Creatify → Publipost → Bloomer → Winclap (formulário)
+5. **Ruby Lovers** (formulário)
+6. **Kwai:** repostar os 5 Reels do portfólio — quarta plataforma com o mesmo vídeo, paga por view
+
+**Semana 2 — DMs com mídia kit:**
 Zanphy, Luisance, Bella Femme, Fenzza, Widi Care, Bioart, Flora Pura, Yes! Cosmetics, Buba, Clingo, Lillo
 
-**Semana 3 — e-mails novos (mesmo modelo dos 19 já feitos):**
-Ruby Rose, Dailus, Vult, Salon Line, Skala, Lola, Beyoung, Simple Organic, Grão de Gente, Puket, Huggies
+**Semana 3 — e-mails novos:**
+UGC (modelo curto): Winclap, Influee, Insense, Creatify · Apps: Nubank, PicPay, Serasa, Cíngulo, Vittude · Marcas: Ruby Rose, Dailus, Vult, Salon Line, Skala, Lola, Beyoung, Simple Organic, Grão de Gente, Puket, Huggies
 
 **Semana 4 — presencial em Mossoró:**
 Lojas Santa Lúcia, 2 farmácias, 1 loja de bebê, 1 salão — com mídia kit impresso e a frase "85% de quem me assiste mora aqui".
 
-**Quando bater 10k:** Creator da Shô (Shopee), Campanhas para Criadores (Mercado Livre), TikTok Creator Marketplace, e as marcas 🔵 via agência.
+**Quando bater 10k (somando Instagram ou TikTok):** Creator da Shô (Shopee), Campanhas para Criadores (Mercado Livre), TikTok Creator Marketplace, e as marcas 🔵 via agência.
 
 ---
 
