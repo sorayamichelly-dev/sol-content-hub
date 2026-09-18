@@ -1,0 +1,494 @@
+<title>Mídia Kit Soraya Oli</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Karla:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+:root{
+  --ground:#EDF1F2;
+  --surface:#FFFFFF;
+  --surface-2:#F6F8F9;
+  --ink:#12282F;
+  --ink-2:#41585F;
+  --ink-3:#74898F;
+  --line:#D8E0E2;
+  --line-strong:#B9C6CA;
+  --accent:#C77A16;
+  --accent-soft:#F3E2C6;
+  --mineral:#4E7C8C;
+  --mineral-soft:#D7E4E8;
+  --good:#2F6B4F;
+
+  --display:"Bricolage Grotesque","Helvetica Neue",Helvetica,Arial,sans-serif;
+  --body:"Karla",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --ground:#0B1A1F;
+    --surface:#11262C;
+    --surface-2:#162E35;
+    --ink:#E8F0F1;
+    --ink-2:#AEC2C7;
+    --ink-3:#7F969C;
+    --line:#22434C;
+    --line-strong:#33606B;
+    --accent:#E9A845;
+    --accent-soft:#3A2D14;
+    --mineral:#7FB3C4;
+    --mineral-soft:#1B3B45;
+    --good:#6FBF93;
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#0B1A1F;
+  --surface:#11262C;
+  --surface-2:#162E35;
+  --ink:#E8F0F1;
+  --ink-2:#AEC2C7;
+  --ink-3:#7F969C;
+  --line:#22434C;
+  --line-strong:#33606B;
+  --accent:#E9A845;
+  --accent-soft:#3A2D14;
+  --mineral:#7FB3C4;
+  --mineral-soft:#1B3B45;
+  --good:#6FBF93;
+}
+
+body{
+  margin:0;
+  background:var(--ground);
+  color:var(--ink);
+  font-family:var(--body);
+  font-size:15px;
+  line-height:1.6;
+}
+.wrap{
+  max-width:940px;
+  margin:0 auto;
+  padding-inline:20px;
+  padding-block:0 56px;
+}
+h1,h2,h3{font-family:var(--display);text-wrap:balance;margin:0;font-weight:800;letter-spacing:-.02em;}
+p{margin:0;}
+
+.eyebrow{
+  font-family:var(--mono);
+  font-size:11px;
+  font-weight:500;
+  letter-spacing:.13em;
+  text-transform:uppercase;
+  color:var(--ink-3);
+}
+
+/* ---------- header ---------- */
+header{
+  border-bottom:1px solid var(--line-strong);
+  padding-block:40px 28px;
+  display:flex;
+  gap:28px;
+  align-items:flex-end;
+  flex-wrap:wrap;
+}
+header .who{flex:1 1 320px;min-width:0;}
+header h1{font-size:clamp(34px,7vw,52px);line-height:1.02;}
+header .handle{
+  font-family:var(--mono);
+  font-size:14px;
+  color:var(--accent);
+  margin-top:10px;
+  font-weight:500;
+}
+header .pos{
+  margin-top:14px;
+  font-size:16.5px;
+  color:var(--ink-2);
+  max-width:46ch;
+}
+header .contact{
+  flex:0 1 auto;
+  display:grid;
+  gap:4px;
+  font-family:var(--mono);
+  font-size:12.5px;
+  color:var(--ink-2);
+  padding-bottom:4px;
+}
+header .contact b{color:var(--ink-3);font-weight:500;}
+header .contact a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line-strong);}
+
+/* ---------- thesis ---------- */
+.thesis{
+  margin-top:36px;
+  background:var(--surface);
+  border:1px solid var(--line);
+  border-left:4px solid var(--accent);
+  padding:30px 28px;
+  display:grid;
+  gap:22px;
+  grid-template-columns:minmax(0,1fr) minmax(0,1.25fr);
+  align-items:center;
+}
+.thesis .ratio{
+  font-family:var(--display);
+  font-size:clamp(58px,13vw,96px);
+  font-weight:800;
+  line-height:.9;
+  letter-spacing:-.045em;
+  color:var(--accent);
+  font-variant-numeric:tabular-nums;
+}
+.thesis .ratio small{
+  display:block;
+  font-family:var(--mono);
+  font-size:12px;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  color:var(--ink-3);
+  font-weight:500;
+  margin-top:12px;
+  line-height:1.5;
+}
+.thesis .say{font-size:16px;color:var(--ink-2);}
+.thesis .say b{color:var(--ink);font-weight:700;}
+@media (max-width:640px){
+  .thesis{grid-template-columns:1fr;padding:24px 20px;}
+}
+
+/* ---------- sections ---------- */
+section{margin-top:52px;}
+.sechead{display:flex;align-items:baseline;gap:14px;border-bottom:1px solid var(--line-strong);padding-bottom:10px;margin-bottom:22px;flex-wrap:wrap;}
+.sechead h2{font-size:22px;}
+.sechead .note{font-family:var(--mono);font-size:11.5px;color:var(--ink-3);margin-left:auto;}
+
+/* ---------- metric tiles ---------- */
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(168px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);}
+.tile{background:var(--surface);padding:18px 18px 16px;}
+.tile .v{
+  font-family:var(--display);
+  font-size:30px;
+  font-weight:800;
+  letter-spacing:-.03em;
+  font-variant-numeric:tabular-nums;
+  line-height:1.1;
+}
+.tile .l{font-size:13px;color:var(--ink-2);margin-top:4px;line-height:1.4;}
+.tile .sub{font-family:var(--mono);font-size:10.5px;color:var(--ink-3);margin-top:8px;letter-spacing:.04em;}
+.tile.hi .v{color:var(--accent);}
+
+/* ---------- charts ---------- */
+figure{margin:0;background:var(--surface);border:1px solid var(--line);padding:22px 20px 18px;}
+figcaption{font-size:13px;color:var(--ink-2);margin-top:14px;padding-top:12px;border-top:1px solid var(--line);}
+.figtitle{font-family:var(--display);font-weight:600;font-size:15.5px;margin-bottom:18px;}
+
+.bars{display:grid;gap:9px;}
+.bar-row{display:grid;grid-template-columns:96px minmax(0,1fr) 62px;gap:12px;align-items:center;}
+.bar-row .cat{font-family:var(--mono);font-size:11.5px;color:var(--ink-2);text-align:right;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.bar-track{background:var(--surface-2);height:16px;position:relative;}
+.bar-fill{height:100%;background:var(--mineral);border-radius:0 4px 4px 0;}
+.bars.warm .bar-fill{background:var(--accent);}
+.bar-row .val{font-family:var(--mono);font-size:11.5px;color:var(--ink);text-align:right;font-variant-numeric:tabular-nums;}
+@media (max-width:520px){
+  .bar-row{grid-template-columns:78px minmax(0,1fr) 54px;gap:8px;}
+  .bar-row .cat,.bar-row .val{font-size:10.5px;}
+}
+
+.cols{display:flex;align-items:flex-end;gap:2px;height:130px;}
+.col{flex:1 1 0;min-width:0;background:var(--accent);border-radius:3px 3px 0 0;position:relative;}
+.col.peak{background:var(--ink);}
+.colaxis{display:flex;justify-content:space-between;font-family:var(--mono);font-size:10.5px;color:var(--ink-3);margin-top:8px;border-top:1px solid var(--line);padding-top:7px;}
+
+/* ---------- portfolio ---------- */
+.posts{display:grid;gap:1px;background:var(--line);border:1px solid var(--line);}
+.post{background:var(--surface);padding:18px 20px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:14px;align-items:start;}
+.post .kind{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);}
+.post h3{font-size:16px;font-weight:600;margin-top:5px;line-height:1.35;}
+.post .why{font-size:13.5px;color:var(--ink-2);margin-top:7px;max-width:58ch;}
+.post .nums{display:flex;gap:16px;flex-wrap:wrap;margin-top:12px;}
+.post .nums div{font-family:var(--mono);font-size:11.5px;color:var(--ink-2);}
+.post .nums b{display:block;font-family:var(--display);font-size:19px;font-weight:800;color:var(--ink);letter-spacing:-.02em;font-variant-numeric:tabular-nums;}
+.post .nums .star b{color:var(--accent);}
+.post a.see{
+  font-family:var(--mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--ink);text-decoration:none;border:1px solid var(--line-strong);padding:7px 11px;white-space:nowrap;
+}
+.post a.see:hover{border-color:var(--accent);color:var(--accent);}
+.post a.see:focus-visible{outline:2px solid var(--accent);outline-offset:2px;}
+@media (max-width:600px){.post{grid-template-columns:1fr;}}
+
+/* ---------- offer ---------- */
+.offer{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);}
+.offer .o{background:var(--surface);padding:20px;}
+.offer .o h3{font-size:15.5px;font-weight:600;}
+.offer .o p{font-size:13.5px;color:var(--ink-2);margin-top:7px;}
+.offer .o .tag{display:inline-block;font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);background:var(--accent-soft);padding:3px 8px;margin-bottom:10px;}
+
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px;}
+
+.srcnote{margin-top:44px;padding:18px 20px;border:1px dashed var(--line-strong);background:var(--surface-2);}
+.srcnote p{font-size:12.5px;color:var(--ink-2);}
+.srcnote p + p{margin-top:8px;}
+.srcnote b{color:var(--ink);}
+</style>
+
+<div class="wrap">
+
+  <header>
+    <div class="who">
+      <p class="eyebrow">Mídia kit · Setembro 2026</p>
+      <h1>Soraya Oliveira</h1>
+      <p class="handle">@sorayaaoliroutine</p>
+      <p class="pos">Maternidade real, rotina e achadinhos para mulheres de 25 a 44 anos do Rio Grande do Norte — um público pequeno, concentrado e que responde.</p>
+    </div>
+    <div class="contact">
+      <p><b>E-mail</b> soraya.michelly@gmail.com</p>
+      <p><b>Perfil</b> <a href="https://www.instagram.com/sorayaaoliroutine/">instagram.com/sorayaaoliroutine</a></p>
+      <p><b>Links</b> <a href="http://tinyurl.com/sorayaoli">tinyurl.com/sorayaoli</a></p>
+      <p><b>Base</b> Mossoró / Baraúna — RN</p>
+    </div>
+  </header>
+
+  <div class="thesis">
+    <div class="ratio">91×
+      <small>Visualizações por seguidor<br>em 30 dias</small>
+    </div>
+    <p class="say">Em 30 dias o perfil somou <b>101.341 visualizações</b> com uma base de <b>1.107 seguidores</b>. Não é um perfil grande — é um perfil que o algoritmo distribui muito além da própria base, com <b>85% da audiência concentrada em duas cidades do Rio Grande do Norte</b>. Para marca que quer testar aceitação real no Nordeste antes de escalar, isso é amostra, não vitrine.</p>
+  </div>
+
+  <section>
+    <div class="sechead">
+      <h2>Números dos últimos 30 dias</h2>
+      <p class="note">19/08 – 17/09/2026</p>
+    </div>
+    <div class="tiles">
+      <div class="tile hi">
+        <p class="v">101.341</p>
+        <p class="l">Visualizações de conteúdo</p>
+        <p class="sub">3.378 / dia em média</p>
+      </div>
+      <div class="tile">
+        <p class="v">1.107</p>
+        <p class="l">Seguidores hoje</p>
+        <p class="sub">+250 no mês · +29%</p>
+      </div>
+      <div class="tile">
+        <p class="v">3.713</p>
+        <p class="l">Interações totais</p>
+        <p class="sub">2.729 curtidas · 360 comentários</p>
+      </div>
+      <div class="tile hi">
+        <p class="v">3,66%</p>
+        <p class="l">Interação por visualização</p>
+        <p class="sub">Interações ÷ views do período</p>
+      </div>
+      <div class="tile">
+        <p class="v">2.788</p>
+        <p class="l">Alcance no melhor dia</p>
+        <p class="sub">2,5× a base de seguidores</p>
+      </div>
+      <div class="tile">
+        <p class="v">181</p>
+        <p class="l">Respostas a Stories</p>
+        <p class="sub">Conversa direta no direct</p>
+      </div>
+      <div class="tile">
+        <p class="v">159</p>
+        <p class="l">Compartilhamentos</p>
+        <p class="sub">Alcance ganho, não pago</p>
+      </div>
+      <div class="tile">
+        <p class="v">44</p>
+        <p class="l">Publicações no feed</p>
+        <p class="sub">Reels e carrosséis</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="sechead">
+      <h2>Quem assiste</h2>
+      <p class="note">Base de seguidores · dado de perfil</p>
+    </div>
+    <div class="grid2">
+      <figure>
+        <p class="figtitle">Faixa de idade e gênero</p>
+        <div class="bars">
+          <div class="bar-row"><span class="cat">Mulheres 25–34</span><div class="bar-track"><div class="bar-fill" style="width:100%"></div></div><span class="val">467</span></div>
+          <div class="bar-row"><span class="cat">Mulheres 35–44</span><div class="bar-track"><div class="bar-fill" style="width:64.5%"></div></div><span class="val">301</span></div>
+          <div class="bar-row"><span class="cat">Mulheres 18–24</span><div class="bar-track"><div class="bar-fill" style="width:15%"></div></div><span class="val">70</span></div>
+          <div class="bar-row"><span class="cat">Mulheres 45–54</span><div class="bar-track"><div class="bar-fill" style="width:14.3%"></div></div><span class="val">67</span></div>
+          <div class="bar-row"><span class="cat">Mulheres 55+</span><div class="bar-track"><div class="bar-fill" style="width:7.5%"></div></div><span class="val">35</span></div>
+          <div class="bar-row"><span class="cat">Homens (todos)</span><div class="bar-track"><div class="bar-fill" style="width:8.8%"></div></div><span class="val">41</span></div>
+        </div>
+        <figcaption><b>85,4% mulheres.</b> 69,6% são mulheres de 25 a 44 anos — a faixa que decide a compra de beleza, skincare e itens de casa na família.</figcaption>
+      </figure>
+
+      <figure>
+        <p class="figtitle">Onde essa audiência mora</p>
+        <div class="bars warm">
+          <div class="bar-row"><span class="cat">Mossoró RN</span><div class="bar-track"><div class="bar-fill" style="width:100%"></div></div><span class="val">462</span></div>
+          <div class="bar-row"><span class="cat">Baraúna RN</span><div class="bar-track"><div class="bar-fill" style="width:70.3%"></div></div><span class="val">325</span></div>
+          <div class="bar-row"><span class="cat">Currais RN</span><div class="bar-track"><div class="bar-fill" style="width:8.4%"></div></div><span class="val">39</span></div>
+          <div class="bar-row"><span class="cat">Fortaleza CE</span><div class="bar-track"><div class="bar-fill" style="width:3.5%"></div></div><span class="val">16</span></div>
+          <div class="bar-row"><span class="cat">Natal RN</span><div class="bar-track"><div class="bar-fill" style="width:2.6%"></div></div><span class="val">12</span></div>
+          <div class="bar-row"><span class="cat">Outras</span><div class="bar-track"><div class="bar-fill" style="width:25.1%"></div></div><span class="val">116</span></div>
+        </div>
+        <figcaption><b>93% Rio Grande do Norte, 98% Nordeste.</b> O eixo Mossoró–Baraúna concentra 85% da base. É densidade regional que perfil nacional do mesmo tamanho não tem.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section>
+    <div class="sechead">
+      <h2>Consistência diária</h2>
+      <p class="note">Visualizações por dia · 30 dias</p>
+    </div>
+    <figure>
+      <div class="cols" id="cols"></div>
+      <div class="colaxis"><span>19/08</span><span>Pico: 8.078 views</span><span>17/09</span></div>
+      <figcaption>Nenhum dia abaixo de 861 visualizações e nenhum dia sem publicação. O pico de 8.078 veio de um Reel de humor sobre casamento — o formato que mais puxa gente de fora da base.</figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <div class="sechead">
+      <h2>Portfólio — conteúdos reais e o que cada um provou</h2>
+      <p class="note">Números do painel, não estimativa</p>
+    </div>
+    <div class="posts">
+
+      <div class="post">
+        <div>
+          <p class="kind">Carrossel · Skincare · 21 ago</p>
+          <h3>“Pra quem tá começando, precisa de ROTINA. O resto vem conforme o resultado.”</h3>
+          <p class="why">Meu conteúdo mais salvo do período. Prova que essa audiência consome skincare como aprendizado — ela quer saber a ordem dos passos antes de saber a marca.</p>
+          <div class="nums">
+            <div class="star"><b>10</b>salvamentos</div>
+            <div><b>1.703</b>views</div>
+            <div><b>746</b>contas alcançadas</div>
+            <div><b>56</b>curtidas</div>
+          </div>
+        </div>
+        <a class="see" href="https://www.instagram.com/p/DcTvEogDlRq/">Ver post</a>
+      </div>
+
+      <div class="post">
+        <div>
+          <p class="kind">Carrossel comercial · 4 ago</p>
+          <h3>Seleção de achadinhos para a promoção 8.8</h3>
+          <p class="why">Formato de curadoria com intenção de compra: pedi que salvassem e perguntei qual categoria queriam primeiro. Vieram 24 comentários escolhendo categoria — bebê, beleza, eletrônicos ou mercado.</p>
+          <div class="nums">
+            <div><b>3.483</b>views</div>
+            <div class="star"><b>1.565</b>contas alcançadas</div>
+            <div><b>24</b>comentários</div>
+            <div><b>11</b>compartilhamentos</div>
+          </div>
+        </div>
+        <a class="see" href="https://www.instagram.com/p/DboCwX1DvmK/">Ver post</a>
+      </div>
+
+      <div class="post">
+        <div>
+          <p class="kind">Reel · Comunidade · 6 ago</p>
+          <h3>A aposta com o marido: “2 mil curtidas e eu ganho meu cabelo”</h3>
+          <p class="why">Mobilizei a audiência em torno de uma meta e ela apareceu. 343 comentários em uma base de 1.1 mil seguidores — é o teto do que esse perfil consegue mobilizar quando pede algo de verdade.</p>
+          <div class="nums">
+            <div class="star"><b>343</b>comentários</div>
+            <div><b>3.881</b>views</div>
+            <div><b>65</b>compartilhamentos</div>
+            <div><b>223</b>curtidas</div>
+          </div>
+        </div>
+        <a class="see" href="https://www.instagram.com/reel/Dbtpszip3_K/">Ver Reel</a>
+      </div>
+
+      <div class="post">
+        <div>
+          <p class="kind">Reel · Humor de maternidade · 13 set</p>
+          <h3>“O julgamento começa em casa”</h3>
+          <p class="why">Alcançou 2.273 contas — mais que o dobro da minha base. É o formato que traz gente nova; quando uma marca entra aqui, ela é vista por quem ainda não me segue.</p>
+          <div class="nums">
+            <div class="star"><b>2.273</b>contas alcançadas</div>
+            <div><b>2.984</b>views</div>
+            <div><b>142</b>curtidas</div>
+            <div><b>205%</b>da minha base</div>
+          </div>
+        </div>
+        <a class="see" href="https://www.instagram.com/reel/DdOvo4euQCA/">Ver Reel</a>
+      </div>
+
+      <div class="post">
+        <div>
+          <p class="kind">Carrossel · Reflexão · 4 set</p>
+          <h3>Conteúdo de pausa e autoestima — “salva para reler”</h3>
+          <p class="why">Mostra a outra metade do perfil: não é só achadinho. É o conteúdo pessoal que sustenta a confiança que faz a indicação funcionar depois.</p>
+          <div class="nums">
+            <div><b>5.084</b>views</div>
+            <div><b>1.462</b>contas alcançadas</div>
+            <div><b>108</b>curtidas</div>
+            <div><b>11</b>compartilhamentos</div>
+          </div>
+        </div>
+        <a class="see" href="https://www.instagram.com/p/Dc3X_vfjhUC/">Ver post</a>
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <div class="sechead">
+      <h2>O que eu entrego</h2>
+    </div>
+    <div class="offer">
+      <div class="o">
+        <p class="tag">Formato principal</p>
+        <h3>Teste de 30 dias com resultado publicado</h3>
+        <p>Uso o produto pelo período inteiro e mostro o antes, o meio e o depois — incluindo o que não funcionou. Sequência de Stories + 1 Reel de fechamento.</p>
+      </div>
+      <div class="o">
+        <p class="tag">Formato educativo</p>
+        <h3>Carrossel de rotina passo a passo</h3>
+        <p>O formato mais salvo do meu perfil. O produto entra dentro de uma ordem de uso que a pessoa entende, não como anúncio solto.</p>
+      </div>
+      <div class="o">
+        <p class="tag">Formato de alcance</p>
+        <h3>Reel de humor sobre rotina real</h3>
+        <p>É o que ultrapassa a base — o melhor deles alcançou 205% dos meus seguidores. Serve quando o objetivo é gente nova vendo a marca.</p>
+      </div>
+      <div class="o">
+        <p class="tag">Formato de conversão</p>
+        <h3>Stories com prova de compra e cupom</h3>
+        <p>Print do pedido, reação real e cupom rastreável. 181 respostas de Stories no mês — é onde a dúvida vira pergunta no direct.</p>
+      </div>
+      <div class="o">
+        <p class="tag">Diferencial</p>
+        <h3>Leitura regional do Nordeste</h3>
+        <p>Devolvo o que a audiência de Mossoró e Baraúna comentou: preço que assusta, textura que não combina com o calor, o que ela já usa. Dado qualitativo que painel não dá.</p>
+      </div>
+      <div class="o">
+        <p class="tag">Sempre incluso</p>
+        <h3>Relatório com print do painel</h3>
+        <p>Views, alcance, contas alcançadas, salvamentos, compartilhamentos e cliques — com captura do Instagram Insights, até 7 dias após a última entrega.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="srcnote">
+    <p><b>Fonte dos dados:</b> Instagram Insights da conta profissional @sorayaaoliroutine, extraídos via conector Windsor.ai em 18/09/2026. Período de performance: últimos 30 dias encerrados em 17/09/2026. Dados de idade, gênero e cidade são do painel de seguidores na data da extração.</p>
+    <p><b>Notas de leitura:</b> alcance e contas alcançadas são métricas de contas únicas por dia e não devem ser somadas ao longo do período — por isso aparecem como média diária e pico. “Visualizações” inclui Reels, posts e Stories. Nenhum número desta página é estimativa ou projeção.</p>
+  </div>
+
+</div>
+
+<script>
+(function(){
+  var v=[4110,2934,4043,2641,2430,2070,4426,1404,2583,861,4098,8078,3719,2435,1128,4056,6333,4143,1959,1397,2825,1706,3492,2992,4852,5974,1995,4440,2896,5321];
+  var max=Math.max.apply(null,v);
+  var host=document.getElementById('cols');
+  v.forEach(function(n){
+    var d=document.createElement('div');
+    d.className='col'+(n===max?' peak':'');
+    d.style.height=Math.max(4,Math.round(n/max*100))+'%';
+    d.title=n.toLocaleString('pt-BR')+' visualizações';
+    host.appendChild(d);
+  });
+})();
+</script>
