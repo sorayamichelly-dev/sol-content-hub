@@ -530,3 +530,25 @@ Olá! Peço que encaminhem esta mensagem ao marketing da Eucerin. Sou a Soraya, 
 **Texto:**
 
 Olá! Peço que encaminhem esta mensagem ao marketing da Neutrogena. Sou a Soraya, criadora UGC e mãe, onde faz 35 graus e a pele pede hidratação leve o dia inteiro. Quero gravar o Hydro Boost no teste real: aplicação às 7h30, a pele no calor do meio da tarde e o resultado às 18h, quando volto para casa, sem filtro. Portfólio: https://sorayamichelly-dev.github.io/ugc/portfolio/ · soraya.michelly@gmail.com
+
+---
+
+## 28. SALLVE (versão 2: skincare) — parcerias@sallve.com.br
+
+> Alternativa ao item 16. Escolha **uma** das duas para enviar, para não mandar dois e-mails para a mesma caixa.
+
+**Assunto:** Vídeos de skincare de verdade: quero gravar com a Sallve
+
+Olá, time da Sallve!
+
+Sou a Soraya, criadora UGC e mãe, e boa parte do que eu gravo é skincare. Gosto de gravar do jeito que a gente realmente usa: no banheiro de casa, com luz de janela, o produto na mão, a textura de perto e a aplicação acontecendo em tempo real, sem corte que esconda nada. Quando é rotina, mostro a ordem e o porquê de cada passo. Quando é produto novo, conto com honestidade o que achei, para quem serve e o que esperar.
+
+A Sallve é uma das marcas que eu mais queria ter nesse formato, porque vocês fazem o que eu tento fazer nos meus vídeos: explicar o ativo sem complicar e mostrar resultado sem exagero. Consigo imaginar, por exemplo, a máscara labial renovadora dentro de uma rotina noturna, ou o bastão antioxidante para olhos na manhã de quem dormiu pouco, que é a realidade de toda mãe de bebê.
+
+Portfólio com os vídeos: https://sorayamichelly-dev.github.io/ugc/portfolio/
+
+Se fizer sentido, me contem o produto e o formato que vocês precisam que eu devolvo o orçamento no mesmo dia útil.
+
+Um abraço,
+Soraya Oliveira
+soraya.michelly@gmail.com · @sorayaaoliroutine
