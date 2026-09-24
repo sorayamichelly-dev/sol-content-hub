@@ -449,3 +449,136 @@ Contato: soraya.michelly@gmail.com
 > Em maternidade, a decisão de compra é de confiança: antes de usar qualquer coisa no meu bebê, eu pesquiso, pergunto e testo. O vídeo que eu quero gravar com a [marca] é esse processo: por que eu escolhi o produto, como ele entra na nossa rotina e o que eu contaria para outra mãe que está na dúvida. Falo como mãe para mãe, com a pergunta real que ela tem antes de comprar.
 >
 > [bloco comum + portfólio + fechamento]
+
+---
+
+# Leva 2 — skincare (24/09/2026)
+
+| Marca | Canal | Confiança | Status |
+|---|---|---|---|
+| Creamy | parcerias@creamy.com.br | — | Já existe (item 3) |
+| Beyoung | gabriela@beyoung.com · SAC: atendimento@beyoung.com.br | ⚠️ gabriela@ veio de lista de terceiros; SAC é oficial | Rascunho no Gmail |
+| Profuse (Aché) | Formulário profuse.com.br/contato · ache@ache.com.br | ✅ formulário / ⚠️ e-mail geral | Rascunho no Gmail (e-mail geral, pedindo encaminhamento) |
+| Mantecorp Skincare (Hypera) | falecom@hypera.com.br · imprensa@hypera.com.br | ⚠️ canais gerais da Hypera | Rascunho no Gmail (pedindo encaminhamento) |
+| Dot & Key | hello@dotandkey.com · care@dotandkey.com | ✅ página oficial / Facebook | Rascunho no Gmail (inglês) |
+| iHerb | Programa de influenciadores: secure.iherb.com/rewards/info/influencers | ✅ | Texto para o cadastro (não é e-mail) |
+| Eucerin | Formulário do site eucerin.com.br (e-mail do SAC não é público) | 📝 | Texto para o formulário |
+| Neutrogena | Formulário neutrogena.com.br/fale-conosco | 📝 | Texto para o formulário |
+
+O que a biblioteca de anúncios mostrou: **Dot & Key** roda UGC há 300 a 600 dias (mesmo criativo), mas é marca indiana que fala com o público da Índia; chance baixa, mandar só se sobrar tempo. **Eucerin** e **iHerb** não têm anúncio UGC ativo nas páginas rastreadas. **Neutrogena** estreou no TikTok Shop Brasil com mais de 100 creators afiliados, mas esse canal você descartou.
+
+---
+
+## 21. BEYOUNG — gabriela@beyoung.com
+
+**Assunto:** Pele de mãe que trabalha fora: uma ideia de vídeo para a Beyoung
+
+Olá, Gabriela e time da Beyoung!
+
+Sou a Soraya, criadora UGC e mãe, de Mossoró (RN).
+
+A Beyoung faz produto que cuida e resolve ao mesmo tempo, e esse é exatamente o tipo de produto que sobrevive na minha rotina: saio de casa às 7h30, volto às 18h, cuido de um bebê e moro num lugar onde faz 35 graus. Quero gravar a Beyoung nesse dia real: aplicação rápida de manhã, a pele no meio da tarde e o resultado quando eu chego em casa, sem retoque e sem filtro. É a prova de que dá para se cuidar sem ter tempo.
+
+O que eu entrego: vídeo vertical 9:16 editado, com legenda, arquivos brutos e 2 rodadas de ajuste, em até 7 dias depois que o produto chega. Se quiserem testar em anúncio, gravo 3 ganchos diferentes para o mesmo vídeo. Já gravei para Elgin, Siàge, Rejuran, Purcell, SKIN1004 e Dona Benta.
+
+Portfólio com os vídeos: https://sorayamichelly-dev.github.io/ugc/portfolio/
+
+Se fizer sentido, me contem o produto e o formato que eu devolvo o orçamento no mesmo dia útil.
+
+Um abraço,
+Soraya Oliveira
+soraya.michelly@gmail.com · @sorayaaoliroutine
+
+---
+
+## 22. PROFUSE (Aché) — ache@ache.com.br (ou formulário profuse.com.br/contato)
+
+**Assunto:** Profuse — proposta de conteúdo UGC (encaminhar ao marketing de Profuse)
+
+Olá, time da Aché!
+
+Peço, por gentileza, que encaminhem esta mensagem ao marketing de Profuse.
+
+Sou a Soraya, criadora UGC e mãe, de Mossoró (RN). A Profuse nasceu inspirada na pele brasileira, e a pele do Nordeste é um capítulo à parte: sol forte o ano inteiro, calor de 35 graus e, no meu caso, um dia que começa às 7h30 e termina às 18h. Quero gravar a Profuse nesse cenário, com a textura na mão, a aplicação real e como a pele reage ao longo de um dia de verdade no interior do RN. É a beleza brasileira que quase não aparece na propaganda.
+
+O que eu entrego: vídeo vertical 9:16 editado, com legenda, arquivos brutos e 2 rodadas de ajuste, em até 7 dias depois que o produto chega. Se quiserem testar em anúncio, gravo 3 ganchos diferentes para o mesmo vídeo. Já gravei para Elgin, Siàge, Rejuran, Purcell, SKIN1004 e Dona Benta.
+
+Portfólio com os vídeos: https://sorayamichelly-dev.github.io/ugc/portfolio/
+
+Obrigada,
+Soraya Oliveira
+soraya.michelly@gmail.com · @sorayaaoliroutine
+
+---
+
+## 23. MANTECORP SKINCARE (Hypera) — falecom@hypera.com.br (cópia: imprensa@hypera.com.br)
+
+**Assunto:** Mantecorp Skincare — proposta de conteúdo UGC (encaminhar ao marketing)
+
+Olá, time da Hypera!
+
+Peço, por gentileza, que encaminhem esta mensagem ao marketing de Mantecorp Skincare.
+
+Sou a Soraya, criadora UGC e mãe, de Mossoró (RN). Aqui o sol não dá trégua, e protetor solar não é opção, é sobrevivência. A ideia é gravar o protetor da Mantecorp no teste que importa: aplicação às 7h30 antes de sair, reaplicação no meio do dia entre uma coisa e outra, e a pele às 18h, quando eu volto para casa. Sem filtro, no sol do Oeste Potiguar, falando como mãe para outra mãe que também não tem tempo.
+
+O que eu entrego: vídeo vertical 9:16 editado, com legenda, arquivos brutos e 2 rodadas de ajuste, em até 7 dias depois que o produto chega. Se quiserem testar em anúncio, gravo 3 ganchos diferentes para o mesmo vídeo. Já gravei para Elgin, Siàge, Rejuran, Purcell, SKIN1004 e Dona Benta.
+
+Portfólio com os vídeos: https://sorayamichelly-dev.github.io/ugc/portfolio/
+
+Obrigada,
+Soraya Oliveira
+soraya.michelly@gmail.com · @sorayaaoliroutine
+
+---
+
+## 24. DOT & KEY — hello@dotandkey.com (em inglês)
+
+**Subject:** A UGC idea for Dot & Key: skincare that survives 7:30 am to 6 pm in 35°C heat
+
+Hello Dot & Key team,
+
+I'm Soraya Oliveira, a UGC creator and mom from Mossoró, in the Northeast of Brazil. I leave home at 7:30, get back at 6 pm, and live where it's 35°C most of the year, a climate very close to India's.
+
+My idea: film your SPF or lip care in that real day. Application in the morning, a check in the afternoon and the result when I get home, with no retouching and no filter. Heat, sweat and a busy schedule are the real test for skincare, and that's the test I can show.
+
+What I deliver: vertical 9:16 edited video with captions, raw files and 2 rounds of revisions, within 7 days of receiving the product. For ad testing, I can film 3 different hooks. I've produced UGC for Elgin, Siàge, Rejuran, Purcell, SKIN1004 and Dona Benta.
+
+Portfolio with videos: https://sorayamichelly-dev.github.io/ugc/portfolio/
+
+Thank you,
+Soraya Oliveira
+soraya.michelly@gmail.com
+
+---
+
+## 25. iHERB — cadastro no programa de influenciadores
+
+**Onde:** https://secure.iherb.com/rewards/info/influencers
+
+**Texto para a descrição do perfil / candidatura:**
+
+Sou a Soraya, criadora UGC e mãe, de Mossoró (RN). Meu conteúdo é sobre o que acontece com a mulher depois que ela vira mãe: no pós-parto as vitaminas caem, o cabelo cai e afina, a pele e a energia sentem, e a rotina não para. Quero mostrar os suplementos da iHerb dentro dessa realidade, sem promessa milagrosa: o que eu escolhi, por quê, e como encaixo no dia de uma mãe que trabalha das 7h30 às 18h. Também mostro o pedido chegando ao interior do Nordeste, que é a dúvida de quem nunca comprou de fora.
+
+Portfólio: https://sorayamichelly-dev.github.io/ugc/portfolio/
+
+> Atenção: suplemento tem regra da Anvisa. Nada de prometer cura ou resultado garantido no vídeo.
+
+---
+
+## 26. EUCERIN — formulário do site
+
+**Onde:** eucerin.com.br → Fale conosco (o e-mail do SAC não é público)
+
+**Texto:**
+
+Olá! Peço que encaminhem esta mensagem ao marketing da Eucerin. Sou a Soraya, criadora UGC e mãe, de Mossoró (RN). A gravidez e o sol forte do Nordeste mudam a pele de muita mulher, com mancha, ressecamento e sensibilidade, e sobra pouco tempo para cuidar. Quero gravar a Eucerin nesse lugar: um cuidado dermatológico que cabe na rotina de uma mãe que trabalha das 7h30 às 18h, com a textura na mão, a aplicação real e uma opinião honesta. Entrego vídeo vertical editado, com legenda, brutos e 2 ajustes, em até 7 dias. Portfólio: https://sorayamichelly-dev.github.io/ugc/portfolio/ · soraya.michelly@gmail.com
+
+---
+
+## 27. NEUTROGENA — formulário do site
+
+**Onde:** neutrogena.com.br/fale-conosco
+
+**Texto:**
+
+Olá! Peço que encaminhem esta mensagem ao marketing da Neutrogena. Sou a Soraya, criadora UGC e mãe, de Mossoró (RN), onde faz 35 graus e a pele pede hidratação leve o dia inteiro. Quero gravar o Hydro Boost no teste real: aplicação às 7h30, a pele no calor do meio da tarde e o resultado às 18h, quando volto para casa, sem filtro. Entrego vídeo vertical editado, com legenda, brutos e 2 ajustes, em até 7 dias, com opção de 3 ganchos para anúncio. Portfólio: https://sorayamichelly-dev.github.io/ugc/portfolio/ · soraya.michelly@gmail.com
