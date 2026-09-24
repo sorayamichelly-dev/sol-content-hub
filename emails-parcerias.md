@@ -18,7 +18,7 @@
 
 > O que eu entrego: vídeo vertical 9:16 editado, com legenda, arquivos brutos e 2 rodadas de ajuste, em até 7 dias depois que o produto chega. Se quiserem testar em anúncio, gravo 3 ganchos diferentes para o mesmo vídeo. Já gravei para Elgin, Siàge, Rejuran, Purcell, SKIN1004 e Dona Benta.
 
-Status: 18 rascunhos no Gmail atualizados com estes textos em 24/09. **Shopee** foi apagado por você e não foi recriado. **Granado** é formulário (texto no fim).
+Status: 18 rascunhos no Gmail atualizados com estes textos em 24/09. **SHEIN em espera** (exige 10 mil seguidores). **Shopee** foi apagado por você e não foi recriado. **Granado** é formulário (texto no fim).
 
 ---
 
@@ -132,7 +132,9 @@ soraya.michelly@gmail.com · @sorayaaoliroutine
 
 ---
 
-## 6. SHEIN — kolbr11@shein.com
+## 6. SHEIN — kolbr11@shein.com — ⏸ EM ESPERA
+
+> **Não enviar agora.** A SHEIN só aprova creators com 10 mil seguidores (informado pela Soraya em 24/09). Guardar para quando bater a meta.
 
 **Assunto:** Provador real para a SHEIN: look de mãe que trabalha fora
 

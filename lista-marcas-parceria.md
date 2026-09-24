@@ -209,7 +209,7 @@ UGC (modelo curto): Winclap, Influee, Insense, Creatify · Apps: Nubank, PicPay,
 **Semana 4 — presencial em Mossoró:**
 Lojas Santa Lúcia, 2 farmácias, 1 loja de bebê, 1 salão — com mídia kit impresso e a frase "85% de quem me assiste mora aqui".
 
-**Quando bater 10k (somando Instagram ou TikTok):** Creator da Shô (Shopee), Campanhas para Criadores (Mercado Livre) e as marcas 🔵 via agência.
+**Quando bater 10k (somando Instagram ou TikTok):** SHEIN (só aprova com 10 mil), Creator da Shô (Shopee), Campanhas para Criadores (Mercado Livre) e as marcas 🔵 via agência.
 
 ---
 
