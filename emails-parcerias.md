@@ -567,7 +567,9 @@ Olá, time da Eudora!
 
 Sou a Soraya, criadora UGC e mãe. Um dos vídeos do meu portfólio é um depoimento com o Siàge Nutri Acid: gravei em casa, com luz natural, falando do meu cabelo como quem usa o produto de verdade. Vocês podem assistir aqui: https://www.instagram.com/reels/DdBpFQlOzu0/
 
-Quero continuar essa história com a Eudora. A ideia que eu tenho é o cabelo no pós-parto. Nessa fase o fio cai, afina e perde o brilho, as vitaminas estão baixas e sobra pouco tempo para se cuidar. A Siàge tem tratamento para esse momento, e eu quero mostrar isso como o instante em que a mãe volta a olhar para o próprio cabelo. A linha Ultra Bond Reset, que vocês acabaram de lançar, seria um ótimo começo.
+Vejo muitas mulheres, de perfis bem diferentes, mostrando os produtos da Eudora. Mas sinto falta de ver uma mãe mostrando que, mesmo com a rotina corrida, ela usa Eudora para se cuidar. É esse vídeo que eu quero gravar com vocês.
+
+A ideia é o cabelo no pós-parto. Nessa fase o fio cai, afina e perde o brilho, as vitaminas estão baixas e sobra pouco tempo para se cuidar. A Siàge tem tratamento para esse momento, e eu quero mostrar isso como o instante em que a mãe volta a olhar para o próprio cabelo. A linha Ultra Bond Reset, que vocês acabaram de lançar, seria um ótimo começo.
 
 Portfólio com os vídeos: https://sorayamichelly-dev.github.io/ugc/portfolio/
 
