@@ -578,3 +578,27 @@ Se fizer sentido, me contem o produto e o formato que eu devolvo o orçamento no
 Um abraço,
 Soraya Oliveira
 soraya.michelly@gmail.com · @sorayaaoliroutine
+
+---
+
+## 30. DERMAGE — sac@dermage.com.br
+
+> O site da Dermage indica o sac@ para oportunidades de negócio. Se o botão "Informações de contato" do Instagram @dermagebrasil mostrar outro e-mail, use aquele.
+
+**Assunto:** A geração que falta na campanha da Dermage: a mãe de bebê
+
+Olá, time da Dermage!
+
+Adorei a campanha "Três gerações, uma mesma escolha". Ela fala de mães e filhas que confiam na mesma marca, e me fez pensar na fase que vem antes de tudo isso: a mãe de primeira viagem, com um bebê em casa e quase nenhum tempo para si. É essa mãe que eu quero mostrar usando Dermage.
+
+Sou a Soraya, criadora UGC e mãe. Gravo em casa, com luz de janela, a rotina de uma mulher que sai para trabalhar às 7h30 e só volta às 18h.
+
+Tenho duas ideias. A primeira é o Stick Color na bolsa: aplicado de manhã, reaplicado no meio do dia entre uma coisa e outra, e a pele às 18h, sem filtro. A segunda são as gomas, dentro da realidade do pós-parto, quando as vitaminas caem e o cabelo e a pele sentem. Sem promessa milagrosa, só o cuidado que cabe na rotina de uma mãe.
+
+Portfólio com os vídeos: https://sorayamichelly-dev.github.io/ugc/portfolio/
+
+Se fizer sentido, me contem o produto e o formato que eu devolvo o orçamento no mesmo dia útil.
+
+Um abraço,
+Soraya Oliveira
+soraya.michelly@gmail.com · @sorayaaoliroutine
