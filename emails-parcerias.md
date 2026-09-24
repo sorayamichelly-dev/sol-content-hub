@@ -552,3 +552,27 @@ Se fizer sentido, me contem o produto e o formato que vocês precisam que eu dev
 Um abraço,
 Soraya Oliveira
 soraya.michelly@gmail.com · @sorayaaoliroutine
+
+---
+
+## 29. EUDORA (Siàge) — sem e-mail público
+
+**Onde enviar:** formulário eudora.com.br/atendimento/fale-conosco (assunto: parceria com criadora de conteúdo). O rascunho no Gmail está **sem destinatário**.
+
+**Canal que mais funciona:** a MIS (BR Media), onde você já está cadastrada. Foi por lá que a Eudora rodou em agosto de 2026 a campanha de UGC do Siàge Ultra Bond Reset, com 25 mil creators a partir de 1.000 seguidores. Manter o perfil da MIS ativo e se candidatar às próximas campanhas da Eudora.
+
+**Assunto:** Já gravei Siàge: quero gravar o próximo vídeo com a Eudora
+
+Olá, time da Eudora!
+
+Sou a Soraya, criadora UGC e mãe. Um dos vídeos do meu portfólio é um depoimento com o Siàge Nutri Acid: gravei em casa, com luz natural, falando do meu cabelo como quem usa o produto de verdade. Vocês podem assistir aqui: https://www.instagram.com/reels/DdBpFQlOzu0/
+
+Quero continuar essa história com a Eudora. A ideia que eu tenho é o cabelo no pós-parto. Nessa fase o fio cai, afina e perde o brilho, as vitaminas estão baixas e sobra pouco tempo para se cuidar. A Siàge tem tratamento para esse momento, e eu quero mostrar isso como o instante em que a mãe volta a olhar para o próprio cabelo. A linha Ultra Bond Reset, que vocês acabaram de lançar, seria um ótimo começo.
+
+Portfólio com os vídeos: https://sorayamichelly-dev.github.io/ugc/portfolio/
+
+Se fizer sentido, me contem o produto e o formato que eu devolvo o orçamento no mesmo dia útil.
+
+Um abraço,
+Soraya Oliveira
+soraya.michelly@gmail.com · @sorayaaoliroutine
