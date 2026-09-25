@@ -197,3 +197,44 @@ Para plataforma, agência e app o argumento **não é a sua audiência** — é 
 - Winclap: [Creators Community](https://studio.winclap.com/creators) · [case Mercado Pago](https://winclap.com/our-work/mercado-pago) · Influee: [Brasil](https://influee.co/ugc-creator/countries/brazil) · Insense: [app](https://apps.apple.com/us/app/insense-brand-collabs/id1155596188) · UGC LATAM: [registro](https://ofertasugc.com/en/register) · Creatify: [contato](https://creatify.com.br/contato) · Publipost: [sou criador](https://publipost.com.br/sou-criador/) · Bloomer: [@bloomerugc](https://www.instagram.com/bloomerugc/) · Seu Influencer: [creator](https://seuinfluencer.com.br/creator/) · AchaPubli: [site](https://achapubli.com.br/) · InfluencerBrasil: [site](https://influencerbrasil.com.br/) · UGC+: [site](https://ugcplus.com.br/plans) · POPline Creators: [site](https://poplinecreators.com.br/) · Creator Ads: [cadastro](https://signup.creatorads.io/) · MIS: [site](https://mis-app.com/) · [ABC — MIS 1.000 seguidores](https://www.abcdacomunicacao.com.br/plataforma-para-microinfluenciadores-digitais-reune-mais-de-20-mil-usuarios-e-espera-crescer-110-ate-o-final-de-2021/) · Spark: [Influencer Hub](https://spark.com.br/influencerhub/) · CoCreators: [creators](https://cocreators.com.br/creators) · Play9: [PlayNest](https://playconnect.play9.com.br/terms-and-conditions) · Pop Creator: [seletiva 50k](https://grandesnomesdapropaganda.com.br/mercado-digital/pop-creator-abre-seletiva-para-novos-talentos-digitais/) · Kwai: [Creator Marketplace](https://www.meioemensagem.com.br/midia/kwai-desenvolve-ferramenta-que-conecta-creators-com-marcas) · [TechTudo — 10 sites para publis](https://www.techtudo.com.br/guia/2026/07/10-melhores-sites-para-conseguir-publis-e-monetizar-como-creator-edsoftwares.ghtml)
 - Ruby Rose: [Ruby Lovers](https://www.rubyrosemaquiagem.com.br/rubylovers) · Sallve: [Q&A afiliados](https://www.sallve.com.br/pages/q-a-afiliados-sallve) · Simple Organic: [FAQ](https://simpleorganic.com.br/pages/faq-simple-organic) · [quero fazer parte](https://simpleorganic.com.br/pages/quero-fazer-parte) · Bioart: [contato](https://loja.bioart.eco.br/contato) · Beyoung: [central de ajuda](https://www.beyoung.com.br/pages/central-de-ajuda) · Boca Rosa: [contato](https://bocarosa.com.br/pages/contato) · Dailus: [fale com a gente](https://www.dailus.com.br/pages/fale-com-a-gente) · Vult: [SAC](https://www.vult.com.br/atendimento-online/outros-assuntos/sac-vult) · Salon Line: [central](https://www.salonline.com.br/central-de-relacionamento) · Skala: [atendimento](https://www.lojaskala.com.br/atendimento) · Lola: [contato](https://lolafromrio.com.br/contato/) · Widi Care: [contato](https://lojawidicare.com.br/contato/) · Payot: [SAC](https://payot.com.br/sac-payot/) · Océane: [marketing de influência](https://blog.oceane.com.br/inside-oceane/marketing-de-influencia/) · [collabs](https://www.oceane.com.br/collabs) · Natura: [afiliados](https://afiliadosnatura.com.br/central-de-suporte) · Boticário: [fale conosco](https://www.boticario.com.br/fale-conosco/) · Avatim: [fale conosco](https://www.avatim.com.br/p/fale-conosco) · Yes!: [LinkedIn](https://br.linkedin.com/company/yescosmetics) · Flora Pura: [@florapuraonline](https://www.instagram.com/florapuraonline/)
 - Mustela: [contato](https://www.mustela.com.br/pages/fale-conosco) · Grão de Gente: [central](https://www.graodegente.com.br/central-de-atendimento) · [blog](https://bloggraodegente.com.br/contact) · Puket: [fale conosco](https://www.puket.com.br/fale-com/fale-conosco) · Lillo: [contato](https://lillo.com.br/contato) · Buba: [SAC](https://bubababy.com.br/sac/) · Clingo: [Brasgroup](https://www.brasgroup.com.br/clingo) · Galzerano: [SAC](https://sac-0800.blogspot.com/2017/11/sac-galzerano-telefones-0800.html) · MAM: [SAC](https://mambrasil.zendesk.com/hc/pt-br) · Huggies: [contato](https://www.huggies.com.br/contactenos) · [squad 2024](https://www.portaldapropaganda.com.br/noticias/25867/huggies-apresenta-squad-de-influenciadores-para-2024/) · Unilever: [imprensa](https://www.unilever.com.br/news/press-releases/) · Granado: [parcerias de marketing](https://suporte.granado.com.br/hc/pt-br/articles/115007460147-Parcerias-de-Marketing-Eventos)
+
+---
+
+## 8. Lista da @biancabottrel (Reel "Plano UGC 21 dias") — conferida em 25/09/2026
+
+### E-mails
+
+| Marca | E-mail na lista | Status |
+|---|---|---|
+| Ricca | blogs@bellizcompanu.com.br | **Erro de digitação na lista** — o certo é blogs@bellizcompany.com.br. ✔ Já enviado (24/09) |
+| Creamy | parcerias@creamy.com.br | ✔ Já enviado |
+| Sallve | parcerias@sallve.com | ✔ Já enviado para parcerias@sallve.com.br (o oficial) |
+| Skelt | marketing@skelt01.com | ✔ Já enviado |
+| Beleza Lab | icontato@belezalab.com.br | Rascunho no Gmail, ainda não enviado |
+| Salon Line | sac@salonline.com.br | Mesmo e-mail que já estava na lista; sem rascunho |
+| **Principia** | **comunidades@principiaskin.com.br** | **Contato novo e melhor** que o atendimento@. Rascunho atualizado para esse endereço |
+| **Simple Organic** | **hubcriacao@simpleorganic.com** | **Novo** — é o hub de criação, canal certo para UGC. Rascunho criado |
+| Hennova Cosméticos | hennovacosmeticos@gmail.com | Novo. Marca de manicure e pedicure (Londrina). Rascunho criado |
+| Gotas Verdes | sac@gotasverdes.com.br | Novo. Linha antiqueda de cabelo. Rascunho criado |
+| KOTE Skincare | contato@koteskincare.com.br | Novo. Clean beauty premiada. Rascunho criado (o site usa kote.com.br; se voltar, tentar contato@kote.com.br) |
+| Skence | influenciador@skence.com.br | Novo. Tem também o programa "Skence Creators" (comissão 15% no site). Rascunho criado |
+| Primacial | marketing@primacial.com | Novo. Marca de perfumes. Rascunho criado |
+| L'Oréal Paris Brasil | faleconosco@br.lorealbaris.com | **Erro de digitação** ("lorealbaris"). É SAC de marca gigante; baixa chance. Sem rascunho |
+| Valentyne Carmel | valentynecarmel@gmail.com | Não encontrei a marca. Sem rascunho |
+
+### Formulários (preencher no site)
+
+| Marca | Link (corrigido) | Observação |
+|---|---|---|
+| Barbours | https://inbazz.com.br/barbours | Inbazz é plataforma de creators; o mesmo cadastro abre Kokeshi e Alva |
+| Vitiss Cosméticos | https://loja.vitiss.com.br/cadastro-de-influencer | |
+| KOTE | https://kote.com.br/pages/cadastro-de-afiliados | É programa de **afiliado** (comissão), não UGC pago |
+| Kokeshi | https://inbazz.com.br/kokeshi | Inbazz |
+| Oásis Semijoias | https://forms.gle/uNiEixrLVyc55KF6 | Google Forms |
+| Alva Creator | https://inbazz.com.br/alvacreators | Inbazz |
+| Ela Up Acessórios | https://influencerelaup.com.br/solicitacao-de-parceria | |
+| Bella Oggi | https://www.bellaoggi.com.br/pages/influencers | |
+| Hidratei | https://parcerias.hidrateo.com.br/hidrateii-loja/register | |
+| Skence | skence.com.br/pages/skence-creators | Programa de creators com comissão |
+
+> Na lista original, os links estão como "https//" (sem os dois-pontos). Os links acima já estão corrigidos.
