@@ -38,8 +38,9 @@ Nunca escrever "vender", "converter", "ROI". Mostrar a dúvida sendo respondida 
 
 ## Passo 4 — Escrever
 
-- **Direct:** 4 a 6 linhas. Gancho com as palavras da marca → ponte com minha vida → cena → portfólio → "Posso te mandar uma proposta?"
+- **Direct:** 4 a 6 linhas. Gancho com as palavras da marca → ponte com minha vida → cena → portfólio → "Vamos engatar juntos nessa ideia?"
 - **E-mail:** o mesmo, com um parágrafo a mais. Sem métricas, sem lista de entregáveis, sem cidade/estado (a não ser que a marca seja regional e eu esteja no mercado dela — perguntar antes).
+- **Fechamento fixo:** todo e-mail e todo direct termina com a chamada **"Vamos engatar juntos nessa ideia?"**, logo antes da assinatura (em inglês: "Shall we make this idea happen together?").
 - Não mostrar meu filho em conteúdo pago (só citar a rotina de mãe).
 
 ## Fichas preenchidas

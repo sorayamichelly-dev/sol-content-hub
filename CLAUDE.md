@@ -6,4 +6,5 @@ Preferências fixas da Soraya:
 - Sem métricas de alcance em pitch de UGC; sem lista de entregáveis técnicos no primeiro contato; sem cidade/estado.
 - Não mostrar o filho em conteúdo pago.
 - TikTok Shop: descartado.
+- Todo e-mail e todo direct termina com a chamada "Vamos engatar juntos nessa ideia?", logo antes da assinatura.
 - Portfólio: https://sorayamichelly-dev.github.io/ugc/portfolio/

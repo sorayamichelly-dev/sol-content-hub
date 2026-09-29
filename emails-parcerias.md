@@ -2,6 +2,8 @@
 
 **Reescritos em 24/09/2026** no formato UGC: nada de métricas de alcance. Cada e-mail propõe **o que eu trago de diferente para aquela marca** — uma cena real da minha rotina onde o produto prova o que promete.
 
+**Fechamento fixo (29/09/2026):** todo e-mail termina com **"Vamos engatar juntos nessa ideia?"** logo antes da assinatura.
+
 **Portfólio (público, com os vídeos):** https://sorayamichelly-dev.github.io/ugc/portfolio/
 
 ## Os ângulos por categoria
@@ -30,6 +32,8 @@ Portfólio com os vídeos: https://sorayamichelly-dev.github.io/ugc/portfolio/
 
 Se fizer sentido, me contem o produto e o formato que eu devolvo o orçamento no mesmo dia útil.
 
+Vamos engatar juntos nessa ideia?
+
 Obrigada,
 Soraya Oliveira
 soraya.michelly@gmail.com · @sorayaaoliroutine
@@ -49,6 +53,8 @@ Sou a Soraya, criadora UGC e mãe. Saio de casa às 7h30 e só volto às 18h, e 
 Portfólio com os vídeos: https://sorayamichelly-dev.github.io/ugc/portfolio/
 
 Se fizer sentido, me contem o produto e o formato que eu devolvo o orçamento no mesmo dia útil.
+
+Vamos engatar juntos nessa ideia?
 
 Abraço,
 Soraya Oliveira
@@ -70,6 +76,8 @@ Portfólio com os vídeos: https://sorayamichelly-dev.github.io/ugc/portfolio/
 
 Se fizer sentido, me contem o produto e o formato que eu devolvo o orçamento no mesmo dia útil.
 
+Vamos engatar juntos nessa ideia?
+
 Um abraço,
 Soraya Oliveira
 soraya.michelly@gmail.com · @sorayaaoliroutine
@@ -90,6 +98,8 @@ Portfólio com os vídeos: https://sorayamichelly-dev.github.io/ugc/portfolio/
 
 Se fizer sentido, me contem o produto e o formato que eu devolvo o orçamento no mesmo dia útil.
 
+Vamos engatar juntos nessa ideia?
+
 Obrigada,
 Soraya Oliveira
 soraya.michelly@gmail.com · @sorayaaoliroutine
@@ -109,6 +119,8 @@ Celular de mãe cai: do sofá, da mão ocupada com sacola, da bolsa aberta na pr
 Portfólio com os vídeos: https://sorayamichelly-dev.github.io/ugc/portfolio/
 
 Se fizer sentido, me contem o produto e o formato que eu devolvo o orçamento no mesmo dia útil.
+
+Vamos engatar juntos nessa ideia?
 
 Abraço,
 Soraya Oliveira
@@ -132,6 +144,8 @@ Portfólio com os vídeos: https://sorayamichelly-dev.github.io/ugc/portfolio/
 
 Se fizer sentido, me contem os produtos e o formato que eu devolvo o orçamento no mesmo dia útil.
 
+Vamos engatar juntos nessa ideia?
+
 Obrigada,
 Soraya Oliveira
 soraya.michelly@gmail.com · @sorayaaoliroutine
@@ -151,6 +165,8 @@ Quem nunca comprou no AliExpress trava em duas perguntas: "chega aqui?" e "chega
 Portfólio com os vídeos: https://sorayamichelly-dev.github.io/ugc/portfolio/
 
 Se fizer sentido, me contem os produtos e o formato que eu devolvo o orçamento no mesmo dia útil.
+
+Vamos engatar juntos nessa ideia?
 
 Atenciosamente,
 Soraya Oliveira
@@ -172,6 +188,8 @@ Portfólio com os vídeos: https://sorayamichelly-dev.github.io/ugc/portfolio/
 
 Se fizer sentido, me contem o produto e o formato que eu devolvo o orçamento no mesmo dia útil.
 
+Vamos engatar juntos nessa ideia?
+
 Abraço,
 Soraya Oliveira
 soraya.michelly@gmail.com · @sorayaaoliroutine
@@ -191,6 +209,8 @@ A Berenice fala com a gente como amiga, com humor, e é assim que eu gravo. A id
 Portfólio com os vídeos: https://sorayamichelly-dev.github.io/ugc/portfolio/
 
 Se fizer sentido, me contem o produto e o formato que eu devolvo o orçamento no mesmo dia útil.
+
+Vamos engatar juntos nessa ideia?
 
 Beijo,
 Soraya Oliveira
@@ -212,6 +232,8 @@ Portfólio com os vídeos: https://sorayamichelly-dev.github.io/ugc/portfolio/
 
 Se fizer sentido, me contem o produto e o formato que eu devolvo o orçamento no mesmo dia útil.
 
+Vamos engatar juntos nessa ideia?
+
 Abraço,
 Soraya Oliveira
 soraya.michelly@gmail.com · @sorayaaoliroutine
@@ -231,6 +253,8 @@ Minha rotina é trabalho das 7h30 às 18h e um bebê em casa. O autocuidado que 
 Portfólio com os vídeos: https://sorayamichelly-dev.github.io/ugc/portfolio/
 
 Se fizer sentido, me contem o produto e o formato que eu devolvo o orçamento no mesmo dia útil.
+
+Vamos engatar juntos nessa ideia?
 
 Obrigada,
 Soraya Oliveira
@@ -252,6 +276,8 @@ Portfólio com os vídeos: https://sorayamichelly-dev.github.io/ugc/portfolio/
 
 Se fizer sentido, me contem o produto e o formato que eu devolvo o orçamento no mesmo dia útil. Para marcas que estão começando, também trabalho com permuta.
 
+Vamos engatar juntos nessa ideia?
+
 Abraço,
 Soraya Oliveira
 soraya.michelly@gmail.com · @sorayaaoliroutine
@@ -271,6 +297,8 @@ A Apta está na prateleira onde a mulher faz a compra do mês, e é daí que eu 
 Portfólio com os vídeos: https://sorayamichelly-dev.github.io/ugc/portfolio/
 
 Se fizer sentido, me contem o produto e o formato que eu devolvo o orçamento no mesmo dia útil.
+
+Vamos engatar juntos nessa ideia?
 
 Obrigada,
 Soraya Oliveira
@@ -292,6 +320,8 @@ Portfólio com os vídeos: https://sorayamichelly-dev.github.io/ugc/portfolio/
 
 Se fizer sentido, me contem o produto e o formato que eu devolvo o orçamento no mesmo dia útil.
 
+Vamos engatar juntos nessa ideia?
+
 Abraço,
 Soraya Oliveira
 soraya.michelly@gmail.com · @sorayaaoliroutine
@@ -311,6 +341,8 @@ Unha feita é o autocuidado mais possível para uma mãe, e o mais difícil de m
 Portfólio com os vídeos: https://sorayamichelly-dev.github.io/ugc/portfolio/
 
 Se fizer sentido, me contem o produto e o formato que eu devolvo o orçamento no mesmo dia útil.
+
+Vamos engatar juntos nessa ideia?
 
 Obrigada,
 Soraya Oliveira
@@ -334,6 +366,8 @@ Portfólio com os vídeos: https://sorayamichelly-dev.github.io/ugc/portfolio/
 
 Se fizer sentido, me contem o produto e o formato que eu devolvo o orçamento no mesmo dia útil.
 
+Vamos engatar juntos nessa ideia?
+
 Um abraço,
 Soraya Oliveira
 soraya.michelly@gmail.com · @sorayaaoliroutine
@@ -354,6 +388,8 @@ Portfólio com os vídeos: https://sorayamichelly-dev.github.io/ugc/portfolio/
 
 Se fizer sentido, me contem o produto e o formato que eu devolvo o orçamento no mesmo dia útil.
 
+Vamos engatar juntos nessa ideia?
+
 Abraço,
 Soraya Oliveira
 soraya.michelly@gmail.com · @sorayaaoliroutine
@@ -371,6 +407,8 @@ I'm Soraya Oliveira, a UGC creator and mom based in the Northeast of Brazil. I'm
 My idea for Caudalie: the five minutes a working mom keeps for herself. I leave home at 7:30 and get back at 6 pm, in a hot, dry climate where hydration is the first thing the skin asks for. I'd film Caudalie as that one premium moment at the end of the day: the texture, the real application, and why it's worth making time for, in natural light and in Portuguese for the Brazilian audience.
 
 Portfolio with videos: https://sorayamichelly-dev.github.io/ugc/portfolio/
+
+Shall we make this idea happen together?
 
 Thank you for your time,
 Soraya Oliveira
@@ -390,6 +428,8 @@ A Granado está na minha casa porque é marca em que eu confio para usar no meu 
 
 Portfólio com os vídeos: https://sorayamichelly-dev.github.io/ugc/portfolio/
 
+Vamos engatar juntos nessa ideia?
+
 Contato: soraya.michelly@gmail.com
 
 ---
@@ -404,7 +444,11 @@ Contato: soraya.michelly@gmail.com
 >
 > Em maternidade, a decisão de compra é de confiança: antes de usar qualquer coisa no meu bebê, eu pesquiso, pergunto e testo. O vídeo que eu quero gravar com a [marca] é esse processo: por que eu escolhi o produto, como ele entra na nossa rotina e o que eu contaria para outra mãe que está na dúvida. Falo como mãe para mãe, com a pergunta real que ela tem antes de comprar.
 >
-> [portfólio + fechamento]
+> [portfólio]
+>
+> Vamos engatar juntos nessa ideia?
+>
+> [assinatura]
 
 ---
 
@@ -439,6 +483,8 @@ Portfólio com os vídeos: https://sorayamichelly-dev.github.io/ugc/portfolio/
 
 Se fizer sentido, me contem o produto e o formato que eu devolvo o orçamento no mesmo dia útil.
 
+Vamos engatar juntos nessa ideia?
+
 Um abraço,
 Soraya Oliveira
 soraya.michelly@gmail.com · @sorayaaoliroutine
@@ -456,6 +502,8 @@ Peço, por gentileza, que encaminhem esta mensagem ao marketing de Profuse.
 Sou a Soraya, criadora UGC e mãe. A Profuse nasceu inspirada na pele brasileira, e a pele do Nordeste é um capítulo à parte: sol forte o ano inteiro, calor de 35 graus e, no meu caso, um dia que começa às 7h30 e termina às 18h. Quero gravar a Profuse nesse cenário, com a textura na mão, a aplicação real e como a pele reage ao longo de um dia de verdade no interior do Nordeste. É a beleza brasileira que quase não aparece na propaganda.
 
 Portfólio com os vídeos: https://sorayamichelly-dev.github.io/ugc/portfolio/
+
+Vamos engatar juntos nessa ideia?
 
 Obrigada,
 Soraya Oliveira
@@ -475,6 +523,8 @@ Sou a Soraya, criadora UGC e mãe. Aqui o sol não dá trégua, e protetor solar
 
 Portfólio com os vídeos: https://sorayamichelly-dev.github.io/ugc/portfolio/
 
+Vamos engatar juntos nessa ideia?
+
 Obrigada,
 Soraya Oliveira
 soraya.michelly@gmail.com · @sorayaaoliroutine
@@ -492,6 +542,8 @@ I'm Soraya Oliveira, a UGC creator and mom from the Northeast of Brazil. I leave
 My idea: film your SPF or lip care in that real day. Application in the morning, a check in the afternoon and the result when I get home, with no retouching and no filter. Heat, sweat and a busy schedule are the real test for skincare, and that's the test I can show.
 
 Portfolio with videos: https://sorayamichelly-dev.github.io/ugc/portfolio/
+
+Shall we make this idea happen together?
 
 Thank you,
 Soraya Oliveira
@@ -519,7 +571,7 @@ Portfólio: https://sorayamichelly-dev.github.io/ugc/portfolio/
 
 **Texto:**
 
-Olá! Peço que encaminhem esta mensagem ao marketing da Eucerin. Sou a Soraya, criadora UGC e mãe. A gravidez e o sol forte do Nordeste mudam a pele de muita mulher, com mancha, ressecamento e sensibilidade, e sobra pouco tempo para cuidar. Quero gravar a Eucerin nesse lugar: um cuidado dermatológico que cabe na rotina de uma mãe que trabalha das 7h30 às 18h, com a textura na mão, a aplicação real e uma opinião honesta. Portfólio: https://sorayamichelly-dev.github.io/ugc/portfolio/ · soraya.michelly@gmail.com
+Olá! Peço que encaminhem esta mensagem ao marketing da Eucerin. Sou a Soraya, criadora UGC e mãe. A gravidez e o sol forte do Nordeste mudam a pele de muita mulher, com mancha, ressecamento e sensibilidade, e sobra pouco tempo para cuidar. Quero gravar a Eucerin nesse lugar: um cuidado dermatológico que cabe na rotina de uma mãe que trabalha das 7h30 às 18h, com a textura na mão, a aplicação real e uma opinião honesta. Vamos engatar juntos nessa ideia? Portfólio: https://sorayamichelly-dev.github.io/ugc/portfolio/ · soraya.michelly@gmail.com
 
 ---
 
@@ -529,7 +581,7 @@ Olá! Peço que encaminhem esta mensagem ao marketing da Eucerin. Sou a Soraya, 
 
 **Texto:**
 
-Olá! Peço que encaminhem esta mensagem ao marketing da Neutrogena. Sou a Soraya, criadora UGC e mãe, onde faz 35 graus e a pele pede hidratação leve o dia inteiro. Quero gravar o Hydro Boost no teste real: aplicação às 7h30, a pele no calor do meio da tarde e o resultado às 18h, quando volto para casa, sem filtro. Portfólio: https://sorayamichelly-dev.github.io/ugc/portfolio/ · soraya.michelly@gmail.com
+Olá! Peço que encaminhem esta mensagem ao marketing da Neutrogena. Sou a Soraya, criadora UGC e mãe, onde faz 35 graus e a pele pede hidratação leve o dia inteiro. Quero gravar o Hydro Boost no teste real: aplicação às 7h30, a pele no calor do meio da tarde e o resultado às 18h, quando volto para casa, sem filtro. Vamos engatar juntos nessa ideia? Portfólio: https://sorayamichelly-dev.github.io/ugc/portfolio/ · soraya.michelly@gmail.com
 
 ---
 
@@ -548,6 +600,8 @@ A Sallve é uma das marcas que eu mais queria ter nesse formato, porque vocês f
 Portfólio com os vídeos: https://sorayamichelly-dev.github.io/ugc/portfolio/
 
 Se fizer sentido, me contem o produto e o formato que vocês precisam que eu devolvo o orçamento no mesmo dia útil.
+
+Vamos engatar juntos nessa ideia?
 
 Um abraço,
 Soraya Oliveira
@@ -575,6 +629,8 @@ Portfólio com os vídeos: https://sorayamichelly-dev.github.io/ugc/portfolio/
 
 Se fizer sentido, me contem o produto e o formato que eu devolvo o orçamento no mesmo dia útil.
 
+Vamos engatar juntos nessa ideia?
+
 Um abraço,
 Soraya Oliveira
 soraya.michelly@gmail.com · @sorayaaoliroutine
@@ -598,6 +654,8 @@ Tenho duas ideias. A primeira é o Stick Color na bolsa: aplicado de manhã, rea
 Portfólio com os vídeos: https://sorayamichelly-dev.github.io/ugc/portfolio/
 
 Se fizer sentido, me contem o produto e o formato que eu devolvo o orçamento no mesmo dia útil.
+
+Vamos engatar juntos nessa ideia?
 
 Um abraço,
 Soraya Oliveira
@@ -637,6 +695,8 @@ INVESTIMENTO
 - Pacote com os 3 vídeos: R$ [valor]
 
 Fico à vontade para ajustar o escopo ao que fizer mais sentido para a campanha de vocês, seja um vídeo de teste ou uma linha específica (cápsulas, cappuccinos ou cafés especiais).
+
+Vamos engatar juntos nessa ideia?
 
 Obrigada pela atenção, e fico no aguardo!
 
