@@ -703,3 +703,51 @@ Obrigada pela atenção, e fico no aguardo!
 Um abraço,
 Soraya Oliveira
 soraya.michelly@gmail.com · @sorayaaoliroutine
+
+---
+
+## 32. HIDRATEI — milena.gouveia@hidratei.com
+
+**Assunto:** Cabelo bonito é cabelo hidratado, até no pós-parto: uma ideia para a Hidratei
+
+Oi, Milena, tudo bem?
+
+"Cabelo bonito é cabelo hidratado" é uma frase que eu entendi de verdade depois que virei mãe. No pós-parto o fio resseca, quebra e perde o brilho, as vitaminas estão baixas e o tempo para cuidar é quase nenhum. Uma hidratação de alto impacto em 3 passos é exatamente o que cabe na vida de uma mãe.
+
+Sou a Soraya, criadora UGC e mãe. Gravo em casa, com luz natural, a rotina de uma mulher que sai para trabalhar às 7h30 e volta às 18h.
+
+A ideia é gravar a Hidratei nesse momento: os 3 passos no banho, no tempo que sobra depois que o bebê dorme, e o cabelo de perto já na primeira aplicação, com o toque, o brilho e o movimento, sem filtro. É a prova que a cliente procura antes de comprar: se funciona de verdade na rotina de quem não tem tempo.
+
+Portfólio com os vídeos: https://sorayamichelly-dev.github.io/ugc/portfolio/
+
+Se fizer sentido, me conta qual linha vocês querem trabalhar e o formato, que eu devolvo o orçamento no mesmo dia útil.
+
+Vamos engatar juntos nessa ideia?
+
+Um abraço,
+Soraya Oliveira
+soraya.michelly@gmail.com · @sorayaaoliroutine
+
+---
+
+## 33. JOOMI — afiliadas@joomibeauty.com.br
+
+**Assunto:** A estrelinha da Joomi na pele de uma mãe: uma ideia de vídeo
+
+Olá, time da Joomi!
+
+Sou a Soraya, criadora UGC e mãe.
+
+Adoro como a Joomi transformou o adesivo de espinha em algo leve e bonito, que trata em vez de esconder. E tem uma fase em que a espinha pega a mulher de surpresa: o pós-parto, quando os hormônios mexem com a pele e sobra zero tempo para cuidar dela.
+
+Quero gravar a Joomi nessa rotina real: a estrela colocada à noite, depois que o bebê dorme, a pele no dia seguinte bem de perto e sem filtro, e o adesivo que me impede de mexer na espinha num dia corrido, das 7h30 às 18h. É a resposta para a dúvida de quem ainda não testou: funciona mesmo e cabe no meu dia?
+
+Portfólio com os vídeos: https://sorayamichelly-dev.github.io/ugc/portfolio/
+
+Se fizer sentido, me contem o produto e o formato que eu devolvo o orçamento no mesmo dia útil.
+
+Vamos engatar juntos nessa ideia?
+
+Um abraço,
+Soraya Oliveira
+soraya.michelly@gmail.com · @sorayaaoliroutine

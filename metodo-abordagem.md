@@ -57,3 +57,25 @@ Nunca escrever "vender", "converter", "ROI". Mostrar a dúvida sendo respondida 
 | Objeção de compra | Online: "como fica no corpo de verdade?", "o tecido é bom?", "é versátil o bastante para o preço?". |
 | Ponte | Roupa atemporal é o que a mãe precisa: poucas peças que atravessam o dia inteiro. E roupa afetiva vira memória dos primeiros meses do bebê. |
 | Cena | Peça da coleção Harmonia no dia real: caimento no corpo de verdade, tecido de perto, o mesmo look do trabalho às 7h30 até o fim do dia. |
+
+### Hidratei — 29/09/2026
+
+| Campo | Resposta |
+|---|---|
+| Propósito | "Cabelo bonito é cabelo hidratado!" Hidratação de alto impacto em 3 passos; vegana; ativos naturais + tecnologia. Linha Cachos "criada por cacheadas para cacheadas". |
+| Cliente | Mulher com fio ressecado que quer resultado rápido. |
+| Linguagem | Direta, animada, com foco em resultado. |
+| Objeção de compra | "3 passos resolvem mesmo? Dá resultado já na primeira aplicação?" |
+| Ponte | Pós-parto: o fio resseca e quebra, e a mãe não tem tempo para um cronograma longo. |
+| Cena | Os 3 passos no banho depois que o bebê dorme e o cabelo de perto na primeira aplicação. |
+
+### Joomi — 29/09/2026
+
+| Campo | Resposta |
+|---|---|
+| Propósito | Adesivos de acne em forma de estrela (ácido salicílico + melaleuca) que tratam em vez de esconder; marca jovem, colorida, cruelty-free. |
+| Cliente | Mulher jovem com pele acneica. |
+| Linguagem | Leve, divertida, visual. |
+| Objeção de compra | "Funciona mesmo? Dá para usar no dia a dia?" |
+| Ponte | Espinha hormonal do pós-parto e a mão que mexe no rosto num dia corrido. |
+| Cena | A estrela à noite depois que o bebê dorme, a pele no dia seguinte de perto, o adesivo como barreira no dia das 7h30 às 18h. |

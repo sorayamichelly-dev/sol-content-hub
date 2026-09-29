@@ -272,3 +272,25 @@ Quase todos são e-mails de SAC. Rascunhos pedem para encaminhar ao marketing.
 | 23 | Widi Care | contato@widicare.com.br | 📝 Rascunho |
 | 24 | Felps Professional | sac@felps.com.br | Profissional — sem rascunho |
 | 25 | Esmaltes Bellia | contato@esmaltesbel… | E-mail cortado no print — sem rascunho |
+
+---
+
+## 10. Lista da @jaapahara — conferida em 29/09/2026
+
+| Marca | E-mail na lista | Status |
+|---|---|---|
+| Ricca | blogs@bellizcompany.com.br | ✔ Já enviado (24/09) |
+| Creamy | parcerias@creamy.com.br | ✔ Já enviado |
+| Skelt | marketing@skelt01.com | ✔ Já enviado |
+| **Hidratei** | **milena.gouveia@hidratei.com** | **Novo** (antes só tínhamos o formulário). 📝 Rascunho para a Milena (cabelo hidratado no pós-parto, 3 passos) |
+| Donna Carioca | mrt02@donnacarioca.com.br | ✔ Já tratado |
+| Principia | comunidades@principiaskin.com.br | 📝 Rascunho já existe |
+| Quem Disse, Berenice? | oie@quemdisseberenice.com.br | ✔ Já enviado para **oi@** em 24/09, sem retorno de erro. Não reenviar |
+| Beleza Lab | icontato@belezalab.com.br | ✔ Já tratado |
+| Make More | makemore@makemore.com.br | ✔ Já enviado |
+| KOTE | contato@koteskincare.com.br | 📝 Rascunho já existe |
+| Hennova | hennovacosmeticos@gmail.com | 📝 Rascunho já existe |
+| Gotas Verdes | sac@gotasverdes.com.br | 📝 Rascunho já existe |
+| **Shop das Sobrancelhas** | sac@shopdassobrancelhas.com.br | ⏸ **Sem rascunho**: site bloqueado e nada confiável na busca (parece loja de revenda, talvez para designers). Falta ver o Instagram para preencher a ficha |
+| Caramelo Wellness | caramelosft@gmail.com | ✔ Já enviado |
+| **Joomi** | **afiliadas@joomibeauty.com.br** | **Novo**. Adesivos de estrela para acne. 📝 Rascunho (espinha hormonal no pós-parto) |
