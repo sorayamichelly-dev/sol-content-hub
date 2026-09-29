@@ -602,3 +602,44 @@ Se fizer sentido, me contem o produto e o formato que eu devolvo o orçamento no
 Um abraço,
 Soraya Oliveira
 soraya.michelly@gmail.com · @sorayaaoliroutine
+
+---
+
+## 31. 3 CORAÇÕES / MERCAFÉ — camilafernandes@3coracoes.com.br ⭐ RESPOSTA RECEBIDA
+
+> A Mercafé respondeu o direct em 28/09 pedindo a proposta por e-mail (protocolo 05109972). **Preencher os valores antes de enviar.**
+
+**Assunto:** Proposta de conteúdo UGC: Soraya Oliveira (protocolo 05109972)
+
+Olá, Camila, tudo bem?
+
+Conversei com o time da Mercafé pelo direct do Instagram e fui orientada a enviar minha proposta para você (protocolo 05109972). Obrigada pela abertura!
+
+QUEM SOU
+Sou a Soraya, criadora UGC e mãe. Gravo em casa, com luz natural, a rotina real de uma mulher que sai para trabalhar às 7h30, volta às 18h e cuida de um bebê. Meus vídeos estão aqui: https://sorayamichelly-dev.github.io/ugc/portfolio/
+
+A IDEIA: "MOVIDA A CAFÉ"
+A Mercafé fala com quem é movido a café, e pouca gente é tão movida a café quanto uma mãe de bebê. Proponho três vídeos, cada um num momento do dia:
+
+1. 6h, antes de todo mundo acordar: a cápsula na máquina, o primeiro gole em silêncio e a correria para sair às 7h30. O café como o único momento da manhã que é só dela.
+2. 18h, a volta para casa: o cappuccino 3 Corações que a mãe prepara antes de recomeçar a segunda jornada. Um vídeo de pausa e aconchego.
+3. A noite mal dormida: humor leve sobre a mãe que acordou três vezes de madrugada e sobrevive ao dia seguinte graças ao café. É o formato que mais gera identificação e compartilhamento.
+
+COMO EU TRABALHO
+- Roteiro enviado para aprovação antes de gravar
+- Vídeos verticais (9:16), de 15 a 60 segundos, editados e com legenda
+- Arquivos brutos inclusos e 2 rodadas de ajuste
+- Entrega em até 7 dias depois que os produtos chegam
+- Uso orgânico por 3 meses; uso em anúncio e prazos maiores sob consulta
+
+INVESTIMENTO
+- 1 vídeo: R$ [valor]
+- Pacote com os 3 vídeos: R$ [valor]
+
+Fico à vontade para ajustar o escopo ao que fizer mais sentido para a campanha de vocês, seja um vídeo de teste ou uma linha específica (cápsulas, cappuccinos ou cafés especiais).
+
+Obrigada pela atenção, e fico no aguardo!
+
+Um abraço,
+Soraya Oliveira
+soraya.michelly@gmail.com · @sorayaaoliroutine
