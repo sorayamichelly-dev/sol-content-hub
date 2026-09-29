@@ -238,3 +238,37 @@ Para plataforma, agência e app o argumento **não é a sua audiência** — é 
 | Skence | skence.com.br/pages/skence-creators | Programa de creators com comissão |
 
 > Na lista original, os links estão como "https//" (sem os dois-pontos). Os links acima já estão corrigidos.
+
+---
+
+## 9. Lista da @dudapiassi ("marcas que fecham parcerias") — conferida em 29/09/2026
+
+Quase todos são e-mails de SAC. Rascunhos pedem para encaminhar ao marketing.
+
+| # | Marca | E-mail | Status |
+|---|---|---|---|
+| 1 | Skala | sac@skala.com.br | 📝 Rascunho (cabelo no pós-parto) |
+| 2 | Bio Extratus | sac@bioextratus.com.br | 📝 Rascunho |
+| 3 | Avon | snac@avon.com | ⚠️ Provável erro ("snac"). Marca gigante via SAC — sem rascunho |
+| 4 | Bella Brazil | sac@bellabrazil.com.br | Sem rascunho (produto não confirmado) |
+| 5 | Wella Professionals | sacbrasil@wella.com | Profissional/salão — sem rascunho |
+| 6 | Mohda | sac@mohda.com.br | Sem rascunho (produto não confirmado) |
+| 7 | Inoar | sac@inoar.com | Foco em salão — sem rascunho |
+| 8 | Lola Cosmetics | contato@lolacosmetics.com.br | 📝 Rascunho (humor) |
+| 9 | Natura | atendimento@natura.net | Gigante; o caminho é o programa de afiliados — sem rascunho |
+| 10 | Nivea | sac@nivea.com.br | Gigante via SAC — sem rascunho |
+| 11 | Salon Line | sac@salonline.com.br | 📝 Rascunho |
+| 12 | Eico | sac@eico.com.br | Sem rascunho |
+| 13 | Haskell | sac@haskellcosmeticos.com.br | 📝 Rascunho |
+| 14 | Cadiveu | sac@cadiveu.com | Foco em salão — sem rascunho |
+| 15 | Truss | sac@trussprofessional.com | Profissional — sem rascunho |
+| 16 | Amend | sac@amend.com.br | Sem rascunho |
+| 17 | Acquaflora | sac@acquaflora.com.br | 📝 Rascunho |
+| 18 | Forever Liss | sac@foreverliss.com.br | Sem rascunho |
+| 19 | Dove | sac.brasil@unilever.com | Gigante; o caminho é a MIS (EmbaixaDove) — sem rascunho |
+| 20 | Novo Toque | atendimento@novotoquecosmeticos.com.br | Sem rascunho |
+| 21 | Coreal Esmaltes | contato.coreal@gmail.com | 📝 Rascunho (esmalte no sétimo dia) |
+| 22 | Bluwe | sac@bluwe.com.br | Sem rascunho (produto não confirmado) |
+| 23 | Widi Care | contato@widicare.com.br | 📝 Rascunho |
+| 24 | Felps Professional | sac@felps.com.br | Profissional — sem rascunho |
+| 25 | Esmaltes Bellia | contato@esmaltesbel… | E-mail cortado no print — sem rascunho |
