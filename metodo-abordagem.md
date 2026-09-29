@@ -79,3 +79,12 @@ Nunca escrever "vender", "converter", "ROI". Mostrar a dúvida sendo respondida 
 | Objeção de compra | "Funciona mesmo? Dá para usar no dia a dia?" |
 | Ponte | Espinha hormonal do pós-parto e a mão que mexe no rosto num dia corrido. |
 | Cena | A estrela à noite depois que o bebê dorme, a pele no dia seguinte de perto, o adesivo como barreira no dia das 7h30 às 18h. |
+
+### Dalla, Forever Liss, Braé, Goddy — 29/09/2026 (resumo)
+
+| Marca | Propósito (palavras da marca) | Ponte | Cena |
+|---|---|---|---|
+| Dalla | "Para que elas sejam vistas – e não rotuladas"; vegana, acessível | A mãe vira "a mãe do bebê" e deixa de ser vista | Maquiagem rápida às 7h30 e espelho às 18h |
+| Forever Liss | Democratizar o cuidado capilar profissional em casa; novo posicionamento: praticidade de manhã, banho da noite como autocuidado | O banho da noite é o único momento da mãe | Linha SOS/Desmaia Cabelo no banho da noite, cabelo pronto às 7h30 |
+| Braé | Levar a beleza da mulher brasileira ao mundo; premium, salão + home care | A mãe que não consegue mais ir ao salão | Home care com resultado de salão depois que o bebê dorme |
+| Goddy | "Be beauty like you"; vegana | O corpo mudou no pós-parto | Gethecream/Bodyscrubee no pós-banho, sem promessa milagrosa |

@@ -294,3 +294,22 @@ Quase todos são e-mails de SAC. Rascunhos pedem para encaminhar ao marketing.
 | **Shop das Sobrancelhas** | sac@shopdassobrancelhas.com.br | ⏸ **Sem rascunho**: site bloqueado e nada confiável na busca (parece loja de revenda, talvez para designers). Falta ver o Instagram para preencher a ficha |
 | Caramelo Wellness | caramelosft@gmail.com | ✔ Já enviado |
 | **Joomi** | **afiliadas@joomibeauty.com.br** | **Novo**. Adesivos de estrela para acne. 📝 Rascunho (espinha hormonal no pós-parto) |
+
+### @jaapahara — página 3
+
+| Marca | E-mail na lista | Status |
+|---|---|---|
+| A Beleza de Menina | abelezademening@.gmail.com | ⚠️ **E-mail quebrado** na lista (provável abelezademenina@gmail.com, não confirmado). É loja multimarcas, não fabricante. Sem rascunho |
+| Alo Yoga | pr@aloyoga.com | Marca americana premium; pr@ é assessoria de imprensa. Sem rascunho |
+| AmoBeleza | atendimento@amobeleza.com.br | Varejista multimarcas via SAC. Sem rascunho (baixa chance) |
+| **Braé** | marketing@braehaircare.com | 📝 **Rascunho** (salão em casa no pós-parto, linha home care) |
+| **Dalla** | marketing@dallamakeup.com.br | 📝 **Rascunho** ("vistas, e não rotuladas" + maquiagem que dura das 7h30 às 18h) |
+| Donna Carioca | mrt02@donnacarioca.com.br | ✔ Já tratado |
+| **Eudora** | **faleconosco@eudora.com.br** | Antes não tínhamos e-mail. **Rascunho existente atualizado** com esse destinatário e pedido de encaminhamento |
+| **Forever Liss** | sac@foreverliss.com.br | 📝 **Rascunho** (novo posicionamento: o banho da noite como autocuidado) |
+| Formato Cosmética | comercial@formatocometica.com.br | ⚠️ Erro na lista (o domínio é formatocosmetica). Vende aparelhos de estética e óleos em aerossol, perfil B2B. Sem rascunho |
+| Garnier | alecronosco@br.garnier.com | ✔ Já tratado |
+| **Goddy** | contato@goddy.com.br | 📝 **Rascunho** ("Be beauty like you", corpo no pós-parto) |
+| GoCase | marketing@gocase.com | 📝 Rascunho já existe |
+| Gotas Verdes | sac@gotasverdes.com.br | 📝 Rascunho já existe |
+| GW Fashion Store | gwfashionstor@gmail.com | ⚠️ Provável erro (gwfashionstore). Loja de roupa com entrega local. Sem rascunho |

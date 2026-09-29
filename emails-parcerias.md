@@ -609,7 +609,7 @@ soraya.michelly@gmail.com · @sorayaaoliroutine
 
 ---
 
-## 29. EUDORA (Siàge) — sem e-mail público
+## 29. EUDORA (Siàge) — faleconosco@eudora.com.br (e-mail da lista @jaapahara)
 
 **Onde enviar:** formulário eudora.com.br/atendimento/fale-conosco (assunto: parceria com criadora de conteúdo). O rascunho no Gmail está **sem destinatário**.
 
@@ -617,7 +617,7 @@ soraya.michelly@gmail.com · @sorayaaoliroutine
 
 **Assunto:** Já gravei Siàge: quero gravar o próximo vídeo com a Eudora
 
-Olá, time da Eudora!
+Olá, time da Eudora! Se puderem, encaminhem esta mensagem ao marketing.
 
 Vejo muitas mulheres, de perfis bem diferentes, mostrando os produtos da Eudora. Mas sinto falta de ver uma mãe mostrando que, mesmo com a rotina corrida, ela usa Eudora para se cuidar. É esse vídeo que eu quero gravar com vocês.
 
@@ -741,6 +741,102 @@ Sou a Soraya, criadora UGC e mãe.
 Adoro como a Joomi transformou o adesivo de espinha em algo leve e bonito, que trata em vez de esconder. E tem uma fase em que a espinha pega a mulher de surpresa: o pós-parto, quando os hormônios mexem com a pele e sobra zero tempo para cuidar dela.
 
 Quero gravar a Joomi nessa rotina real: a estrela colocada à noite, depois que o bebê dorme, a pele no dia seguinte bem de perto e sem filtro, e o adesivo que me impede de mexer na espinha num dia corrido, das 7h30 às 18h. É a resposta para a dúvida de quem ainda não testou: funciona mesmo e cabe no meu dia?
+
+Portfólio com os vídeos: https://sorayamichelly-dev.github.io/ugc/portfolio/
+
+Se fizer sentido, me contem o produto e o formato que eu devolvo o orçamento no mesmo dia útil.
+
+Vamos engatar juntos nessa ideia?
+
+Um abraço,
+Soraya Oliveira
+soraya.michelly@gmail.com · @sorayaaoliroutine
+
+---
+
+## 34. DALLA — marketing@dallamakeup.com.br
+
+**Assunto:** Vista, não rotulada: a mãe que continua se maquiando
+
+Olá, time da Dalla!
+
+"Para que elas sejam vistas, e não rotuladas." Essa frase de vocês me pegou, porque quando a mulher vira mãe, o rótulo chega antes de todo o resto: ela vira "a mãe do bebê" e para de ser vista.
+
+Sou a Soraya, criadora UGC e mãe. Gravo em casa, com luz natural, a rotina de uma mulher que sai para trabalhar às 7h30 e volta às 18h.
+
+A ideia é gravar a Dalla como o momento em que essa mãe volta a se ver: a maquiagem feita em poucos minutos antes de sair, com a correria real em volta, e o reencontro com o espelho às 18h, mostrando que o produto aguentou o dia inteiro. É a prova que a cliente quer antes de comprar: se dura mesmo e se cabe na vida real.
+
+Portfólio com os vídeos: https://sorayamichelly-dev.github.io/ugc/portfolio/
+
+Se fizer sentido, me contem o produto e o formato que eu devolvo o orçamento no mesmo dia útil.
+
+Vamos engatar juntos nessa ideia?
+
+Um abraço,
+Soraya Oliveira
+soraya.michelly@gmail.com · @sorayaaoliroutine
+
+---
+
+## 35. FOREVER LISS — sac@foreverliss.com.br
+
+**Assunto:** O banho como o autocuidado de uma mãe: uma ideia para a Forever Liss
+
+Olá, time da Forever Liss! Se puderem, encaminhem esta mensagem ao marketing.
+
+Sou a Soraya, criadora UGC e mãe.
+
+Vi o novo posicionamento de vocês: praticidade de manhã e, à noite, o banho como o momento de se cuidar. Para uma mãe, esse banho da noite, depois que o bebê dorme, é muitas vezes o único momento do dia que é só dela.
+
+É esse momento que eu quero gravar. No pós-parto o cabelo cai, afina e perde o brilho, e as vitaminas estão baixas. A ideia é mostrar a linha SOS ou o Desmaia Cabelo nesse banho da noite, com resultado de salão feito em casa, e o cabelo de manhã, pronto em poucos minutos para sair às 7h30.
+
+Portfólio com os vídeos: https://sorayamichelly-dev.github.io/ugc/portfolio/
+
+Se fizer sentido, me contem o produto e o formato que eu devolvo o orçamento no mesmo dia útil.
+
+Vamos engatar juntos nessa ideia?
+
+Um abraço,
+Soraya Oliveira
+soraya.michelly@gmail.com · @sorayaaoliroutine
+
+---
+
+## 36. BRAÉ — marketing@braehaircare.com
+
+**Assunto:** Cabelo de salão na rotina de uma mãe: uma ideia de vídeo para a Braé
+
+Olá, time da Braé!
+
+Sou a Soraya, criadora UGC e mãe.
+
+A Braé nasceu para levar a beleza da mulher brasileira ao mundo, e existe uma mulher brasileira que quase nunca aparece nesse cenário: a mãe que não consegue mais ir ao salão. No pós-parto o cabelo cai, afina e perde o brilho, as vitaminas estão baixas e sobra pouco tempo para se cuidar.
+
+Quero gravar a linha home care da Braé nesse momento: o tratamento de qualidade profissional feito em casa, no tempo que sobra depois que o bebê dorme, e o cabelo de perto no dia seguinte, com brilho e movimento, pronto para sair às 7h30. É a prova de que o resultado de salão cabe na rotina de quem não tem tempo.
+
+Portfólio com os vídeos: https://sorayamichelly-dev.github.io/ugc/portfolio/
+
+Se fizer sentido, me contem o produto e o formato que eu devolvo o orçamento no mesmo dia útil.
+
+Vamos engatar juntos nessa ideia?
+
+Um abraço,
+Soraya Oliveira
+soraya.michelly@gmail.com · @sorayaaoliroutine
+
+---
+
+## 37. GODDY — contato@goddy.com.br
+
+**Assunto:** Be beauty like you, no corpo de uma mãe: uma ideia de vídeo para a Goddy
+
+Olá, time da Goddy!
+
+Sou a Soraya, criadora UGC e mãe.
+
+"Be beauty like you" fala muito com a mulher que acabou de ter um bebê. O corpo mudou, a rotina mudou, e ela precisa reaprender a gostar de si do jeito que é agora.
+
+Quero gravar a Goddy nesse momento: o Gethecream ou o Bodyscrubee no pós-banho, os poucos minutos de cuidado com o corpo que uma mãe consegue no fim do dia, com a textura na mão, a aplicação real e sem filtro. Sem promessa milagrosa, só o autocuidado que cabe na rotina de quem sai às 7h30 e volta às 18h.
 
 Portfólio com os vídeos: https://sorayamichelly-dev.github.io/ugc/portfolio/
 
