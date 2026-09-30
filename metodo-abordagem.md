@@ -101,13 +101,12 @@ Nunca escrever "vender", "converter", "ROI". Mostrar a dúvida sendo respondida 
 | Ponte | Mãe que passa o dia fora no sol forte precisa de proteção e beleza no mesmo gesto. |
 | Cena | Bastão com FPS às 7h30, reaplicação no meio do dia, pele de perto às 18h. |
 
-### DermaFeel — 30/09/2026
+### Dermafeel — 30/09/2026
 
 | Campo | Resposta |
 |---|---|
-| Propósito | Clínica de dermatologia "especializada em estética facial e corporal e gerenciamento do envelhecimento", liderada pela Dra. Julyana Gomes. |
-| Cliente | Mulher adulta que quer cuidar da pele com médica, mas tem receio e pouco tempo. |
-| Objeção de compra | "Dói? Fica marcado? Quando volto à rotina? Vale o investimento?" |
-| Ponte | A mãe adia a própria consulta: primeiro o bebê, depois o trabalho. |
-| Cena | A hora que a mãe tira para si, o procedimento visto como paciente, a volta à rotina no dia seguinte, a pele de perto. |
-| Cuidado | Publicidade médica segue regras do CFM: nada de prometer resultado; antes e depois só dentro do que a clínica aprovar. |
+| Propósito | Produtos para pele de bebê (informação da Soraya). Site e perfil não encontrados na busca; completar com o print do Instagram. |
+| Cliente | Mãe e pai de bebê. |
+| Objeção de compra | "É seguro? É suave o bastante para a pele do meu bebê?" |
+| Ponte | Eu leio o rótulo e pesquiso antes de usar qualquer coisa no meu bebê. |
+| Cena | A escolha, a textura na mão da mãe, a hora do banho, a recomendação de mãe para mãe. Sem mostrar o bebê. |

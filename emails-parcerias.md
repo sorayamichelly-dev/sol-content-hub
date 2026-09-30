@@ -860,12 +860,13 @@ Vamos engatar juntos nessa ideia?
 
 ---
 
-## 39. DERMAFEEL (clínica da Dra. Julyana Gomes) — direct do Instagram
+## 39. DERMAFEEL (produtos para pele de bebê) — direct do Instagram
 
-> Suposição: a DermaFeel é a clínica de dermatologia e estética facial e corporal da Dra. Julyana Gomes. Confirmar antes de enviar.
+> Site e perfil não apareceram na busca. Texto no ângulo de maternidade; ajustar com as palavras da marca quando tiver o print do perfil.
+> Regra: o bebê não aparece no conteúdo pago. O vídeo mostra o produto, as minhas mãos e a rotina.
 
-Oi, Dra. Julyana e time da DermaFeel! Sou a Soraya, criadora UGC e mãe.
-Toda mãe adia a própria consulta: primeiro o bebê, depois o trabalho, e a pele fica para depois.
-Quero gravar esse momento na DermaFeel: a mãe que finalmente tira uma hora para si, o procedimento contado do ponto de vista da paciente, a volta à rotina no dia seguinte e a pele de perto, sem filtro.
+Oi, time da Dermafeel! Sou a Soraya, criadora UGC e mãe.
+Antes de passar qualquer coisa na pele do meu bebê, eu leio o rótulo, pesquiso e pergunto. Toda mãe faz isso.
+Quero gravar a Dermafeel nesse momento de confiança: o que me fez escolher, a textura na minha mão, a hora do banho e o que eu contaria para outra mãe que está em dúvida.
 Meus vídeos: https://sorayamichelly-dev.github.io/ugc/portfolio/
 Vamos engatar juntos nessa ideia?
