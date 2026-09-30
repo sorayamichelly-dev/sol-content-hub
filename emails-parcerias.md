@@ -860,7 +860,7 @@ Vamos engatar juntos nessa ideia?
 
 ---
 
-## 39. DERMAFEEL (produtos para pele de bebê) — direct do Instagram
+## 39. DERMAFEEL (produtos para pele de bebê) — direct do Instagram — ⏸ NÃO ENVIAR: falta o propósito da marca
 
 > Site e perfil não apareceram na busca. Texto no ângulo de maternidade; ajustar com as palavras da marca quando tiver o print do perfil.
 > Regra: o bebê não aparece no conteúdo pago. O vídeo mostra o produto, as minhas mãos e a rotina.
