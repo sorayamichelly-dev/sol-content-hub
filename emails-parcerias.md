@@ -857,3 +857,15 @@ Borogodó brasileiro de verdade é o de uma mãe que sai às 7h30 no sol forte e
 Quero gravar o bastão com FPS da ella nesse dia real: aplicado de manhã, reaplicado no meio do dia e a pele de perto no fim da tarde, sem filtro.
 Meus vídeos: https://sorayamichelly-dev.github.io/ugc/portfolio/
 Vamos engatar juntos nessa ideia?
+
+---
+
+## 39. DERMAFEEL (clínica da Dra. Julyana Gomes) — direct do Instagram
+
+> Suposição: a DermaFeel é a clínica de dermatologia e estética facial e corporal da Dra. Julyana Gomes. Confirmar antes de enviar.
+
+Oi, Dra. Julyana e time da DermaFeel! Sou a Soraya, criadora UGC e mãe.
+Toda mãe adia a própria consulta: primeiro o bebê, depois o trabalho, e a pele fica para depois.
+Quero gravar esse momento na DermaFeel: a mãe que finalmente tira uma hora para si, o procedimento contado do ponto de vista da paciente, a volta à rotina no dia seguinte e a pele de perto, sem filtro.
+Meus vídeos: https://sorayamichelly-dev.github.io/ugc/portfolio/
+Vamos engatar juntos nessa ideia?

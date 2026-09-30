@@ -100,3 +100,14 @@ Nunca escrever "vender", "converter", "ROI". Mostrar a dúvida sendo respondida 
 | Objeção de compra | "Aguenta o calor? Dá para reaplicar por cima? Fica bonito o dia inteiro?" |
 | Ponte | Mãe que passa o dia fora no sol forte precisa de proteção e beleza no mesmo gesto. |
 | Cena | Bastão com FPS às 7h30, reaplicação no meio do dia, pele de perto às 18h. |
+
+### DermaFeel — 30/09/2026
+
+| Campo | Resposta |
+|---|---|
+| Propósito | Clínica de dermatologia "especializada em estética facial e corporal e gerenciamento do envelhecimento", liderada pela Dra. Julyana Gomes. |
+| Cliente | Mulher adulta que quer cuidar da pele com médica, mas tem receio e pouco tempo. |
+| Objeção de compra | "Dói? Fica marcado? Quando volto à rotina? Vale o investimento?" |
+| Ponte | A mãe adia a própria consulta: primeiro o bebê, depois o trabalho. |
+| Cena | A hora que a mãe tira para si, o procedimento visto como paciente, a volta à rotina no dia seguinte, a pele de perto. |
+| Cuidado | Publicidade médica segue regras do CFM: nada de prometer resultado; antes e depois só dentro do que a clínica aprovar. |
