@@ -847,3 +847,13 @@ Vamos engatar juntos nessa ideia?
 Um abraço,
 Soraya Oliveira
 soraya.michelly@gmail.com · @sorayaaoliroutine
+
+---
+
+## 38. ELLA (@ellacosmetics.br) — direct do Instagram (sem e-mail público encontrado)
+
+Oi, time da ella! Sou a Soraya, criadora UGC e mãe.
+Borogodó brasileiro de verdade é o de uma mãe que sai às 7h30 no sol forte e volta às 18h com a pele ainda bonita.
+Quero gravar o bastão com FPS da ella nesse dia real: aplicado de manhã, reaplicado no meio do dia e a pele de perto no fim da tarde, sem filtro.
+Meus vídeos: https://sorayamichelly-dev.github.io/ugc/portfolio/
+Vamos engatar juntos nessa ideia?

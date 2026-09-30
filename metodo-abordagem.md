@@ -88,3 +88,15 @@ Nunca escrever "vender", "converter", "ROI". Mostrar a dúvida sendo respondida 
 | Forever Liss | Democratizar o cuidado capilar profissional em casa; novo posicionamento: praticidade de manhã, banho da noite como autocuidado | O banho da noite é o único momento da mãe | Linha SOS/Desmaia Cabelo no banho da noite, cabelo pronto às 7h30 |
 | Braé | Levar a beleza da mulher brasileira ao mundo; premium, salão + home care | A mãe que não consegue mais ir ao salão | Home care com resultado de salão depois que o bebê dorme |
 | Goddy | "Be beauty like you"; vegana | O corpo mudou no pós-parto | Gethecream/Bodyscrubee no pós-banho, sem promessa milagrosa |
+
+### ella (@ellacosmetics.br) — 30/09/2026
+
+| Campo | Resposta |
+|---|---|
+| Propósito | "Produtos de beleza que combinam os melhores ativos do Brasil, proteção solar e muito borogodó!" · "Beleza brasileira, alma tropical" · "ella é orgulho de ser brasileira". |
+| Cliente | Mulher brasileira que vive no calor e quer proteção solar com make leve. Vende no site e na glam. |
+| Linguagem | Solar, brasileira, descontraída ("borogodó"). |
+| Momento | Destaque "quem usa" com mulheres reais usando os produtos; comunidade ella no Instagram. |
+| Objeção de compra | "Aguenta o calor? Dá para reaplicar por cima? Fica bonito o dia inteiro?" |
+| Ponte | Mãe que passa o dia fora no sol forte precisa de proteção e beleza no mesmo gesto. |
+| Cena | Bastão com FPS às 7h30, reaplicação no meio do dia, pele de perto às 18h. |
