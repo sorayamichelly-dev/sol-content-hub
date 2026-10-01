@@ -888,10 +888,10 @@ Vamos engatar juntos nessa ideia?
 
 ---
 
-## 41. BYEM BEAUTY (@byembeautyoficial) — direct do Instagram (v2, com o "Quem somos" do site)
+## 41. BYEM BEAUTY (@byembeautyoficial) — direct do Instagram (v3: o porquê de uma pessoa real, sem proposta de cena)
 
 Oi, time da Byem! Sou a Soraya, criadora UGC e mãe.
-Vocês falam de fórmulas que respeitam a rotina e o tempo de cada pessoa. O tempo de uma mãe que sai às 7h30 e volta às 18h são poucos minutos na frente do espelho.
-Quero gravar a Byem nesses minutos: primer, base e pó solto antes de sair, e a pele de perto às 18h, mostrando que a beleza esteve presente o dia inteiro.
+Vocês falam de fórmulas que respeitam a rotina e o tempo de cada pessoa, e é isso que a cliente quer ver antes de comprar: uma mulher real, com uma rotina real, usando o produto.
+Não sou modelo nem celebridade. Sou uma mãe que trabalha fora e tem poucos minutos na frente do espelho. Quando quem assiste se reconhece em mim, confia no que vê, e passa a confiar na Byem também.
 Meus vídeos: https://sorayamichelly-dev.github.io/ugc/portfolio/
 Vamos engatar juntos nessa ideia?
