@@ -870,3 +870,18 @@ Antes de passar qualquer coisa na pele do meu bebê, eu leio o rótulo, pesquiso
 Quero gravar a Dermafeel nesse momento de confiança: o que me fez escolher, a textura na minha mão, a hora do banho e o que eu contaria para outra mãe que está em dúvida.
 Meus vídeos: https://sorayamichelly-dev.github.io/ugc/portfolio/
 Vamos engatar juntos nessa ideia?
+
+---
+
+## 40. ZORTELE (@zortele) — direct, chamada aberta "Precisamos de criador UGC"
+
+> Regras da chamada: seguir @zortele, ter mais de 18 anos e mandar no direct nome, idade e cidade. A cidade aqui é exigência da marca (exceção à regra de não citar cidade; a Soraya decide).
+> Propósito da marca não encontrado na busca (só o visual: óculos e trevo). Ajustar o gancho com o print do perfil.
+
+Oi, time da Zortele! Vi que vocês estão procurando criador UGC.
+Nome: Soraya Oliveira
+Idade: [idade]
+Cidade: [cidade]
+Sou criadora UGC e mãe. Gravo em casa, com luz natural, a rotina real de uma mulher que sai às 7h30 e volta às 18h. Quero mostrar os óculos da Zortele nesse dia a dia, no rosto de uma mulher de verdade, do caminho para o trabalho até a volta para casa.
+Meus vídeos: https://sorayamichelly-dev.github.io/ugc/portfolio/
+Vamos engatar juntos nessa ideia?
