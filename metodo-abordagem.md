@@ -115,10 +115,10 @@ Nunca escrever "vender", "converter", "ROI". Mostrar a dúvida sendo respondida 
 
 | Campo | Resposta |
 |---|---|
-| Propósito | "Sua luz. Seu momento. Sua BYEM." · "Be yourself every moment!" · cruelty free · valoriza a diversidade da pele brasileira (grupo Badam Beauty, desde 2022). |
+| Propósito | "Sua luz. Seu momento. Sua BYEM." · "Be yourself every moment!" · Quem somos: "viver a própria beleza em todos os momentos"; "tons pensados para valorizar a diversidade real da pele brasileira e fórmulas que respeitam a rotina e o tempo de cada pessoa"; "beleza é presença — e cada momento merece ser vivido com ela". Grupo Badam Beauty, desde 2022; cruelty free. |
 | Cliente | Mulher que quer pele bonita e prática no dia a dia (o blog tem "maquiagem para o dia a dia em 10 minutos, ideal para trabalho e rotina"). |
 | Linguagem | Sofisticada e acolhedora. |
 | Momento | Destaques "Quem usa", "Base", "Primer"; post do pó solto com acabamento. |
 | Objeção de compra | "A base e o pó aguentam um dia inteiro de trabalho no calor?" |
-| Ponte | O "seu momento" é o que a mãe menos tem. |
-| Cena | Primer + base + pó solto em poucos minutos às 7h30, pele de perto às 18h. |
+| Ponte | "Fórmulas que respeitam o tempo de cada pessoa": o tempo da mãe são poucos minutos no espelho. |
+| Cena | Primer + base + pó solto em poucos minutos às 7h30, pele de perto às 18h: a beleza "presente" o dia inteiro. |

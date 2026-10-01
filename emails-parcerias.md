@@ -888,10 +888,10 @@ Vamos engatar juntos nessa ideia?
 
 ---
 
-## 41. BYEM BEAUTY (@byembeautyoficial) — direct do Instagram
+## 41. BYEM BEAUTY (@byembeautyoficial) — direct do Instagram (v2, com o "Quem somos" do site)
 
 Oi, time da Byem! Sou a Soraya, criadora UGC e mãe.
-"Sua luz. Seu momento." Para uma mãe, esse momento quase não existe: primeiro o bebê, depois o trabalho.
-Quero gravar a Byem como esse momento: primer, base e pó solto em poucos minutos antes de sair às 7h30, e a pele de perto às 18h, mostrando que a make aguentou o dia inteiro.
+Vocês falam de fórmulas que respeitam a rotina e o tempo de cada pessoa. O tempo de uma mãe que sai às 7h30 e volta às 18h são poucos minutos na frente do espelho.
+Quero gravar a Byem nesses minutos: primer, base e pó solto antes de sair, e a pele de perto às 18h, mostrando que a beleza esteve presente o dia inteiro.
 Meus vídeos: https://sorayamichelly-dev.github.io/ugc/portfolio/
 Vamos engatar juntos nessa ideia?
