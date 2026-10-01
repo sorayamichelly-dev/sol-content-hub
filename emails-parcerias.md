@@ -885,3 +885,13 @@ Cidade: [cidade]
 Sou criadora UGC e mãe. Gravo em casa, com luz natural, a rotina real de uma mulher que sai às 7h30 e volta às 18h. Quero mostrar os óculos da Zortele nesse dia a dia, no rosto de uma mulher de verdade, do caminho para o trabalho até a volta para casa.
 Meus vídeos: https://sorayamichelly-dev.github.io/ugc/portfolio/
 Vamos engatar juntos nessa ideia?
+
+---
+
+## 41. BYEM BEAUTY (@byembeautyoficial) — direct do Instagram
+
+Oi, time da Byem! Sou a Soraya, criadora UGC e mãe.
+"Sua luz. Seu momento." Para uma mãe, esse momento quase não existe: primeiro o bebê, depois o trabalho.
+Quero gravar a Byem como esse momento: primer, base e pó solto em poucos minutos antes de sair às 7h30, e a pele de perto às 18h, mostrando que a make aguentou o dia inteiro.
+Meus vídeos: https://sorayamichelly-dev.github.io/ugc/portfolio/
+Vamos engatar juntos nessa ideia?

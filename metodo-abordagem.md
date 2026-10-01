@@ -110,3 +110,15 @@ Nunca escrever "vender", "converter", "ROI". Mostrar a dúvida sendo respondida 
 | Objeção de compra | "É seguro? É suave o bastante para a pele do meu bebê?" |
 | Ponte | Eu leio o rótulo e pesquiso antes de usar qualquer coisa no meu bebê. |
 | Cena | A escolha, a textura na mão da mãe, a hora do banho, a recomendação de mãe para mãe. Sem mostrar o bebê. |
+
+### Byem Beauty (@byembeautyoficial) — 01/10/2026
+
+| Campo | Resposta |
+|---|---|
+| Propósito | "Sua luz. Seu momento. Sua BYEM." · "Be yourself every moment!" · cruelty free · valoriza a diversidade da pele brasileira (grupo Badam Beauty, desde 2022). |
+| Cliente | Mulher que quer pele bonita e prática no dia a dia (o blog tem "maquiagem para o dia a dia em 10 minutos, ideal para trabalho e rotina"). |
+| Linguagem | Sofisticada e acolhedora. |
+| Momento | Destaques "Quem usa", "Base", "Primer"; post do pó solto com acabamento. |
+| Objeção de compra | "A base e o pó aguentam um dia inteiro de trabalho no calor?" |
+| Ponte | O "seu momento" é o que a mãe menos tem. |
+| Cena | Primer + base + pó solto em poucos minutos às 7h30, pele de perto às 18h. |
