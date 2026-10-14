@@ -895,3 +895,33 @@ Vocês falam de fórmulas que respeitam a rotina e o tempo de cada pessoa, e é 
 Não sou modelo nem celebridade. Sou uma mãe que trabalha fora e tem poucos minutos na frente do espelho. Quando quem assiste se reconhece em mim, confia no que vê, e passa a confiar na Byem também.
 Meus vídeos: https://sorayamichelly-dev.github.io/ugc/portfolio/
 Vamos engatar juntos nessa ideia?
+
+---
+
+## 42. SKELT — parcerias@skelt.com.br ⭐ RESPOSTA RECEBIDA (direct, 14/10/2026)
+
+> A Skelt respondeu no direct pedindo e-mail para parcerias@skelt.com.br com: @ do Instagram, @ do TikTok, @ do YouTube e media kit. Avisaram que não há prazo de retorno e que só entram em contato se o perfil for selecionado.
+> Propósito: bodycare e fragrância; "glow inconfundível"; hidratante que hidrata por 48 h e "fixa e projeta igual perfume"; linhas Amalfi Sunset, Urban Beat e Unexpected Day.
+
+**Assunto:** Parceria Skelt: Soraya Oliveira (@sorayaaoliroutine)
+
+Olá, time de parcerias da Skelt!
+
+Conversei com vocês pelo direct do Instagram e fui orientada a enviar minhas informações por aqui. Obrigada pelo retorno!
+
+Sou a Soraya, criadora UGC e mãe. A Skelt fala de glow e de perfume que fixa e projeta, e quem compra quer saber se isso acontece na vida real, não só na foto. É isso que o vídeo de uma pessoa real mostra: uma mãe que trabalha fora, com um dia longo e imprevisível (bem Unexpected Day), usando o produto de verdade. Quem assiste se reconhece em mim e confia no que vê.
+
+Seguem as informações:
+
+Instagram: @sorayaaoliroutine (https://www.instagram.com/sorayaaoliroutine/)
+TikTok: [@ do TikTok]
+YouTube: [@ do canal]
+Media kit e portfólio com os vídeos: https://sorayamichelly-dev.github.io/ugc/portfolio/
+
+Sobre o meu trabalho: crio conteúdo UGC gravado em casa, com luz natural, sobre a rotina real de uma mulher que sai para trabalhar às 7h30, volta às 18h e cuida de um bebê. Publico o mesmo conteúdo no Instagram, no TikTok e no YouTube Shorts.
+
+Vamos engatar juntos nessa ideia?
+
+Um abraço,
+Soraya Oliveira
+soraya.michelly@gmail.com · @sorayaaoliroutine
