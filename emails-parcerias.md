@@ -916,7 +916,8 @@ Seguem as informações:
 Instagram: @sorayaaoliroutine (https://www.instagram.com/sorayaaoliroutine/)
 TikTok: [@ do TikTok]
 YouTube: [@ do canal]
-Media kit e portfólio com os vídeos: https://sorayamichelly-dev.github.io/ugc/portfolio/
+Media kit: em anexo (PDF)
+Portfólio com os vídeos: https://sorayamichelly-dev.github.io/ugc/portfolio/
 
 Sobre o meu trabalho: crio conteúdo UGC gravado em casa, com luz natural, sobre a rotina real de uma mulher que sai para trabalhar às 7h30, volta às 18h e cuida de um bebê. Publico o mesmo conteúdo no Instagram, no TikTok e no YouTube Shorts.
 
