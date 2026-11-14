@@ -19,6 +19,11 @@ Registro de ideias para evolução do projeto. Nada aqui foi implementado ainda.
 - Registrar as marcas em que fui aprovada.
 - Para cada marca: **prazo de entrega do material**.
 - Prazos aparecendo na agenda.
+- **Remuneração da parceria**, preenchida junto com a marca:
+  - Tipo de parceria: **pago**, **permuta** ou **afiliado**.
+  - Se for pago: **valor** que vou ganhar e **data de recebimento**.
+  - Se for permuta: o que vou receber em troca.
+  - Se for afiliado: comissão/condições do programa.
 
 ### 4. Área de briefing
 - Lugar para colar ou subir o briefing da marca.
