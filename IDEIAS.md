@@ -44,6 +44,10 @@ Registro de ideias para evolução do projeto. Nada aqui foi implementado ainda.
 - Espaço para **subir um print** do que a marca está buscando (ex.: anúncio de vaga/campanha).
 - A partir do print, **criar uma abordagem** para eu me candidatar ou propor a parceria para a marca.
 
+### 7. Edição de vídeo
+- Uma **aba chamada "Edição de vídeo"**.
+- Funcionalidades ainda a definir.
+
 ---
 
 ### Observações
