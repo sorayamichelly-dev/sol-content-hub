@@ -279,12 +279,12 @@ export function aiPanel(container, { obj, title, emptyLabel = 'Gerar', onSave, g
     const idx = Math.min(obj.atual ?? n - 1, n - 1);
     const cur = obj.versoes[idx];
     container.innerHTML = `
-      <div class="ai-box">
+      <div class="ai-box ${busy ? 'busy' : ''}">
         <div class="ai-head">✨ ${esc(title)}<span class="spacer"></span>
           ${n > 1 && !busy ? `<div class="versions"><button class="btn sm ghost" data-v="-1" ${idx === 0 ? 'disabled' : ''} aria-label="Versão anterior">‹</button><span class="small">versão ${idx + 1} de ${n}</span><button class="btn sm ghost" data-v="1" ${idx === n - 1 ? 'disabled' : ''} aria-label="Próxima versão">›</button></div>` : ''}
         </div>
         <div class="ai-body">
-          ${busy ? `<div class="md typing">${md(streamText || 'Pensando…')}</div>`
+          ${busy ? `<div class="md typing">${streamText ? md(streamText) : '<span class="thinking"><i></i><i></i><i></i>&nbsp;criando…</span>'}</div>`
             : cur ? `${cur.pedido ? `<p class="small muted">Ajuste pedido: “${esc(cur.pedido)}”</p>` : ''}<div class="md">${md(cur.texto)}</div>`
             : `<p class="muted">Nada gerado ainda.</p>`}
         </div>
@@ -348,3 +348,57 @@ export function aiPanel(container, { obj, title, emptyLabel = 'Gerar', onSave, g
 
   render();
 }
+
+
+// ---------- Efeitos ----------
+const reduced = () => window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+export function confetti(n = 90) {
+  if (reduced()) return;
+  const box = document.createElement('div');
+  box.className = 'confetti';
+  const cores = ['#7b2ff2', '#c026d3', '#e0377f', '#ff8a3d', '#ffc53d', '#16b26a', '#3b6cff'];
+  for (let i = 0; i < n; i++) {
+    const c = document.createElement('i');
+    c.style.left = Math.random() * 100 + 'vw';
+    c.style.background = cores[i % cores.length];
+    c.style.setProperty('--x', (Math.random() * 30 - 15) + 'vw');
+    c.style.setProperty('--r', (Math.random() * 900 - 450) + 'deg');
+    c.style.setProperty('--d', (1.3 + Math.random() * 1.4) + 's');
+    c.style.animationDelay = Math.random() * 0.25 + 's';
+    if (Math.random() > 0.6) { c.style.borderRadius = '50%'; c.style.height = '9px'; }
+    box.appendChild(c);
+  }
+  document.body.appendChild(box);
+  setTimeout(() => box.remove(), 3200);
+}
+
+export function countUp(el, to, fmt = (v) => String(Math.round(v)), ms = 900) {
+  if (reduced() || !to) { el.textContent = fmt(to); return; }
+  const t0 = performance.now();
+  const step = (t) => {
+    const k = Math.min(1, (t - t0) / ms);
+    el.textContent = fmt(to * (1 - Math.pow(1 - k, 3)));
+    if (k < 1) requestAnimationFrame(step);
+  };
+  requestAnimationFrame(step);
+}
+
+/** Anima a entrada de cards e itens novos na tela, um depois do outro. */
+export function revealNew(root) {
+  let i = 0;
+  root.querySelectorAll('.item, .stat, .card, .ai-box, .empty, .hero, .section-title').forEach((el) => {
+    if (el.dataset.rv) return;
+    el.dataset.rv = '1';
+    el.classList.add('reveal');
+    el.style.setProperty('--i', Math.min(i++, 14));
+  });
+}
+
+export const SUN_SVG = `<svg class="sun-svg" viewBox="0 0 150 150" aria-hidden="true">
+  <defs><radialGradient id="sg" cx="50%" cy="45%" r="55%"><stop offset="0" stop-color="#fff6c9"/><stop offset=".55" stop-color="#ffd257"/><stop offset="1" stop-color="#ff9a3d"/></radialGradient></defs>
+  <g class="rays" stroke="#ffe08a" stroke-width="7" stroke-linecap="round" opacity=".85">
+    ${Array.from({ length: 12 }, (_, k) => { const a = (k * Math.PI) / 6; const x1 = 75 + 46 * Math.cos(a), y1 = 75 + 46 * Math.sin(a), x2 = 75 + (k % 2 ? 60 : 66) * Math.cos(a), y2 = 75 + (k % 2 ? 60 : 66) * Math.sin(a); return `<line x1="${x1.toFixed(1)}" y1="${y1.toFixed(1)}" x2="${x2.toFixed(1)}" y2="${y2.toFixed(1)}"/>`; }).join('')}
+  </g>
+  <circle class="core" cx="75" cy="75" r="36" fill="url(#sg)"/>
+</svg>`;

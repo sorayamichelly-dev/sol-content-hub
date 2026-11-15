@@ -1,5 +1,5 @@
 // Service worker: deixa o app abrir mesmo sem internet.
-const CACHE = 'sol-hub-v4';
+const CACHE = 'sol-hub-v6';
 const SHELL = [
   './',
   './index.html',
@@ -32,7 +32,8 @@ self.addEventListener('fetch', (e) => {
   if (req.method !== 'GET') return;
   const url = new URL(req.url);
   // Chamadas à API da IA nunca passam pelo cache.
-  if (url.hostname === 'api.anthropic.com') return;
+  // Chamadas à IA e ao servidor de contas/dados nunca passam pelo cache.
+  if (url.hostname === 'api.anthropic.com' || url.hostname.endsWith('.supabase.co')) return;
 
   if (url.origin === location.origin) {
     // Arquivos do app: tenta a rede primeiro (pega atualizações), cai no cache se estiver offline.
@@ -45,8 +46,8 @@ self.addEventListener('fetch', (e) => {
         })
         .catch(() => caches.match(req).then((r) => r || caches.match('./index.html')))
     );
-  } else if (url.hostname === 'cdn.jsdelivr.net') {
-    // Biblioteca da IA: cache primeiro.
+  } else if (['cdn.jsdelivr.net', 'fonts.googleapis.com', 'fonts.gstatic.com'].includes(url.hostname)) {
+    // Bibliotecas e fontes: cache primeiro.
     e.respondWith(
       caches.match(req).then((hit) => hit || fetch(req).then((res) => {
         const copy = res.clone();

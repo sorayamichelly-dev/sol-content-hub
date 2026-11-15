@@ -1,11 +1,11 @@
 // Integração com o Claude (API da Anthropic), chamada direto do navegador com a chave salva no aparelho.
-import { state } from './db.js';
+import { state, getApiKey } from './db.js';
 
 const SDK_URL = 'https://cdn.jsdelivr.net/npm/@anthropic-ai/sdk@1.3.0/+esm';
 let AnthropicCls;
 
 async function client() {
-  const key = (state.settings.apiKey || '').trim();
+  const key = getApiKey().trim();
   if (!key) {
     const err = new Error('Coloque sua chave da API em Ajustes para usar a IA.');
     err.code = 'no_key';

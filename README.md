@@ -13,9 +13,10 @@ Site que vira app (PWA) para organizar o trabalho de criadora UGC.
 - **Portfólio**: marcas, faixa de logos e pedido de atualização do site e do PDF.
 
 ## Como funciona
-- Site estático, sem servidor: `index.html`, `css/`, `js/`, `manifest.webmanifest`, `sw.js`.
-- Os dados ficam salvos no próprio aparelho (IndexedDB). Use **Ajustes → Baixar backup** para guardar uma cópia ou passar para outro aparelho.
-- A IA usa a API da Anthropic (Claude). A chave é colada em **Ajustes** e fica salva só no aparelho.
+- Site estático: `index.html`, `css/`, `js/`, `manifest.webmanifest`, `sw.js`.
+- **Contas:** login com e-mail e senha pelo Supabase (projeto `sol-content-hub`). Só cria conta quem foi convidada. A primeira conta criada vira administradora e libera os convites em **Ajustes → Convites**.
+- **Dados:** cada pessoa só vê os próprios dados (regras de segurança no banco). Uma cópia fica no aparelho para abrir rápido e funcionar sem internet; o que mudar offline é enviado quando a conexão voltar.
+- **IA:** cada pessoa cola a própria chave da Anthropic em Ajustes. A chave fica só no aparelho, não vai para o servidor.
 
 ## Publicar
 Ative o GitHub Pages no repositório (Settings → Pages → branch) e abra o endereço no celular. Depois é só usar "Adicionar à Tela de Início".

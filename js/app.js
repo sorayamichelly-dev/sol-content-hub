@@ -1,8 +1,13 @@
-import { state, loadAll, save, add, find, remove, exportJSON, importJSON, uid } from './db.js';
+import {
+  state, sb, save, flush, add, find, remove, exportJSON, importJSON, uid, getApiKey, setApiKey,
+  currentUser, loadUserData, signIn, signUp, signOut, resetPassword, updatePassword, authErrorMsg,
+  listConvites, addConvite, removeConvite, legacyLocalData, importLegacy, dropLegacy, seedPortfolio,
+} from './db.js';
 import * as AI from './ai.js';
 import {
   esc, md, toast, copy, modal, confirmBox, formModal, bindFields, wireSegs, aiPanel,
   thumbsHTML, wireThumbs, todayISO, toISO, parseISO, fmtDate, relDay, daysFrom, money,
+  confetti, countUp, revealNew, SUN_SVG,
 } from './ui.js';
 
 const $view = document.getElementById('view');
@@ -26,7 +31,11 @@ const SECTION_OF = { marca: 'marcas', roteiro: 'roteiros', proposta: 'propostas'
 function renderNav(section) {
   document.getElementById('sidebar').innerHTML =
     `<div class="brandmark"><img src="icons/icon-192.png" alt="">Sol Content Hub</div>` +
-    NAV.map((n) => `<a href="#/${n.r}" class="${section === n.r ? 'active' : ''}"><span>${n.ic}</span>${n.t}</a>`).join('');
+    NAV.map((n) => `<a href="#/${n.r}" class="${section === n.r ? 'active' : ''}"><span>${n.ic}</span>${n.t}</a>`).join('') +
+    `<div class="me"><b>${esc(state.settings.nome || 'Minha conta')}</b><div class="muted" style="overflow:hidden;text-overflow:ellipsis">${esc(state.user?.email || '')}</div>
+      <button class="btn sm" style="margin-top:8px" id="sideOut">Sair</button></div>`;
+  const so = document.getElementById('sideOut');
+  if (so) so.onclick = doSignOut;
   const inMore = !NAV.find((n) => n.r === section)?.tab;
   document.getElementById('tabbar').innerHTML =
     NAV.filter((n) => n.tab).map((n) => `<a class="tab ${section === n.r ? 'active' : ''}" href="#/${n.r}"><span class="ic">${n.ic}</span>${n.t}</a>`).join('') +
@@ -37,14 +46,21 @@ function setTop(title, { back = false, actions = '' } = {}) {
   $title.textContent = title;
   document.title = title === 'Sol Content Hub' ? title : `${title} · Sol Hub`;
   $back.hidden = !back;
-  $actions.innerHTML = actions;
+  $actions.innerHTML = actions + `<span class="sync-dot ${syncState === 'erro' ? 'erro' : ''}" id="syncDot" title="${syncState === 'erro' ? 'Sem conexão: salvo no aparelho, envio quando voltar a internet' : 'Tudo salvo na sua conta'}"></span>`;
 }
+let syncState = 'ok';
+window.addEventListener('sync', (e) => {
+  syncState = e.detail;
+  const d = document.getElementById('syncDot');
+  if (d) { d.classList.toggle('erro', syncState === 'erro'); d.title = syncState === 'erro' ? 'Sem conexão: salvo no aparelho, envio quando voltar a internet' : 'Tudo salvo na sua conta'; }
+});
 $back.onclick = () => (history.length > 1 ? history.back() : go('agenda'));
 
 export function go(path) { location.hash = '#/' + path; }
 
 function route() {
-  const [name = 'agenda', id, sub] = location.hash.replace(/^#\/?/, '').split('/');
+  let [name, id, sub] = location.hash.replace(/^#\/?/, '').split('/');
+  name ||= 'agenda';
   const section = SECTION_OF[name] || name;
   renderNav(section);
   document.querySelectorAll('.fab').forEach((f) => f.remove());
@@ -106,11 +122,69 @@ function entryItem(e, showDate = true) {
     <span class="dot ${COR[e.tipo]}"></span>
     <div class="body"><div class="title" style="${e.feito ? 'text-decoration:line-through;opacity:.6' : ''}">${esc(e.titulo)}</div>
       <div class="sub">${esc(e.sub || '')}</div></div>
-    <div class="end">${showDate ? `<div class="${late ? 'badge b-bad' : 'muted'}">${esc(relDay(e.data))}</div>` : ''}${e.hora ? `<div class="muted">${esc(e.hora)}</div>` : ''}</div>
+    <div class="end">${showDate ? `<div class="${late ? 'badge b-bad pulse' : 'muted'}">${esc(relDay(e.data))}</div>` : ''}${e.hora ? `<div class="muted">${esc(e.hora)}</div>` : ''}</div>
   </div>`;
 }
 function wireEntries(container, list) {
   container.querySelectorAll('[data-entry]').forEach((el, i) => (el.onclick = list[i].open));
+}
+
+const FRASES = [
+  'Hoje é um ótimo dia para criar algo que só você faria. ☀️',
+  'Consistência vence perfeição. Um vídeo de cada vez.',
+  'Cada entrega bem feita é o próximo convite chegando.',
+  'Seu jeito de contar é o que as marcas estão comprando.',
+  'Gancho forte, roteiro simples, luz boa. Bora gravar?',
+  'Organizou, gravou, entregou, recebeu. Esse é o ciclo. ✨',
+  'Uma ideia anotada hoje é um post pronto amanhã.',
+];
+let fraseT;
+function saudacao() {
+  const h = new Date().getHours();
+  return h < 5 ? 'Boa madrugada' : h < 12 ? 'Bom dia' : h < 18 ? 'Boa tarde' : 'Boa noite';
+}
+function heroHTML(pend) {
+  const hoje = parseISO(todayISO());
+  const ini = new Date(hoje); ini.setDate(hoje.getDate() - ((hoje.getDay() + 6) % 7));
+  const fim = new Date(ini); fim.setDate(ini.getDate() + 6);
+  const a = toISO(ini), b = toISO(fim);
+  const semana = allEntries().filter((e) => e.data >= a && e.data <= b && ['prazo', 'gravacao', 'postagem'].includes(e.tipo));
+  const feitas = semana.filter((e) => e.feito).length;
+  const pct = semana.length ? Math.round((feitas / semana.length) * 100) : 0;
+  const hojeN = pend.filter((e) => e.data === todayISO()).length;
+  const nome = (state.settings.nome || '').split(' ')[0];
+  return `<section class="hero">
+    <div class="sunwrap">${SUN_SVG}</div>
+    <h2>${saudacao()}${nome ? ', ' + esc(nome) : ''}!</h2>
+    <div class="date">${(() => { const t = hoje.toLocaleDateString('pt-BR', { weekday: 'long', day: 'numeric', month: 'long' }); return t[0].toUpperCase() + t.slice(1); })()}</div>
+    <div class="quote" id="frase"><span>${FRASES[new Date().getDate() % FRASES.length]}</span></div>
+    <div class="hero-row">
+      <div class="ring" id="ring" style="--p:0"><b>${semana.length ? pct + '%' : '—'}</b></div>
+      <div class="txt"><b>${semana.length ? `${feitas} de ${semana.length} da semana` : 'Semana livre'}</b>${hojeN ? `${hojeN} coisa${hojeN > 1 ? 's' : ''} para hoje` : 'Nada pendente para hoje'}</div>
+    </div>
+    <div class="quick">
+      <button data-q="ideia">💡 Ideia</button><button data-q="roteiro">🎬 Roteiro</button>
+      <button data-q="marca">🎉 Fui aprovada</button><button data-q="proposta">🤝 Proposta</button><button data-q="evento">📅 Compromisso</button>
+    </div>
+  </section>`;
+}
+function wireHero() {
+  const ring = document.getElementById('ring');
+  if (ring) {
+    const pct = parseInt(ring.textContent) || 0;
+    const t0 = performance.now();
+    const step = (t) => { const k = Math.min(1, (t - t0) / 1100); ring.style.background = `conic-gradient(#fff ${pct * (1 - Math.pow(1 - k, 3))}%, rgba(255,255,255,.25) 0)`; if (k < 1) requestAnimationFrame(step); };
+    requestAnimationFrame(step);
+  }
+  const acts = { ideia: () => editIdeia(null), roteiro: () => novoRoteiro(), marca: () => novaMarca(), proposta: novaProposta, evento: () => editEvento(null) };
+  document.querySelectorAll('[data-q]').forEach((b) => (b.onclick = acts[b.dataset.q]));
+  clearInterval(fraseT);
+  let k = new Date().getDate();
+  fraseT = setInterval(() => {
+    const el = document.getElementById('frase');
+    if (!el) return clearInterval(fraseT);
+    el.innerHTML = `<span>${FRASES[++k % FRASES.length]}</span>`;
+  }, 7000);
 }
 
 let calMonth = null, calSel = null;
@@ -147,11 +221,12 @@ function viewAgenda() {
 
   $view.innerHTML = `
     ${installBanner()}
+    ${heroHTML(pend)}
     <div class="stats">
-      <div class="stat"><div class="v">${entregas7}</div><div class="l">entregas em 7 dias</div></div>
-      <div class="stat"><div class="v money">${money(aReceber) || 'R$ 0'}</div><div class="l">a receber</div></div>
-      <div class="stat"><div class="v">${ativas}</div><div class="l">marcas ativas</div></div>
-      <div class="stat"><div class="v">${state.ideias.filter((i) => i.status !== 'postada').length}</div><div class="l">ideias no banco</div></div>
+      <div class="stat"><span class="e">📦</span><div class="v" data-count="${entregas7}">0</div><div class="l">entregas em 7 dias</div></div>
+      <div class="stat"><span class="e">💸</span><div class="v money" data-count="${aReceber}" data-money="1">R$ 0</div><div class="l">a receber</div></div>
+      <div class="stat"><span class="e">🏷️</span><div class="v" data-count="${ativas}">0</div><div class="l">marcas ativas</div></div>
+      <div class="stat"><span class="e">💡</span><div class="v" data-count="${state.ideias.filter((i) => i.status !== 'postada').length}">0</div><div class="l">ideias no banco</div></div>
     </div>
 
     ${atrasados.length ? `<div class="section-title"><h2>⚠️ Atrasados</h2></div><div class="list" id="lAtr">${atrasados.map((e) => entryItem(e)).join('')}</div>` : ''}
@@ -174,6 +249,8 @@ function viewAgenda() {
     <div class="list" id="lProx">${proximos.length ? proximos.map((e) => entryItem(e)).join('') : emptyBox('🌤️', 'Nenhum prazo nas próximas duas semanas.')}</div>`;
 
   wireInstall();
+  wireHero();
+  $view.querySelectorAll('[data-count]').forEach((el) => countUp(el, Number(el.dataset.count), el.dataset.money ? (v) => money(v) || 'R$ 0' : undefined));
   if (atrasados.length) wireEntries($view.querySelector('#lAtr'), atrasados);
   wireEntries($view.querySelector('#lDia'), doDia);
   if (proximos.length) wireEntries($view.querySelector('#lProx'), proximos);
@@ -251,6 +328,8 @@ function novaMarca(preset = {}) {
     ],
     onSubmit: (d) => {
       const m = add('marcas', { status: 'aprovada', entregas: [], emails: [], briefing: { texto: '', imagens: [], versoes: [] }, envio: {}, ...d });
+      confetti();
+      toast(`Parabéns pela parceria com ${m.nome}! 🎉`);
       go(`marca/${m.id}`);
     },
   });
@@ -353,6 +432,7 @@ function tabParceria(m, body) {
     if (k === 'nome') $title.textContent = m.nome;
     if (k === 'envio.rastreio') renderRastreio();
     if (k === 'status') viewMarca(m.id, 'parceria');
+    if ((k === 'recebido' && m.recebido) || (k === 'envio.recebido' && m.envio.recebido)) { confetti(60); toast(k === 'recebido' ? 'Dinheiro na conta! 💸' : 'Produto chegou! 📦'); }
   });
   renderRastreio();
   body.querySelector('#toPort').onclick = () => addToPortfolio(m.nome);
@@ -389,6 +469,7 @@ function tabEntregas(m, body) {
   body.querySelectorAll('[data-done]').forEach((el) => (el.onchange = () => {
     const e = m.entregas.find((x) => x.id === el.dataset.done);
     e.feito = el.checked;
+    if (e.feito) { confetti(50); toast('Entrega concluída ✨'); }
     if (m.entregas.length && m.entregas.every((x) => x.feito) && ['aprovada', 'em produção'].includes(m.status)) { m.status = 'entregue'; toast('Tudo entregue! Status mudou para "entregue"'); }
     save('marcas'); viewMarca(m.id, 'entregas');
   }));
@@ -623,7 +704,7 @@ function viewProposta(id) {
     canGenerate: () => (p.imagens.length || p.notas?.trim() ? true : 'Adicione o print do que a marca está buscando'),
     generate: ({ ajuste, base, anteriores, onText, signal }) => AI.criarAbordagem({ marca: p.marca, notas: p.notas, imagens: p.imagens, anteriores, ajuste, base }, { onText, signal }),
   });
-  $view.querySelector('#aprov').onclick = () => { p.status = 'aprovada'; save('propostas'); novaMarca({ nome: p.marca }); };
+  $view.querySelector('#aprov').onclick = () => { p.status = 'aprovada'; save('propostas'); confetti(); novaMarca({ nome: p.marca }); };
   $view.querySelector('#delP').onclick = async () => { if (await confirmBox('Excluir esta proposta?')) { remove('propostas', p.id); history.back(); } };
 }
 
@@ -821,10 +902,25 @@ function viewAjustes() {
   setTop('Ajustes');
   const s = state.settings;
   $view.innerHTML = `
+    <div class="section-title"><h2>👤 Minha conta</h2></div>
+    <div class="card">
+      <label class="field"><span>Como quer ser chamada</span><input class="input" data-k="nome" placeholder="Seu nome"></label>
+      <p class="small muted" style="margin:0 0 12px">Conectada como <b>${esc(state.user?.email || '')}</b>${state.isAdmin ? ' · <span class="badge">administradora</span>' : ''}</p>
+      <div class="row"><button class="btn" id="chgPw">🔑 Trocar senha</button><button class="btn danger" id="out">Sair</button></div>
+    </div>
+
+    ${state.isAdmin ? `
+    <div class="section-title"><h2>💌 Convites</h2></div>
+    <div class="card">
+      <p class="small muted" style="margin-top:0">Só quem estiver nesta lista consegue criar conta. Depois de liberar, mande o link do app para a pessoa.</p>
+      <form class="row" id="convForm" style="flex-wrap:nowrap"><input class="input" type="email" id="convEmail" placeholder="email@exemplo.com" required><button class="btn primary">Liberar</button></form>
+      <div class="list" id="convList" style="margin-top:12px"><p class="muted small">Carregando…</p></div>
+    </div>` : ''}
+
     <div class="section-title"><h2>✨ Inteligência artificial</h2></div>
     <div class="card">
-      <p class="small muted" style="margin-top:0">A análise de briefing, os roteiros, as abordagens e os pedidos de edição usam o Claude. Para isso, crie uma chave em
-        <a href="https://console.anthropic.com/settings/keys" target="_blank" rel="noopener">console.anthropic.com</a> e cole abaixo. A chave fica salva só neste aparelho. Cada uso é cobrado na sua conta da Anthropic.</p>
+      <p class="small muted" style="margin-top:0">A análise de briefing, os roteiros, as abordagens e os pedidos de edição usam o Claude. Crie sua chave em
+        <a href="https://console.anthropic.com/settings/keys" target="_blank" rel="noopener">console.anthropic.com</a> e cole abaixo. A chave fica salva só neste aparelho (não vai para a sua conta), e cada uso é cobrado na sua conta da Anthropic.</p>
       <label class="field"><span>Chave da API</span><input class="input" type="password" id="sKey" autocomplete="off" placeholder="sk-ant-..."></label>
       <div class="grid2">
         <label class="field"><span>Modelo</span><select class="input" data-k="model">
@@ -842,17 +938,20 @@ function viewAjustes() {
 
     <div class="section-title"><h2>💾 Backup</h2></div>
     <div class="card">
-      <p class="small muted" style="margin-top:0">Seus dados ficam salvos neste aparelho. Baixe um backup de vez em quando, e use-o para passar os dados para outro celular ou computador.</p>
+      <p class="small muted" style="margin-top:0">Tudo fica salvo na sua conta e aparece em qualquer aparelho em que você entrar. Se quiser, baixe uma cópia.</p>
       <div class="row"><button class="btn" id="exp">⬇️ Baixar backup</button><button class="btn" id="imp">⬆️ Restaurar backup</button></div>
     </div>
 
-    <div class="section-title"><h2>Aparência</h2></div>
+    <div class="section-title"><h2>🎨 Aparência</h2></div>
     <div class="card"><div class="seg" data-k="theme"><button data-v="auto">Automático</button><button data-v="light">Claro</button><button data-v="dark">Escuro</button></div></div>`;
   const key = $view.querySelector('#sKey');
-  key.value = s.apiKey || '';
-  key.onchange = () => { s.apiKey = key.value.trim(); save('settings'); toast(s.apiKey ? 'Chave salva neste aparelho' : 'Chave removida'); };
-  bindFields($view, s, (k) => { save('settings'); if (k === 'theme') applyTheme(); });
+  key.value = getApiKey();
+  key.onchange = () => { setApiKey(key.value.trim()); toast(key.value.trim() ? 'Chave salva neste aparelho' : 'Chave removida'); };
+  bindFields($view, s, (k) => { save('settings'); if (k === 'theme') applyTheme(); if (k === 'nome') renderNav('ajustes'); });
   renderInstallCard();
+  $view.querySelector('#out').onclick = doSignOut;
+  $view.querySelector('#chgPw').onclick = () => askNewPassword();
+  if (state.isAdmin) wireConvites();
   $view.querySelector('#exp').onclick = () => {
     const blob = new Blob([exportJSON()], { type: 'application/json' });
     const a = document.createElement('a');
@@ -867,13 +966,62 @@ function viewAjustes() {
     inp.onchange = async () => {
       try {
         const text = await inp.files[0].text();
-        if (!(await confirmBox('Restaurar substitui os dados atuais deste aparelho. Continuar?', 'Restaurar'))) return;
+        if (!(await confirmBox('Restaurar substitui os dados atuais da sua conta. Continuar?', 'Restaurar'))) return;
         await importJSON(text);
         toast('Backup restaurado'); applyTheme(); route();
       } catch (e) { toast(e.message || 'Arquivo inválido'); }
     };
     inp.click();
   };
+}
+
+async function wireConvites() {
+  const list = $view.querySelector('#convList');
+  const render = async () => {
+    try {
+      const cs = await listConvites();
+      list.innerHTML = cs.length ? cs.map((c) => `<div class="item"><div class="avatar soft">✉️</div><div class="body"><div class="title">${esc(c.email)}</div>
+        <div class="sub">${c.usado_em ? 'já criou a conta' : 'aguardando cadastro'}</div></div>
+        <span class="badge ${c.usado_em ? 'b-ok' : 'b-warn'}">${c.usado_em ? 'ativa' : 'convidada'}</span>
+        <button class="iconbtn" data-rm="${esc(c.email)}" aria-label="Remover convite">✕</button></div>`).join('')
+        : '<p class="muted small">Ninguém convidado ainda.</p>';
+      list.querySelectorAll('[data-rm]').forEach((b) => (b.onclick = async () => {
+        if (!(await confirmBox(`Remover o convite de ${b.dataset.rm}? Quem já criou conta continua com acesso.`, 'Remover'))) return;
+        try { await removeConvite(b.dataset.rm); render(); } catch (e) { toast(authErrorMsg(e)); }
+      }));
+    } catch (e) { list.innerHTML = `<p class="small muted">Não deu para carregar os convites (${esc(authErrorMsg(e))}).</p>`; }
+  };
+  $view.querySelector('#convForm').onsubmit = async (e) => {
+    e.preventDefault();
+    const inp = $view.querySelector('#convEmail');
+    try {
+      await addConvite(inp.value);
+      const link = location.origin + location.pathname;
+      inp.value = '';
+      await render();
+      copy(`Oi! Liberei seu acesso ao Sol Content Hub ☀️ Crie sua conta com este e-mail aqui: ${link}`);
+      toast('Convite liberado e mensagem copiada para enviar');
+    } catch (err) { toast(err.code === '23505' ? 'Esse e-mail já está na lista' : authErrorMsg(err)); }
+  };
+  render();
+}
+
+function askNewPassword(recovery = false) {
+  formModal({
+    title: recovery ? 'Crie uma nova senha' : 'Trocar senha',
+    fields: [{ k: 'senha', label: 'Nova senha (mínimo 6 caracteres)', type: 'password', required: true }],
+    submit: 'Salvar senha',
+    onSubmit: async (d) => {
+      try { await updatePassword(d.senha); toast('Senha atualizada'); } catch (e) { toast(authErrorMsg(e)); }
+    },
+  });
+}
+
+async function doSignOut() {
+  if (!(await confirmBox('Sair da sua conta neste aparelho?', 'Sair'))) return;
+  await signOut();
+  location.hash = '';
+  renderAuth();
 }
 
 // ---------- Instalação (PWA) ----------
@@ -919,14 +1067,91 @@ function applyTheme() {
   else delete document.documentElement.dataset.theme;
 }
 
+// ---------- Entrar / criar conta ----------
+function renderAuth(mode = 'entrar', msg = '', kind = '') {
+  document.getElementById('appShell').hidden = true;
+  document.getElementById('tabbar').hidden = true;
+  document.querySelectorAll('.fab').forEach((f) => f.remove());
+  const root = document.getElementById('authRoot');
+  root.hidden = false;
+  const isReset = mode === 'esqueci';
+  root.innerHTML = `<div class="auth">
+    <div class="bigsun">${SUN_SVG}</div>
+    <form class="auth-card" id="authForm" novalidate>
+      <h1>Sol Content Hub</h1>
+      <p class="tag">Sua agenda de criadora: marcas, roteiros e entregas num só lugar.</p>
+      ${isReset ? '' : `<div class="seg"><button type="button" data-m="entrar" class="${mode === 'entrar' ? 'on' : ''}">Entrar</button><button type="button" data-m="criar" class="${mode === 'criar' ? 'on' : ''}">Criar conta</button></div>`}
+      ${mode === 'criar' ? '<label class="field"><span>Seu nome</span><input class="input" name="nome" autocomplete="name" required></label>' : ''}
+      <label class="field"><span>E-mail</span><input class="input" type="email" name="email" autocomplete="email" required></label>
+      ${isReset ? '' : `<label class="field"><span>Senha</span><input class="input" type="password" name="senha" autocomplete="${mode === 'criar' ? 'new-password' : 'current-password'}" minlength="6" required></label>`}
+      <button class="btn primary block" id="authBtn">${mode === 'criar' ? 'Criar minha conta' : isReset ? 'Enviar link para trocar a senha' : 'Entrar'}</button>
+      ${mode === 'criar' ? '<p class="small muted" style="text-align:center;margin:10px 0 0">Só e-mails convidados conseguem criar conta.</p>' : ''}
+      <div class="auth-msg ${kind}" role="alert">${esc(msg)}</div>
+      ${mode === 'entrar' ? '<button type="button" class="linkbtn" data-m="esqueci">Esqueci minha senha</button>' : ''}
+      ${isReset ? '<button type="button" class="linkbtn" data-m="entrar">Voltar para entrar</button>' : ''}
+    </form></div>`;
+  root.querySelectorAll('[data-m]').forEach((b) => (b.onclick = () => renderAuth(b.dataset.m)));
+  root.querySelector('#authForm').onsubmit = async (e) => {
+    e.preventDefault();
+    const f = e.target;
+    const email = f.email.value.trim(), senha = f.senha?.value || '', nome = f.nome?.value.trim() || '';
+    const out = root.querySelector('.auth-msg');
+    const btn = root.querySelector('#authBtn');
+    if (!email || (!isReset && senha.length < 6) || (mode === 'criar' && !nome)) { out.className = 'auth-msg err'; out.textContent = 'Preencha todos os campos (senha com 6 ou mais caracteres).'; return; }
+    btn.disabled = true;
+    try {
+      if (mode === 'entrar') { await signIn(email, senha); await boot(); }
+      else if (mode === 'criar') {
+        const r = await signUp(email, senha, nome);
+        if (r.needsConfirm) renderAuth('entrar', 'Conta criada! Abra o e-mail de confirmação que enviamos e depois entre aqui.', 'ok');
+        else { state.user = r.user; await boot({ nome }); }
+      } else { await resetPassword(email); out.className = 'auth-msg ok'; out.textContent = 'Se o e-mail tiver conta, você vai receber um link para criar uma nova senha.'; }
+    } catch (err) {
+      out.className = 'auth-msg err'; out.textContent = authErrorMsg(err);
+    } finally { btn.disabled = false; }
+  };
+}
+
+let observer;
+async function boot(extra = {}) {
+  document.getElementById('authRoot').hidden = true;
+  document.getElementById('authRoot').innerHTML = '';
+  const res = await loadUserData();
+  const meta = state.user.user_metadata || {};
+  if (!state.settings.nome && (extra.nome || meta.nome)) { state.settings.nome = extra.nome || meta.nome; save('settings'); }
+  if (state.isAdmin && !state.settings.portfolioSemeado && !state.portfolio.length) { seedPortfolio(); state.settings.portfolioSemeado = true; save('settings'); }
+  applyTheme();
+  document.getElementById('appShell').hidden = false;
+  document.getElementById('tabbar').hidden = false;
+  if (!observer) {
+    observer = new MutationObserver(() => revealNew($view));
+    observer.observe($view, { childList: true, subtree: true });
+  }
+  route();
+  if (res.offline) toast(res.fromCache ? 'Sem conexão: mostrando o que está salvo no aparelho' : 'Sem conexão com o servidor');
+  const legacy = await legacyLocalData();
+  if (legacy) {
+    const n = Object.values(legacy).filter(Array.isArray).reduce((a, b) => a + b.length, 0);
+    if (await confirmBox(`Encontrei ${n} itens salvos só neste aparelho (da versão sem login). Levar para a sua conta?`, 'Levar para a conta')) {
+      await importLegacy(legacy); await flush(); route(); toast('Dados levados para a sua conta');
+    } else if (await confirmBox('Apagar esses itens antigos deste aparelho?', 'Apagar')) await dropLegacy();
+  }
+}
+
 // ---------- Início ----------
 (async function start() {
-  const ok = await loadAll();
-  applyTheme();
-  if (!ok) toast('Não deu para salvar dados neste navegador (modo anônimo?).');
-  window.addEventListener('hashchange', route);
-  window.addEventListener('save-error', () => toast('Erro ao salvar. Pode faltar espaço no aparelho.'));
-  route();
+  window.addEventListener('hashchange', () => state.user && route());
+  document.getElementById('authRoot').innerHTML = `<div class="splash">${SUN_SVG}</div>`;
+  sb.auth.onAuthStateChange((event) => {
+    if (event === 'PASSWORD_RECOVERY') setTimeout(() => askNewPassword(true), 400);
+  });
+  try {
+    const user = await currentUser();
+    if (user) await boot(); else renderAuth();
+  } catch (e) {
+    console.error(e);
+    renderAuth('entrar', 'Não deu para conectar. Confira a internet e tente de novo.', 'err');
+  }
   if ('serviceWorker' in navigator && location.protocol !== 'file:') {
     navigator.serviceWorker.register('sw.js').catch((e) => console.warn('SW', e));
   }
