@@ -40,6 +40,10 @@ Registro de ideias para evolução do projeto. Nada aqui foi implementado ainda.
 - Botão **"Gerar novo"**: se eu não gostar do roteiro, gero outro.
 - Campo para **digitar ajustes**, pedindo para acrescentar ou remover coisas do roteiro.
 
+### 6. Proposta de parceria
+- Espaço para **subir um print** do que a marca está buscando (ex.: anúncio de vaga/campanha).
+- A partir do print, **criar uma abordagem** para eu me candidatar ou propor a parceria para a marca.
+
 ---
 
 ### Observações
