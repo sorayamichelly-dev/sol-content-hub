@@ -1,6 +1,8 @@
 # Ideias — Sol Content Hub
 
-Registro de ideias para evolução do projeto. Nada aqui foi implementado ainda.
+Registro de ideias para evolução do projeto.
+
+> **15/11/2026:** a primeira versão do app foi construída com as seções 1 a 8. Fora desta versão: sincronização automática com o Gmail (por enquanto tem o botão "Buscar no Gmail" e o registro manual dos e-mails), edição automática no Descript (o app gera o pedido para colar lá) e atualização automática do site do portfólio (o app gera o pedido para a conversa "Portfólio UGC").
 
 ---
 
