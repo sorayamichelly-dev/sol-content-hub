@@ -48,6 +48,15 @@ Registro de ideias para evolução do projeto. Nada aqui foi implementado ainda.
 - Uma **aba chamada "Edição de vídeo"**.
 - Funcionalidades ainda a definir.
 
+### 8. Atualização de portfólio
+- Área para **atualizar o portfólio UGC** a partir do Hub.
+- Ligação com o portfólio que já existe (criado na sessão "Portfólio UGC"):
+  - Portfólio tem **site + PDF** (PDF publicado em `sorayamichelly-dev.github.io/ugc/portfolio/`).
+  - Tem faixa de **logos das marcas** (hoje: Simple, LUX, Letty, Gold Spell, Forever Liss) — 5 cabem numa linha; a partir de 6 precisa ajustar o layout.
+  - Tem **galeria de fotos UGC** (pessoa + produto + contexto) e lista "marcas e lojas que já gravei" com links dos vídeos.
+- Ideia de integração: quando uma marca aprovada tiver o vídeo entregue, o Hub sugere **adicionar ao portfólio** (logo, foto, link do vídeo).
+- Pendência registrada lá: Letty, Gold Spell e Forever Liss ainda sem vídeo no mídia kit.
+
 ---
 
 ### Observações
