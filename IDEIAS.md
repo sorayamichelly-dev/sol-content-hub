@@ -36,6 +36,9 @@ Registro de ideias para evolução do projeto. Nada aqui foi implementado ainda.
 ### 5. Criação de roteiros criativos
 - A partir do briefing analisado, **criar roteiros criativos para gravar**.
 - Roteiros ligados à marca e ao prazo correspondente.
+- Junto com o roteiro, vêm **ganchos** para usar no vídeo.
+- Botão **"Gerar novo"**: se eu não gostar do roteiro, gero outro.
+- Campo para **digitar ajustes**, pedindo para acrescentar ou remover coisas do roteiro.
 
 ---
 
