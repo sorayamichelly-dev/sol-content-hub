@@ -46,7 +46,18 @@ Registro de ideias para evolução do projeto. Nada aqui foi implementado ainda.
 
 ### 7. Edição de vídeo
 - Uma **aba chamada "Edição de vídeo"**.
-- Funcionalidades ainda a definir.
+- Baseada no que já foi feito na sessão "Conectores para ditar vídeo" (edição pelo **Descript**, pedindo as mudanças por texto):
+  - **Cortar** o vídeo bruto para o tamanho certo (ex.: de 3min16s para 35s), tirando vícios de fala e repetições.
+  - **Áudio:** limpar ruído (Studio Sound em intensidade leve, ~40%, para não ficar metálico) e trilha de fundo baixa.
+  - **Legendas:** cor, sombra, posição na tela e destaque de palavras.
+  - **Texto na tela:** gancho de abertura e citações em destaque (adicionar ou remover).
+  - **Velocidade** do vídeo (ex.: 1.2x).
+  - **Zooms** suaves e **correção de cor**.
+  - **Exportar** em vertical 1080x1920 (Reels/TikTok) com link para baixar, assistir e editar.
+  - Junto com o vídeo, gerar **opções de legenda para o post** e **hashtags**.
+- Ajustes feitos por pedido em texto, do mesmo jeito do roteiro ("baixa a legenda", "tira o texto de abertura", "velocidade 1.2").
+- Pontos de atenção que apareceram lá: conferir tom da voz após acelerar, alinhamento dos zooms e fade da música.
+- Ligação com outras áreas: o vídeo editado fica na **pasta da marca** e pode ir para o **portfólio**.
 
 ### 8. Atualização de portfólio
 - Área para **atualizar o portfólio UGC** a partir do Hub.
