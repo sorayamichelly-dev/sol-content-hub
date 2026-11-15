@@ -24,6 +24,7 @@ Registro de ideias para evolução do projeto. Nada aqui foi implementado ainda.
   - Se for pago: **valor** que vou ganhar e **data de recebimento**.
   - Se for permuta: o que vou receber em troca.
   - Se for afiliado: comissão/condições do programa.
+- **Envio de produto:** se a marca for enviar algo, campo para colocar o **código de rastreio** do produto.
 
 ### 4. Área de briefing
 - Lugar para colar ou subir o briefing da marca.
