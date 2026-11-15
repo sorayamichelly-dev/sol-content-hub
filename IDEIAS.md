@@ -25,6 +25,9 @@ Registro de ideias para evolução do projeto. Nada aqui foi implementado ainda.
   - Se for permuta: o que vou receber em troca.
   - Se for afiliado: comissão/condições do programa.
 - **Envio de produto:** se a marca for enviar algo, campo para colocar o **código de rastreio** do produto.
+- **Pasta da marca + e-mails:** cada marca tem sua própria pasta.
+  - Indicar se a parceria veio de uma **plataforma** ou **direto da marca**.
+  - Nos dois casos, **cruzar os e-mails** relacionados (da marca e/ou da plataforma) e **registrar dentro da pasta da marca**.
 
 ### 4. Área de briefing
 - Lugar para colar ou subir o briefing da marca.
