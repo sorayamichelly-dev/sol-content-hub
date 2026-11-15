@@ -73,4 +73,4 @@ Registro de ideias para evolução do projeto.
 ---
 
 ### Observações
-- O `index.html` atual já tem partes de calendário e de roteiro; avaliar depois o que dá para reaproveitar.
+- O calendário antigo (versão anterior do Sol Content Hub) não é usado: foi removido em 15/11/2026.

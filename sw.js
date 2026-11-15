@@ -1,5 +1,5 @@
 // Service worker: deixa o app abrir mesmo sem internet.
-const CACHE = 'sol-hub-v2';
+const CACHE = 'sol-hub-v3';
 const SHELL = [
   './',
   './index.html',

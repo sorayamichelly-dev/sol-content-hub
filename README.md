@@ -16,7 +16,6 @@ Site que vira app (PWA) para organizar o trabalho de criadora UGC.
 - Site estático, sem servidor: `index.html`, `css/`, `js/`, `manifest.webmanifest`, `sw.js`.
 - Os dados ficam salvos no próprio aparelho (IndexedDB). Use **Ajustes → Baixar backup** para guardar uma cópia ou passar para outro aparelho.
 - A IA usa a API da Anthropic (Claude). A chave é colada em **Ajustes** e fica salva só no aparelho.
-- A versão antiga do hub está em `legado/guia-crescimento.html`.
 
 ## Publicar
 Ative o GitHub Pages no repositório (Settings → Pages → branch) e abra o endereço no celular. Depois é só usar "Adicionar à Tela de Início".

@@ -846,10 +846,7 @@ function viewAjustes() {
     </div>
 
     <div class="section-title"><h2>Aparência</h2></div>
-    <div class="card"><div class="seg" data-k="theme"><button data-v="auto">Automático</button><button data-v="light">Claro</button><button data-v="dark">Escuro</button></div></div>
-
-    <div class="section-title"><h2>Outros</h2></div>
-    <div class="list"><a class="item" href="legado/guia-crescimento.html"><div class="avatar">📈</div><div class="body"><div class="title">Guia de crescimento antigo</div><div class="sub">A versão anterior do Sol Content Hub (Reels, calendário e crescimento)</div></div><span class="muted">›</span></a></div>`;
+    <div class="card"><div class="seg" data-k="theme"><button data-v="auto">Automático</button><button data-v="light">Claro</button><button data-v="dark">Escuro</button></div></div>`;
   const key = $view.querySelector('#sKey');
   key.value = s.apiKey || '';
   key.onchange = () => { s.apiKey = key.value.trim(); save('settings'); toast(s.apiKey ? 'Chave salva neste aparelho' : 'Chave removida'); };
