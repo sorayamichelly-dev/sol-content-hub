@@ -357,7 +357,7 @@ export function confetti(n = 90) {
   if (reduced()) return;
   const box = document.createElement('div');
   box.className = 'confetti';
-  const cores = ['#7b2ff2', '#c026d3', '#e0377f', '#ff8a3d', '#ffc53d', '#16b26a', '#3b6cff'];
+  const cores = ['#D8386A', '#F2762E', '#FFC46B', '#8A6FD1', '#1F9C7E', '#3E8FD0', '#FFE0E9'];
   for (let i = 0; i < n; i++) {
     const c = document.createElement('i');
     c.style.left = Math.random() * 100 + 'vw';
@@ -396,9 +396,10 @@ export function revealNew(root) {
 }
 
 export const SUN_SVG = `<svg class="sun-svg" viewBox="0 0 150 150" aria-hidden="true">
-  <defs><radialGradient id="sg" cx="50%" cy="45%" r="55%"><stop offset="0" stop-color="#fff6c9"/><stop offset=".55" stop-color="#ffd257"/><stop offset="1" stop-color="#ff9a3d"/></radialGradient></defs>
-  <g class="rays" stroke="#ffe08a" stroke-width="7" stroke-linecap="round" opacity=".85">
-    ${Array.from({ length: 12 }, (_, k) => { const a = (k * Math.PI) / 6; const x1 = 75 + 46 * Math.cos(a), y1 = 75 + 46 * Math.sin(a), x2 = 75 + (k % 2 ? 60 : 66) * Math.cos(a), y2 = 75 + (k % 2 ? 60 : 66) * Math.sin(a); return `<line x1="${x1.toFixed(1)}" y1="${y1.toFixed(1)}" x2="${x2.toFixed(1)}" y2="${y2.toFixed(1)}"/>`; }).join('')}
+  <g class="rays" fill="#FFC46B" stroke="#2A1A1E" stroke-width="4" stroke-linejoin="round">
+    ${Array.from({ length: 10 }, (_, k) => { const a = (k * Math.PI) / 5; const p = (r, d) => `${(75 + r * Math.cos(a + d)).toFixed(1)},${(75 + r * Math.sin(a + d)).toFixed(1)}`; return `<polygon points="${p(46, -0.16)} ${p(72, 0)} ${p(46, 0.16)}"/>`; }).join('')}
   </g>
-  <circle class="core" cx="75" cy="75" r="36" fill="url(#sg)"/>
+  <circle class="core" cx="75" cy="75" r="40" fill="#F2762E" stroke="#2A1A1E" stroke-width="5"/>
+  <path d="M60 80 q15 14 30 0" fill="none" stroke="#2A1A1E" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="62" cy="66" r="4.5" fill="#2A1A1E"/><circle cx="88" cy="66" r="4.5" fill="#2A1A1E"/>
 </svg>`;

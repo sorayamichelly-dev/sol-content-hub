@@ -130,13 +130,13 @@ function wireEntries(container, list) {
 }
 
 const FRASES = [
-  'Hoje é um ótimo dia para criar algo que só você faria. ☀️',
-  'Consistência vence perfeição. Um vídeo de cada vez.',
-  'Cada entrega bem feita é o próximo convite chegando.',
-  'Seu jeito de contar é o que as marcas estão comprando.',
-  'Gancho forte, roteiro simples, luz boa. Bora gravar?',
-  'Organizou, gravou, entregou, recebeu. Esse é o ciclo. ✨',
-  'Uma ideia anotada hoje é um post pronto amanhã.',
+  'Gente <em>real</em> usando produto de verdade.',
+  'Consistência vence perfeição. <em>Um vídeo</em> de cada vez.',
+  'Cada entrega bem feita é o <em>próximo convite</em> chegando.',
+  'Seu jeito de contar é o que <em>as marcas</em> compram.',
+  'Gancho forte, roteiro simples, <em>luz de janela.</em>',
+  'Organizou, gravou, entregou, <em>recebeu.</em>',
+  'Uma ideia anotada hoje é um <em>post pronto</em> amanhã.',
 ];
 let fraseT;
 function saudacao() {
@@ -153,27 +153,31 @@ function heroHTML(pend) {
   const pct = semana.length ? Math.round((feitas / semana.length) * 100) : 0;
   const hojeN = pend.filter((e) => e.data === todayISO()).length;
   const nome = (state.settings.nome || '').split(' ')[0];
+  const dia = hoje.toLocaleDateString('pt-BR', { day: 'numeric', month: 'long' });
+  const semanaNome = hoje.toLocaleDateString('pt-BR', { weekday: 'long' });
   return `<section class="hero">
     <div class="sunwrap">${SUN_SVG}</div>
-    <h2>${saudacao()}${nome ? ', ' + esc(nome) : ''}!</h2>
-    <div class="date">${(() => { const t = hoje.toLocaleDateString('pt-BR', { weekday: 'long', day: 'numeric', month: 'long' }); return t[0].toUpperCase() + t.slice(1); })()}</div>
+    <span class="hi">${saudacao().toLowerCase()}${nome ? ', ' + esc(nome) : ''}! ✿</span>
+    <h2>${esc(dia)}</h2>
+    <div class="date">${esc(semanaNome)} · ${hojeN ? `${hojeN} coisa${hojeN > 1 ? 's' : ''} para hoje` : 'nada pendente hoje'}</div>
     <div class="quote" id="frase"><span>${FRASES[new Date().getDate() % FRASES.length]}</span></div>
     <div class="hero-row">
-      <div class="ring" id="ring" style="--p:0"><b>${semana.length ? pct + '%' : '—'}</b></div>
-      <div class="txt"><b>${semana.length ? `${feitas} de ${semana.length} da semana` : 'Semana livre'}</b>${hojeN ? `${hojeN} coisa${hojeN > 1 ? 's' : ''} para hoje` : 'Nada pendente para hoje'}</div>
+      <div class="ring" id="ring"><b>${semana.length ? pct + '%' : '—'}</b></div>
+      <div class="txt"><b>${semana.length ? `${feitas} de ${semana.length} feitos` : 'Semana livre'}</b>${semana.length ? 'entregas, gravações e posts desta semana' : 'nenhum prazo nesta semana'}</div>
     </div>
     <div class="quick">
-      <button data-q="ideia">💡 Ideia</button><button data-q="roteiro">🎬 Roteiro</button>
-      <button data-q="marca">🎉 Fui aprovada</button><button data-q="proposta">🤝 Proposta</button><button data-q="evento">📅 Compromisso</button>
+      <button data-q="marca">🎉 Fui aprovada</button><button data-q="ideia">💡 Ideia</button><button data-q="roteiro">🎬 Roteiro</button>
+      <button data-q="proposta">🤝 Proposta</button><button data-q="evento">📅 Compromisso</button>
     </div>
-  </section>`;
+  </section>
+  <div class="marquee" aria-hidden="true"><div class="track">${'<span>' + ['briefing', 'roteiro', 'gancho', 'gravação', 'edição', 'entrega', 'recebido', 'portfólio'].map((w) => `${w}<i>✦</i>`).join('') + '</span>'}${'<span>' + ['briefing', 'roteiro', 'gancho', 'gravação', 'edição', 'entrega', 'recebido', 'portfólio'].map((w) => `${w}<i>✦</i>`).join('') + '</span>'}</div></div>`;
 }
 function wireHero() {
   const ring = document.getElementById('ring');
   if (ring) {
     const pct = parseInt(ring.textContent) || 0;
     const t0 = performance.now();
-    const step = (t) => { const k = Math.min(1, (t - t0) / 1100); ring.style.background = `conic-gradient(#fff ${pct * (1 - Math.pow(1 - k, 3))}%, rgba(255,255,255,.25) 0)`; if (k < 1) requestAnimationFrame(step); };
+    const step = (t) => { const k = Math.min(1, (t - t0) / 1100); ring.style.background = `conic-gradient(#F2762E ${pct * (1 - Math.pow(1 - k, 3))}%, rgba(255,241,232,.18) 0)`; if (k < 1) requestAnimationFrame(step); };
     requestAnimationFrame(step);
   }
   const acts = { ideia: () => editIdeia(null), roteiro: () => novoRoteiro(), marca: () => novaMarca(), proposta: novaProposta, evento: () => editEvento(null) };
@@ -229,9 +233,9 @@ function viewAgenda() {
       <div class="stat"><span class="e">💡</span><div class="v" data-count="${state.ideias.filter((i) => i.status !== 'postada').length}">0</div><div class="l">ideias no banco</div></div>
     </div>
 
-    ${atrasados.length ? `<div class="section-title"><h2>⚠️ Atrasados</h2></div><div class="list" id="lAtr">${atrasados.map((e) => entryItem(e)).join('')}</div>` : ''}
+    ${atrasados.length ? `<div class="section-title"><h2>Atrasados <em>ai ai</em></h2><span class="note">corre!</span></div><div class="list" id="lAtr">${atrasados.map((e) => entryItem(e)).join('')}</div>` : ''}
 
-    <div class="section-title"><h2>Calendário</h2></div>
+    <div class="section-title"><h2>Seu <em>mês</em></h2></div>
     <div class="card">
       <div class="cal-head"><button class="iconbtn" id="prevM" aria-label="Mês anterior">‹</button>
         <h2>${(() => { const t = first.toLocaleDateString('pt-BR', { month: 'long', year: 'numeric' }); return t[0].toUpperCase() + t.slice(1); })()}</h2>
@@ -241,11 +245,11 @@ function viewAgenda() {
         <span><i class="c-post"></i>Postagem</span><span><i class="c-ideia"></i>Ideia</span><span><i class="c-envio"></i>Produto chegando</span><span><i class="c-evento"></i>Outros</span></div>
     </div>
 
-    <div class="section-title"><h2>${calSel === today ? 'Hoje' : fmtDate(calSel, { weekday: 'long', day: '2-digit', month: 'long' })}</h2>
+    <div class="section-title"><h2>${calSel === today ? 'Hoje' : esc(fmtDate(calSel, { day: '2-digit', month: 'short' }))} <em>${calSel === today ? 'no dia' : esc(fmtDate(calSel, { weekday: 'long' }))}</em></h2>
       <button class="btn sm" id="addDia">+ Compromisso</button></div>
     <div class="list" id="lDia">${doDia.length ? doDia.map((e) => entryItem(e, false)).join('') : '<p class="muted small">Nada marcado.</p>'}</div>
 
-    <div class="section-title"><h2>Próximos 14 dias</h2></div>
+    <div class="section-title"><h2>Próximos <em>14 dias</em></h2><span class="note">vem aí ✦</span></div>
     <div class="list" id="lProx">${proximos.length ? proximos.map((e) => entryItem(e)).join('') : emptyBox('🌤️', 'Nenhum prazo nas próximas duas semanas.')}</div>`;
 
   wireInstall();
@@ -369,7 +373,7 @@ function tabParceria(m, body) {
       <label class="field"><span>Site ou domínio da marca</span><input class="input" data-k="dominio" placeholder="ex.: marca.com.br"></label>
     </div>
 
-    <div class="section-title"><h2>💰 Quanto e quando</h2></div>
+    <div class="section-title"><h2>Quanto e <em>quando</em></h2></div>
     <div class="card">
       <div class="field"><span>Tipo de parceria</span><div class="seg" data-k="tipo"><button data-v="pago">Pago</button><button data-v="permuta">Permuta</button><button data-v="afiliado">Afiliado</button></div></div>
       ${m.tipo === 'pago' ? `
@@ -391,7 +395,7 @@ function tabParceria(m, body) {
         <label class="field"><span>Quando a comissão é paga</span><input class="input" data-k="pagamentoComissao" placeholder="Ex.: todo dia 15"></label>` : ''}
     </div>
 
-    <div class="section-title"><h2>📦 Envio do produto</h2></div>
+    <div class="section-title"><h2>Envio do <em>produto</em></h2></div>
     <div class="card">
       <label class="check"><input type="checkbox" data-k="envio.temEnvio"><span class="lbl">A marca vai me enviar produto</span></label>
       ${e.temEnvio ? `
@@ -407,7 +411,7 @@ function tabParceria(m, body) {
         <div class="row" id="rastreioBtns"></div>` : ''}
     </div>
 
-    <div class="section-title"><h2>📝 Anotações</h2></div>
+    <div class="section-title"><h2><em>Anotações</em></h2></div>
     <div class="card"><textarea class="input" rows="4" data-k="notas" placeholder="Combinados, links, observações..."></textarea></div>
 
     <div class="row" style="margin-top:18px">
@@ -483,7 +487,7 @@ function tabBriefing(m, body) {
       <label class="field"><span>Cole o briefing aqui</span><textarea class="input" rows="7" data-k="texto" placeholder="Cole o texto do briefing que a marca ou a plataforma mandou"></textarea></label>
       <div class="field"><span>Ou adicione prints / fotos do briefing</span><div id="bImgs"></div></div>
     </div>
-    <div class="section-title"><h2>Análise</h2></div>
+    <div class="section-title"><h2>A <em>análise</em></h2></div>
     <div id="bAi"></div>
     <div class="row" style="margin-top:14px"><button class="btn" id="toRot">🎬 Criar roteiro com esse briefing</button></div>`;
   bindFields(body, b, () => save('marcas'));
@@ -644,7 +648,7 @@ function viewRoteiro(id) {
           ? `<label class="check"><input type="checkbox" data-k="usarBriefing"><span class="lbl">Usar a análise do briefing da ${esc(m.nome)}</span></label>`
           : `<p class="small muted">A ${esc(m.nome)} ainda não tem briefing analisado. <a href="#/marca/${m.id}/briefing">Analisar briefing</a></p>`) : ''}
       </div>
-      <div class="section-title"><h2>Roteiro</h2></div>
+      <div class="section-title"><h2>O <em>roteiro</em></h2></div>
       <div id="rAi"></div>
       <div class="row" style="margin-top:18px"><button class="btn" id="toVid">✂️ Mandar para edição de vídeo</button><span class="spacer"></span><button class="btn danger" id="delR">Excluir</button></div>`;
     bindFields($view, r, (k) => { save('roteiros'); if (k === 'titulo') $title.textContent = r.titulo; if (k === 'marcaId') render(); });
@@ -693,7 +697,7 @@ function viewProposta(id) {
       <label class="field"><span>Observações (opcional)</span><textarea class="input" rows="2" data-k="notas" placeholder="Ex.: vi no grupo de UGC, eles querem vídeos de unboxing"></textarea></label>
       <div class="field"><span>Status</span><div class="seg" data-k="status">${STATUS_PROP.map(([v, l]) => `<button data-v="${v}">${l}</button>`).join('')}</div></div>
     </div>
-    <div class="section-title"><h2>Abordagem</h2></div>
+    <div class="section-title"><h2>A <em>abordagem</em></h2></div>
     <div id="pAi"></div>
     <div class="row" style="margin-top:18px"><button class="btn sun" id="aprov">🎉 Fui aprovada: criar pasta da marca</button><span class="spacer"></span><button class="btn danger" id="delP">Excluir</button></div>`;
   bindFields($view, p, (k) => { save('propostas'); if (k === 'marca') $title.textContent = p.marca || 'Proposta'; });
@@ -770,21 +774,21 @@ function viewVideo(id) {
       </div>
     </div>
 
-    <div class="section-title"><h2>O que fazer na edição</h2></div>
+    <div class="section-title"><h2>Na <em>edição</em></h2></div>
     <div class="card">${CHECK_EDICAO.map(([k, l]) => `<label class="check"><input type="checkbox" data-k="checklist.${k}"><span class="lbl">${l}</span></label>`).join('')}
       <label class="field" style="margin-top:8px"><span>Outros pedidos</span><textarea class="input" rows="2" data-k="notas" placeholder="Ex.: tirar o texto de abertura, baixar a legenda"></textarea></label></div>
 
-    <div class="section-title"><h2>Links</h2></div>
+    <div class="section-title"><h2><em>Links</em></h2></div>
     <div class="card">
       ${linkRow('linkBruto', 'Vídeo bruto (Drive, Dropbox...)', 'https://')}
       ${linkRow('linkDescript', 'Projeto no Descript', 'https://web.descript.com/...')}
       ${linkRow('linkFinal', 'Vídeo final / post publicado', 'https://')}
     </div>
 
-    <div class="section-title"><h2>Pedido de edição + legenda</h2></div>
+    <div class="section-title"><h2>Pedido + <em>legenda</em></h2></div>
     <div id="vAi"></div>
 
-    <div class="section-title"><h2>Conferir antes de entregar</h2></div>
+    <div class="section-title"><h2>Antes de <em>entregar</em></h2></div>
     <div class="card">${CHECK_CONFERIR.map(([k, l]) => `<label class="check"><input type="checkbox" data-k="conferir.${k}"><span class="lbl">${l}</span></label>`).join('')}</div>
 
     <div class="row" style="margin-top:18px"><button class="btn" id="vPort">⭐ Adicionar ao portfólio</button><span class="spacer"></span><button class="btn danger" id="delV">Excluir</button></div>`;
@@ -840,19 +844,19 @@ function viewPortfolio() {
       <div class="row">${s.portfolioSite ? `<a class="btn sm" target="_blank" rel="noopener" href="${esc(s.portfolioSite)}">Abrir site</a>` : ''}${s.portfolioPdf ? `<a class="btn sm" target="_blank" rel="noopener" href="${esc(s.portfolioPdf)}">Abrir PDF</a>` : ''}</div>
     </div>
 
-    <div class="section-title"><h2>Faixa de logos (${logos.length})</h2></div>
+    <div class="section-title"><h2>Marcas que <em>confiaram</em></h2><span class="note">${logos.length} logos ✦</span></div>
     <div class="card"><div class="logos">${itens.map((p) => `<div class="logo-c ${p.logoOk ? '' : 'pending'}" title="${esc(p.marca)}">${esc(p.marca)}</div>`).join('')}</div>
       ${logos.length >= 6 ? '<p class="callout small" style="margin-top:12px">Com 6 ou mais logos a faixa quebra em duas linhas. Peça para ajustar o tamanho dos círculos na próxima atualização.</p>' : `<p class="small muted" style="margin-top:10px">Cabem 5 logos em uma linha. ${5 - logos.length > 0 ? `Ainda cabe${5 - logos.length > 1 ? 'm' : ''} ${5 - logos.length}.` : 'A linha está cheia.'}</p>`}</div>
 
-    ${sugestoes.length ? `<div class="section-title"><h2>Marcas entregues fora do portfólio</h2></div>
+    ${sugestoes.length ? `<div class="section-title"><h2>Faltam no <em>portfólio</em></h2></div>
       <div class="list">${sugestoes.map((m) => `<div class="item"><div class="avatar">${esc(initials(m.nome))}</div><div class="body"><div class="title">${esc(m.nome)}</div><div class="sub">${esc(m.status)}</div></div><button class="btn sm primary" data-add="${esc(m.nome)}">Adicionar</button></div>`).join('')}</div>` : ''}
 
-    <div class="section-title"><h2>Marcas no portfólio</h2><button class="btn sm" id="addP">+ Marca</button></div>
+    <div class="section-title"><h2>No <em>portfólio</em></h2><button class="btn sm" id="addP">+ Marca</button></div>
     <div class="list">${itens.map((p) => `<div class="item" data-p="${p.id}"><div class="avatar">${esc(initials(p.marca))}</div>
       <div class="body"><div class="title">${esc(p.marca)}</div><div class="sub">${[p.temVideo ? 'com vídeo' : 'sem vídeo', p.logoOk ? 'logo ok' : 'falta logo', p.noSite ? 'no site' : 'fora do site', p.noPdf ? 'no PDF' : 'fora do PDF'].join(' · ')}</div></div>
       ${!p.temVideo || !p.logoOk || !p.noSite || !p.noPdf ? '<span class="badge b-warn">pendente</span>' : '<span class="badge b-ok">ok</span>'}</div>`).join('')}</div>
 
-    <div class="section-title"><h2>Atualizar o portfólio</h2></div>
+    <div class="section-title"><h2>Atualizar o <em>site</em></h2></div>
     <div class="card"><p class="small muted" style="margin-top:0">O site e o PDF são atualizados na conversa "Portfólio UGC". Copie o pedido abaixo e cole lá.</p>
       <button class="btn primary" id="cpPed" ${pend.length ? '' : 'disabled'}>📋 Copiar pedido de atualização (${pend.length})</button></div>`;
   const site = $view.querySelector('#pSite'), pdf = $view.querySelector('#pPdf');
@@ -902,7 +906,7 @@ function viewAjustes() {
   setTop('Ajustes');
   const s = state.settings;
   $view.innerHTML = `
-    <div class="section-title"><h2>👤 Minha conta</h2></div>
+    <div class="section-title"><h2>Minha <em>conta</em></h2></div>
     <div class="card">
       <label class="field"><span>Como quer ser chamada</span><input class="input" data-k="nome" placeholder="Seu nome"></label>
       <p class="small muted" style="margin:0 0 12px">Conectada como <b>${esc(state.user?.email || '')}</b>${state.isAdmin ? ' · <span class="badge">administradora</span>' : ''}</p>
@@ -910,14 +914,14 @@ function viewAjustes() {
     </div>
 
     ${state.isAdmin ? `
-    <div class="section-title"><h2>💌 Convites</h2></div>
+    <div class="section-title"><h2><em>Convites</em></h2><span class="note">só entra quem você chamar</span></div>
     <div class="card">
       <p class="small muted" style="margin-top:0">Só quem estiver nesta lista consegue criar conta. Depois de liberar, mande o link do app para a pessoa.</p>
       <form class="row" id="convForm" style="flex-wrap:nowrap"><input class="input" type="email" id="convEmail" placeholder="email@exemplo.com" required><button class="btn primary">Liberar</button></form>
       <div class="list" id="convList" style="margin-top:12px"><p class="muted small">Carregando…</p></div>
     </div>` : ''}
 
-    <div class="section-title"><h2>✨ Inteligência artificial</h2></div>
+    <div class="section-title"><h2>A <em>IA</em></h2></div>
     <div class="card">
       <p class="small muted" style="margin-top:0">A análise de briefing, os roteiros, as abordagens e os pedidos de edição usam o Claude. Crie sua chave em
         <a href="https://console.anthropic.com/settings/keys" target="_blank" rel="noopener">console.anthropic.com</a> e cole abaixo. A chave fica salva só neste aparelho (não vai para a sua conta), e cada uso é cobrado na sua conta da Anthropic.</p>
@@ -933,17 +937,14 @@ function viewAjustes() {
       <label class="field"><span>Sobre mim (a IA usa para acertar o tom)</span><textarea class="input" rows="4" data-k="sobre" placeholder="Ex.: @seuperfil, criadora UGC de beleza e rotina, público feminino 25-40, tom leve e sincero, grava em casa..."></textarea></label>
     </div>
 
-    <div class="section-title"><h2>📲 Instalar como app</h2></div>
+    <div class="section-title"><h2>Virar <em>app</em></h2></div>
     <div class="card" id="installCard"></div>
 
-    <div class="section-title"><h2>💾 Backup</h2></div>
+    <div class="section-title"><h2><em>Backup</em></h2></div>
     <div class="card">
       <p class="small muted" style="margin-top:0">Tudo fica salvo na sua conta e aparece em qualquer aparelho em que você entrar. Se quiser, baixe uma cópia.</p>
       <div class="row"><button class="btn" id="exp">⬇️ Baixar backup</button><button class="btn" id="imp">⬆️ Restaurar backup</button></div>
-    </div>
-
-    <div class="section-title"><h2>🎨 Aparência</h2></div>
-    <div class="card"><div class="seg" data-k="theme"><button data-v="auto">Automático</button><button data-v="light">Claro</button><button data-v="dark">Escuro</button></div></div>`;
+    </div>`;
   const key = $view.querySelector('#sKey');
   key.value = getApiKey();
   key.onchange = () => { setApiKey(key.value.trim()); toast(key.value.trim() ? 'Chave salva neste aparelho' : 'Chave removida'); };
@@ -1061,11 +1062,8 @@ function renderInstallCard() {
     <b>Computador (Chrome/Edge):</b> ícone de instalar na barra de endereço.</p>`;
 }
 
-function applyTheme() {
-  const t = state.settings.theme;
-  if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t;
-  else delete document.documentElement.dataset.theme;
-}
+// Visual sempre claro, igual ao portfólio.
+function applyTheme() {}
 
 // ---------- Entrar / criar conta ----------
 function renderAuth(mode = 'entrar', msg = '', kind = '') {
@@ -1077,9 +1075,9 @@ function renderAuth(mode = 'entrar', msg = '', kind = '') {
   const isReset = mode === 'esqueci';
   root.innerHTML = `<div class="auth">
     <div class="bigsun">${SUN_SVG}</div>
+    <div class="auth-intro"><span class="hi">oi, criadora! ✿</span><h1>Sol Content Hub</h1>
+      <p>Marcas, roteiros e entregas <em>num só lugar.</em></p></div>
     <form class="auth-card" id="authForm" novalidate>
-      <h1>Sol Content Hub</h1>
-      <p class="tag">Sua agenda de criadora: marcas, roteiros e entregas num só lugar.</p>
       ${isReset ? '' : `<div class="seg"><button type="button" data-m="entrar" class="${mode === 'entrar' ? 'on' : ''}">Entrar</button><button type="button" data-m="criar" class="${mode === 'criar' ? 'on' : ''}">Criar conta</button></div>`}
       ${mode === 'criar' ? '<label class="field"><span>Seu nome</span><input class="input" name="nome" autocomplete="name" required></label>' : ''}
       <label class="field"><span>E-mail</span><input class="input" type="email" name="email" autocomplete="email" required></label>
