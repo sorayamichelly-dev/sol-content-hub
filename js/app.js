@@ -58,6 +58,7 @@ function route() {
 }
 
 function fab(label, onClick) {
+  document.querySelectorAll('.fab').forEach((f) => f.remove());
   const b = document.createElement('button');
   b.className = 'fab';
   b.setAttribute('aria-label', label);
