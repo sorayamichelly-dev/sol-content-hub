@@ -80,7 +80,7 @@ export function friendlyError(e) {
 
 // ---------- Pedidos prontos ----------
 
-export function analisarBriefing({ marca, texto, imagens }, opts) {
+export function buildBriefing({ marca, texto, imagens }) {
   const content = [
     ...imageBlocks(imagens),
     {
@@ -105,10 +105,10 @@ Analise esse briefing para eu gravar sem erro. Use exatamente estas seções:
 (lista de itens para marcar)`,
     },
   ];
-  return run({ content, ...opts });
+  return { content, imagens };
 }
 
-export function gerarRoteiro({ marca, briefing, ideia, formato, duracao, extra, anteriores = [], ajuste, base }, opts) {
+export function buildRoteiro({ marca, briefing, ideia, formato, duracao, extra, anteriores = [], ajuste, base }) {
   let pedido;
   if (ajuste && base) {
     pedido = `Aqui está o roteiro atual:
@@ -140,10 +140,10 @@ Lista do que filmar, incluindo cenas de apoio (b-roll).
 Com 3 a 5 hashtags.
 ${briefing ? '## Conferência do briefing\nLista curta confirmando que cada item obrigatório do briefing aparece no roteiro.' : ''}`;
   }
-  return run({ content: [{ type: 'text', text: pedido }], ...opts });
+  return { content: [{ type: 'text', text: pedido }], imagens: [] };
 }
 
-export function criarAbordagem({ marca, notas, imagens, anteriores = [], ajuste, base }, opts) {
+export function buildAbordagem({ marca, notas, imagens, anteriores = [], ajuste, base }) {
   let text;
   if (ajuste && base) {
     text = `Esta é a abordagem atual:
@@ -170,10 +170,11 @@ Com linha de assunto.
 ## Próximo passo
 O que anexar (mídia kit, portfólio) e quando cobrar resposta.`;
   }
-  return run({ content: [...(ajuste ? [] : imageBlocks(imagens)), { type: 'text', text }], ...opts });
+  const imgs = ajuste ? [] : imagens || [];
+  return { content: [...imageBlocks(imgs), { type: 'text', text }], imagens: imgs };
 }
 
-export function pedidoEdicao({ video, roteiro, marca }, opts) {
+export function buildEdicao({ video, roteiro, marca }) {
   const ck = video.checklist || {};
   const text = `Preciso editar um vídeo no Descript pedindo as mudanças em texto (para o editor de IA do Descript, o "Underlord").
 Vídeo: ${video.titulo || ''}
@@ -192,5 +193,25 @@ Um texto único, claro, em passos numerados, com: cortes (tirar vícios de fala,
 3 opções.
 ## Hashtags
 5 hashtags.`;
-  return run({ content: [{ type: 'text', text }], ...opts });
+  return { content: [{ type: 'text', text }], imagens: [] };
+}
+
+/** Ajuste genérico de um texto já gerado. */
+export function buildAjuste({ base, ajuste, oque = 'o texto' }) {
+  return { content: [{ type: 'text', text: `Este é ${oque} atual:\n"""\n${base}\n"""\n\nAjuste seguindo este pedido: ${ajuste}\nMantenha o que não foi pedido para mudar e devolva ${oque} completo, com as mesmas seções.` }], imagens: [] };
+}
+
+// ---------- Dois modos: chave da API (automático) ou "meu Claude" (copiar e colar, sem custo) ----------
+export const hasKey = () => !!getApiKey().trim();
+
+export function runJob(job, opts) {
+  return run({ content: job.content, ...opts });
+}
+
+/** Texto completo para colar no Claude (site ou app), com as mesmas instruções que o app usaria. */
+export function promptText(job) {
+  const corpo = job.content.filter((b) => b.type === 'text').map((b) => b.text).join('\n\n');
+  const n = job.imagens?.length || 0;
+  const aviso = n ? `\n\n(Vou anexar ${n === 1 ? '1 imagem' : n + ' imagens'} junto com esta mensagem: ${n === 1 ? 'é o print' : 'são os prints'} do material.)` : '';
+  return `${BASE}${sobreMim()}\n\n---\n\n${corpo}${aviso}\n\nResponda só com o conteúdo pedido, em Markdown, sem comentários antes ou depois.`;
 }

@@ -1,5 +1,5 @@
 // Utilidades de interface.
-import { friendlyError } from './ai.js';
+import { friendlyError, hasKey, runJob, promptText } from './ai.js';
 
 export const esc = (s) =>
   String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
@@ -268,38 +268,52 @@ export function wireThumbs(container, arr, onChange) {
 // ---------- Painel de IA com versões, "Gerar novo" e ajuste por texto ----------
 /**
  * obj.versoes = [{texto, pedido, criadoEm}], obj.atual = índice.
- * generate({mode:'novo'|'ajuste', ajuste, base, anteriores, onText, signal}) => Promise<string>
+ * build({mode:'novo'|'ajuste', ajuste, base, anteriores}) => job (ver ai.js)
+ * Com chave da API: gera direto. Sem chave: modo "meu Claude" (copiar o pedido, colar a resposta), sem custo.
  */
-export function aiPanel(container, { obj, title, emptyLabel = 'Gerar', onSave, generate, canGenerate = () => true }) {
+export function aiPanel(container, { obj, title, emptyLabel = 'Gerar', onSave, build, canGenerate = () => true }) {
   obj.versoes ||= [];
   let busy = false, ctrl = null;
+  let copiado = null; // último pedido copiado no modo grátis: {mode, ajuste, imagens}
 
-  const render = (streamText) => {
+  const addVersion = (texto, pedido) => {
+    obj.versoes.push({ texto, pedido: pedido || '', criadoEm: new Date().toISOString() });
+    obj.atual = obj.versoes.length - 1;
+    onSave();
+  };
+
+  const render = () => {
+    const auto = hasKey();
     const n = obj.versoes.length;
     const idx = Math.min(obj.atual ?? n - 1, n - 1);
     const cur = obj.versoes[idx];
     container.innerHTML = `
       <div class="ai-box ${busy ? 'busy' : ''}">
-        <div class="ai-head">✨ ${esc(title)}<span class="spacer"></span>
+        <div class="ai-head">✨ ${esc(title)}${auto ? '' : ' · com o seu Claude'}
           ${n > 1 && !busy ? `<div class="versions"><button class="btn sm ghost" data-v="-1" ${idx === 0 ? 'disabled' : ''} aria-label="Versão anterior">‹</button><span class="small">versão ${idx + 1} de ${n}</span><button class="btn sm ghost" data-v="1" ${idx === n - 1 ? 'disabled' : ''} aria-label="Próxima versão">›</button></div>` : ''}
         </div>
         <div class="ai-body">
-          ${busy ? `<div class="md typing">${streamText ? md(streamText) : '<span class="thinking"><i></i><i></i><i></i>&nbsp;criando…</span>'}</div>`
+          ${busy ? `<div class="md typing"><span class="thinking"><i></i><i></i><i></i>&nbsp;criando…</span></div>`
             : cur ? `${cur.pedido ? `<p class="small muted">Ajuste pedido: “${esc(cur.pedido)}”</p>` : ''}<div class="md">${md(cur.texto)}</div>`
-            : `<p class="muted">Nada gerado ainda.</p>`}
+            : auto ? `<p class="muted">Nada gerado ainda.</p>`
+            : `<p class="muted" style="margin:0">Nada gerado ainda.</p>`}
         </div>
       </div>
-      <div class="row" style="margin-top:10px">
+      ${!auto && !busy ? passosHTML() : ''}
+      <div class="row" style="margin-top:12px">
         ${busy ? `<button class="btn" data-stop>Parar</button>`
-          : `<button class="btn primary" data-gen>${n ? '🔄 Gerar novo' : '✨ ' + esc(emptyLabel)}</button>
-             ${cur ? '<button class="btn" data-copy>Copiar</button>' : ''}`}
+          : auto ? `<button class="btn primary" data-gen>${n ? '🔄 Gerar novo' : '✨ ' + esc(emptyLabel)}</button>${cur ? '<button class="btn" data-copy>Copiar</button>' : ''}`
+          : `<button class="btn primary" data-gen>📋 ${n ? 'Copiar pedido de um novo' : 'Copiar pedido para o Claude'}</button>
+             <a class="btn" href="https://claude.ai/new" target="_blank" rel="noopener">Abrir o Claude ↗</a>
+             <button class="btn sun" data-paste>✍️ Colar resposta</button>
+             ${cur ? '<button class="btn" data-copy>Copiar texto</button>' : ''}`}
       </div>
       ${cur && !busy ? `
-      <div class="field" style="margin-top:14px">
+      <div class="field" style="margin-top:16px">
         <span>Acrescentar ou remover algo</span>
         <textarea class="input" rows="2" data-adj placeholder="Ex.: tira a parte do preço, acrescenta uma cena mostrando a textura, deixa o gancho mais curto"></textarea>
       </div>
-      <button class="btn" data-adjbtn>✏️ Ajustar</button>` : ''}`;
+      <button class="btn" data-adjbtn>${auto ? '✏️ Ajustar' : '📋 Copiar pedido de ajuste'}</button>` : ''}`;
 
     container.querySelectorAll('[data-v]').forEach((b) => (b.onclick = () => { obj.atual = idx + Number(b.dataset.v); onSave(); render(); }));
     const gen = container.querySelector('[data-gen]');
@@ -308,6 +322,10 @@ export function aiPanel(container, { obj, title, emptyLabel = 'Gerar', onSave, g
     if (cp) cp.onclick = () => copy(cur.texto);
     const st = container.querySelector('[data-stop]');
     if (st) st.onclick = () => ctrl && ctrl.abort();
+    const ps = container.querySelector('[data-paste]');
+    if (ps) ps.onclick = pasteAnswer;
+    const dl = container.querySelector('[data-dlimg]');
+    if (dl) dl.onclick = () => (copiado?.imagens || []).forEach((src, i) => { const a = document.createElement('a'); a.href = src; a.download = `print-${i + 1}.jpg`; a.click(); });
     const ab = container.querySelector('[data-adjbtn]');
     if (ab) ab.onclick = () => {
       const t = container.querySelector('[data-adj]').value.trim();
@@ -316,26 +334,63 @@ export function aiPanel(container, { obj, title, emptyLabel = 'Gerar', onSave, g
     };
   };
 
+  const passosHTML = () => {
+    const imgs = copiado?.imagens?.length || 0;
+    return `<div class="callout small" style="margin-top:12px">
+      <b>Modo grátis, com o seu Claude:</b>
+      <ol style="margin:6px 0 0;padding-left:20px">
+        <li>${copiado ? '✅ Pedido copiado.' : 'Toque em <b>Copiar pedido</b>.'}</li>
+        <li>Abra o Claude, cole numa conversa nova${imgs ? ` e <b>anexe ${imgs === 1 ? 'o print' : `os ${imgs} prints`}</b>` : ''} e envie.</li>
+        <li>Copie a resposta do Claude e toque em <b>Colar resposta</b>.</li>
+      </ol>
+      ${imgs ? `<button class="btn sm" data-dlimg style="margin-top:10px">⬇️ Baixar ${imgs === 1 ? 'o print' : 'os prints'}</button>` : ''}
+    </div>`;
+  };
+
+  const pasteAnswer = () => {
+    modal(`<h3>Colar resposta</h3>
+      <p class="small muted" style="margin-top:0">Copie a resposta inteira do Claude e cole aqui.</p>
+      <textarea class="input" rows="10" id="pasteTxt" placeholder="Cole aqui a resposta do Claude"></textarea>
+      <div class="actions"><button class="btn" id="fromClip">📋 Colar da área de transferência</button><span class="spacer"></span>
+        <button class="btn" data-close>Cancelar</button><button class="btn primary" id="savePaste">Salvar</button></div>`,
+      (el, close) => {
+        const ta = el.querySelector('#pasteTxt');
+        el.querySelector('#fromClip').onclick = async () => {
+          try { ta.value = await navigator.clipboard.readText(); } catch { toast('Toque e segure no campo e escolha Colar'); ta.focus(); }
+        };
+        el.querySelector('#savePaste').onclick = () => {
+          const t = ta.value.trim();
+          if (t.length < 20) return toast('Cole a resposta do Claude primeiro');
+          addVersion(t, copiado?.mode === 'ajuste' ? copiado.ajuste : '');
+          copiado = null;
+          close();
+          render();
+          toast('Resposta salva ✨');
+        };
+      });
+  };
+
   const go = async (mode, ajuste, base) => {
     if (busy) return;
     const why = canGenerate();
     if (why !== true) return toast(why || 'Falta informação para gerar');
+    const job = build({ mode, ajuste, base, anteriores: mode === 'novo' ? obj.versoes.map((v) => v.texto) : [] });
+    if (!hasKey()) {
+      await copy(promptText(job));
+      copiado = { mode, ajuste, imagens: job.imagens || [] };
+      toast(job.imagens?.length ? 'Pedido copiado. Lembre de anexar o print no Claude' : 'Pedido copiado. Agora cole no Claude');
+      render();
+      return;
+    }
     busy = true;
     ctrl = new AbortController();
     render();
     try {
-      const texto = await generate({
-        mode, ajuste, base,
-        anteriores: mode === 'novo' ? obj.versoes.map((v) => v.texto) : [],
+      const texto = await runJob(job, {
         signal: ctrl.signal,
-        onText: (t) => {
-          const box = container.querySelector('.typing');
-          if (box) box.innerHTML = md(t);
-        },
+        onText: (t) => { const box = container.querySelector('.typing'); if (box) box.innerHTML = md(t); },
       });
-      obj.versoes.push({ texto, pedido: mode === 'ajuste' ? ajuste : '', criadoEm: new Date().toISOString() });
-      obj.atual = obj.versoes.length - 1;
-      onSave();
+      addVersion(texto, mode === 'ajuste' ? ajuste : '');
     } catch (e) {
       console.error(e);
       toast(friendlyError(e));
@@ -348,7 +403,6 @@ export function aiPanel(container, { obj, title, emptyLabel = 'Gerar', onSave, g
 
   render();
 }
-
 
 // ---------- Efeitos ----------
 const reduced = () => window.matchMedia('(prefers-reduced-motion: reduce)').matches;
