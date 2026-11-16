@@ -496,10 +496,10 @@ function tabBriefing(m, body) {
   aiPanel(body.querySelector('#bAi'), {
     obj: b, title: 'Análise do briefing', emptyLabel: 'Ler e analisar o briefing', onSave: () => save('marcas'),
     canGenerate: () => (b.texto?.trim() || b.imagens.length ? true : 'Cole o briefing ou adicione um print'),
-    generate: ({ mode, ajuste, base, onText, signal }) =>
+    build: ({ mode, ajuste, base }) =>
       mode === 'ajuste'
-        ? AI.run({ content: [{ type: 'text', text: `Análise atual:\n"""\n${base}\n"""\nAjuste: ${ajuste}\nDevolva a análise completa.` }], onText, signal })
-        : AI.analisarBriefing({ marca: m.nome, texto: b.texto, imagens: b.imagens }, { onText, signal }),
+        ? AI.buildAjuste({ base, ajuste, oque: 'a análise do briefing' })
+        : AI.buildBriefing({ marca: m.nome, texto: b.texto, imagens: b.imagens }),
   });
   body.querySelector('#toRot').onclick = () => novoRoteiro({ marcaId: m.id, usarBriefing: true });
 }
@@ -655,11 +655,11 @@ function viewRoteiro(id) {
     aiPanel($view.querySelector('#rAi'), {
       obj: r, title: 'Ganchos + roteiro', emptyLabel: 'Gerar roteiro', onSave: () => save('roteiros'),
       canGenerate: () => (r.ideia?.trim() || m || r.extra?.trim() ? true : 'Escreva a ideia ou escolha uma marca'),
-      generate: ({ ajuste, base, anteriores, onText, signal }) => {
+      build: ({ ajuste, base, anteriores }) => {
         const mm = find('marcas', r.marcaId);
         const bv = mm?.briefing?.versoes;
         const briefing = r.usarBriefing && bv?.length ? bv[mm.briefing.atual ?? bv.length - 1].texto : mm?.briefing?.texto || '';
-        return AI.gerarRoteiro({ marca: mm?.nome, briefing, ideia: r.ideia, formato: r.formato, duracao: r.duracao, extra: r.extra, anteriores, ajuste, base }, { onText, signal });
+        return AI.buildRoteiro({ marca: mm?.nome, briefing, ideia: r.ideia, formato: r.formato, duracao: r.duracao, extra: r.extra, anteriores, ajuste, base });
       },
     });
     $view.querySelector('#toVid').onclick = () => novoVideo({ marcaId: r.marcaId, roteiroId: r.id, titulo: r.titulo });
@@ -706,7 +706,7 @@ function viewProposta(id) {
   aiPanel($view.querySelector('#pAi'), {
     obj: p, title: 'Abordagem para a marca', emptyLabel: 'Criar abordagem', onSave: () => save('propostas'),
     canGenerate: () => (p.imagens.length || p.notas?.trim() ? true : 'Adicione o print do que a marca está buscando'),
-    generate: ({ ajuste, base, anteriores, onText, signal }) => AI.criarAbordagem({ marca: p.marca, notas: p.notas, imagens: p.imagens, anteriores, ajuste, base }, { onText, signal }),
+    build: ({ ajuste, base, anteriores }) => AI.buildAbordagem({ marca: p.marca, notas: p.notas, imagens: p.imagens, anteriores, ajuste, base }),
   });
   $view.querySelector('#aprov').onclick = () => { p.status = 'aprovada'; save('propostas'); confetti(); novaMarca({ nome: p.marca }); };
   $view.querySelector('#delP').onclick = async () => { if (await confirmBox('Excluir esta proposta?')) { remove('propostas', p.id); history.back(); } };
@@ -801,11 +801,11 @@ function viewVideo(id) {
   $view.querySelectorAll('[data-k^="conferir."]').forEach((el) => el.closest('.check').classList.toggle('done', el.checked));
   aiPanel($view.querySelector('#vAi'), {
     obj: v, title: 'Pedido para o Descript', emptyLabel: 'Gerar pedido de edição', onSave: () => save('videos'),
-    generate: ({ mode, ajuste, base, onText, signal }) => {
-      if (mode === 'ajuste') return AI.run({ content: [{ type: 'text', text: `Texto atual:\n"""\n${base}\n"""\nAjuste: ${ajuste}\nDevolva o texto completo, com as mesmas seções.` }], onText, signal });
+    build: ({ mode, ajuste, base }) => {
+      if (mode === 'ajuste') return AI.buildAjuste({ base, ajuste, oque: 'o pedido de edição' });
       const r = find('roteiros', v.roteiroId);
       const rt = r?.versoes?.length ? r.versoes[r.atual ?? r.versoes.length - 1].texto : '';
-      return AI.pedidoEdicao({ video: v, roteiro: rt, marca: marcaNome(v.marcaId) }, { onText, signal });
+      return AI.buildEdicao({ video: v, roteiro: rt, marca: marcaNome(v.marcaId) });
     },
   });
   $view.querySelector('#vPort').onclick = () => addToPortfolio(marcaNome(v.marcaId) || v.titulo, v.linkFinal);
@@ -923,9 +923,11 @@ function viewAjustes() {
 
     <div class="section-title"><h2>A <em>IA</em></h2></div>
     <div class="card">
-      <p class="small muted" style="margin-top:0">A análise de briefing, os roteiros, as abordagens e os pedidos de edição usam o Claude. Crie sua chave em
-        <a href="https://console.anthropic.com/settings/keys" target="_blank" rel="noopener">console.anthropic.com</a> e cole abaixo. A chave fica salva só neste aparelho (não vai para a sua conta), e cada uso é cobrado na sua conta da Anthropic.</p>
-      <label class="field"><span>Chave da API</span><input class="input" type="password" id="sKey" autocomplete="off" placeholder="sk-ant-..."></label>
+      <div class="callout small" style="margin-bottom:14px"><b>${getApiKey() ? 'Modo automático (com chave)' : 'Modo grátis: com o seu Claude ✓'}</b><br>
+        ${getApiKey() ? 'A IA gera direto no app e cada uso desconta do seu crédito da Anthropic. Apague a chave para voltar ao modo grátis.' : 'Sem custo extra: o app monta o pedido, você cola no Claude (site ou app, com a sua assinatura) e cola a resposta de volta.'}</div>
+      <p class="small muted" style="margin-top:0"><b>Opcional:</b> para a IA gerar sozinha, sem copiar e colar, crie uma chave em
+        <a href="https://console.anthropic.com/settings/keys" target="_blank" rel="noopener">console.anthropic.com</a> (precisa de crédito pré-pago) e cole abaixo. A chave fica salva só neste aparelho.</p>
+      <label class="field"><span>Chave da API (opcional)</span><input class="input" type="password" id="sKey" autocomplete="off" placeholder="sk-ant-..."></label>
       <div class="grid2">
         <label class="field"><span>Modelo</span><select class="input" data-k="model">
           <option value="claude-opus-5-5">Claude Opus 5.5 (melhor qualidade)</option>
@@ -947,7 +949,7 @@ function viewAjustes() {
     </div>`;
   const key = $view.querySelector('#sKey');
   key.value = getApiKey();
-  key.onchange = () => { setApiKey(key.value.trim()); toast(key.value.trim() ? 'Chave salva neste aparelho' : 'Chave removida'); };
+  key.onchange = () => { setApiKey(key.value.trim()); toast(key.value.trim() ? 'Chave salva: modo automático' : 'Chave removida: modo grátis'); viewAjustes(); };
   bindFields($view, s, (k) => { save('settings'); if (k === 'theme') applyTheme(); if (k === 'nome') renderNav('ajustes'); });
   renderInstallCard();
   $view.querySelector('#out').onclick = doSignOut;
